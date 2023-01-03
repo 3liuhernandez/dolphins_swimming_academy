@@ -1,0 +1,12 @@
+:root {
+    --color-green-main: #427c42;
+    /* --color-green-main: #198754; */
+}
+
+.bg_color-green_main {
+    background-color: var(--color-green-main) !important;
+}
+
+.color-green_main {
+    color: var(--color-green-main) !important;
+}
