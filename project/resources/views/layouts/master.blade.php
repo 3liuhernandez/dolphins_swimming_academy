@@ -11,37 +11,43 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
 
-    <!-- BOOTSTRAP 5.2 -->
+    <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
 
-    <!-- VENDOR ICONS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/mdi/css/materialdesignicons.min.css') }}"
-        media="all" />
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <link rel="stylesheet" href="{{ asset('bs/js/bootstrap.bundle.min.js') }}">
+    <link rel="stylesheet" href="{{ asset('bs/js/bootstrap.min.js') }}">
 
-    <link rel="stylesheet" href="{{ asset('vendor/snackbar/custom_snackbar.css') }}">
-    <link rel="stylesheet" href="{{ asset('vendor/toast/toast.css') }}">
+    <!-- VENDOR ICONS -->
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('vendor/mdi/css/materialdesignicons.min.css') }}" media="all" /> --}}
+
+    {{-- <link rel="stylesheet" href="{{ asset('vendor/snackbar/custom_snackbar.css') }}"> --}}
+    {{-- <link rel="stylesheet" href="{{ asset('vendor/toast/toast.css') }}"> --}}
 
     <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"> --}}
 
     <!-- SLICK SLIDER -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/slick.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/slick-theme.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/slick.css') }}"> --}}
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('vendor/slick/slick-theme.css') }}"> --}}
 
 
     {{-- STYLES TEMPLATE --}}
-    <link rel="stylesheet" type="text/css" href="{{ asset('template/css/style.css') }}">
+
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('template/css/style.css') }}"> --}}
+
     <!-- Responsive-->
-    <link rel="stylesheet" href="{{ asset('template/css/responsive.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('template/css/responsive.css') }}"> --}}
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('template/css/jquery.mCustomScrollbar.min.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('template/css/jquery.mCustomScrollbar.min.css') }}"> --}}
     <!-- Tweaks for older IEs-->
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    {{-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> --}}
     <!-- owl stylesheets -->
-    <link rel="stylesheet" href="{{ asset('template/css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('template/css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-        media="screen">
+    {{-- <link rel="stylesheet" href="{{ asset('template/css/owl.carousel.min.css') }}"> --}}
+
+    {{-- <link rel="stylesheet" href="{{ asset('template/css/owl.theme.default.min.css') }}"> --}}
+
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen"> --}}
 
     @yield('header')
 
@@ -49,7 +55,7 @@
 
 <body>
 
-    <header class="sticky-top bg-light">
+    <header class="sticky-top">
         @include('layouts.includes.navbar')
     </header>
 
@@ -64,14 +70,12 @@
         <div class="side cont-right"></div>
     </div>
 
-    <div id="toast_msg" class="toast align-items-center text-white bg_color-green_main border-0" role="alert"
-        aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-delay="2000" data-bs-autoHide="true">
+    <div id="toast_msg" class="toast align-items-center text-white bg_color-green_main border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-delay="2000" data-bs-autoHide="true">
         <div class="d-flex">
             <div class="toast-body text-center">
                 Hello, world! This is a toast message.
             </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
     </div>
 
