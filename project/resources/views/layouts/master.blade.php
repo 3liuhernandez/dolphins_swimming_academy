@@ -20,7 +20,7 @@
 
 <body>
 
-    <header class="sticky-top">
+    <header class="sticky-top bg-light">
         @include('layouts.includes.navbar')
     </header>
 
@@ -46,9 +46,21 @@
 
     @include('layouts.includes.footer')
 
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text text-center">2020 All Rights Reserved. Design by</p>
+        </div>
+    </div>
+
     <!-- CDN SLICE -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+
+    {{-- JS BOOTSTRAP 5.3 --}}
+    <script src="{{ asset('vendor/bs/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js') }}"></script>
+
+
     {{-- <script src="{{ asset('vendor/popper/popper.min.js') }}"></script> --}}
 
     {{-- <script src="{{ asset('vendor/slick/slick.min.js') }}"></script> --}}
@@ -65,11 +77,11 @@
 
     {{-- <script src="{{ asset('vendor/axios/axios.min.js') }}"></script> --}}
 
-    {{-- <script>
+    <script>
         jQuery(() => {
-            show_toast('mensaje que va en el toast');
+            // show_toast('mensaje que va en el toast');
         });
-    </script> --}}
+    </script>
 
     @yield('footer')
 </body>
