@@ -1,14 +1,5 @@
-@extends('layouts.auth')
+@extends('admin.layouts.auth')
 
-@section('footer')
-    @isset($msg_login)
-        <script>
-            jQuery( () => {
-                snackbar('bg-danger', "{{$msg_login}}", 'center');
-            });
-        </script>
-    @endisset
-@endsection
 
 @section('body')
     <section id="inicio_seccion">
@@ -21,12 +12,12 @@
                         <h3 class="color-green_main">Iniciar Sesión</h3>
                     </div>
                     <!-- CONTAINER FORM -->
-                    <form action="{{ route('login.validate') }}" method="POST">
+                    <form action="{{ route('admin.login.validate') }}" method="POST">
                         @csrf
                         <div class="p-2 p-lg-4">
                             <div class="input-group mb-3">
                                 <span class="input-group-text bg_color-green_main"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                <input type="text" class="form-control" placeholder="example@email.com" name="email" required autocomplete="email" autofocus value="{{ old('email') }}">
+                                <input type="text" class="form-control" placeholder="Username" name="username" required autocomplete="username" autofocus value="{{ old('username') }}">
                             </div>
 
                             <div class="input-group mb-3">

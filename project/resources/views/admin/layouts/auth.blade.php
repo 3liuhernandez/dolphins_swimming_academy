@@ -29,7 +29,7 @@
 <body>
 
     <header class="sticky-top bg-light">
-        @include('layouts.includes.navbar')
+
     </header>
 
     <main class="py-5">
@@ -46,8 +46,6 @@
                 aria-label="Close"></button>
         </div>
     </div>
-
-    @include('layouts.includes.footer')
 
     <!-- copyright section start -->
     <div class="copyright_section">

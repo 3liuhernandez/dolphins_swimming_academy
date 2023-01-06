@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\admin\LoginController as AdminLoginController;
+use App\Http\Controllers\Admin\PageController as AdminPageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
@@ -29,4 +31,20 @@ Route::prefix('auth')->middleware(['web'])->group( function() {
     Route::get('registro', [PageController::class, 'register'])->name('register');
     // validacion de registro
     Route::post('registro', [UserController::class, 'register_validation'])->name('register.store');
+});
+
+Route::prefix("admin")->group( function() {
+
+    Route::prefix('auth')->middleware(['web'])->group( function() {
+        Route::get('login', [AdminPageController::class, 'login'])->name('admin.login');
+        Route::post('login', [AdminLoginController::class, 'check_login'])->name('admin.login.validate');
+        Route::get('logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
+    });
+
+    Route::middleware("auth_admin")->group( function() {
+        Route::get('/', [AdminPageController::class, 'home'])->name('admin');
+        Route::get('/dashboard', [AdminPageController::class, 'home'])->name('admin.dashboard');
+        Route::get('/home', [AdminPageController::class, 'home'])->name('admin.home');
+    });
+
 });
