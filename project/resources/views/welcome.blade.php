@@ -155,7 +155,7 @@
                     <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel1.jpg') }}" class="img-fluid rounded" alt="..."></div>
                 </div>
 
-                <div class="row m-0 p-5 bg-primary bg-opacity-25 flex-column-reverse">
+                <div class="row m-0 p-5 bg-primary bg-opacity-25">
                     <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel2.jpg') }}" class="img-fluid rounded" alt="..."></div>
                     <div class="col-12 col-lg-10 rounded">
                         <h2 class="bw-semibold text_color-blue-main">Nivel 2</h2>

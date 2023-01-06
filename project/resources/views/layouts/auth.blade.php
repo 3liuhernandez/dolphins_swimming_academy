@@ -32,7 +32,7 @@
         @include('layouts.includes.navbar')
     </header>
 
-    <main>
+    <main class="py-5">
         @yield('body')
     </main>
 
@@ -47,10 +47,12 @@
         </div>
     </div>
 
+    @include('layouts.includes.footer')
+
     <!-- copyright section start -->
     <div class="copyright_section">
         <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free html Templates</a></p>
+            <p class="copyright_text text-center">2020 All Rights Reserved. Design by</p>
         </div>
     </div>
 
