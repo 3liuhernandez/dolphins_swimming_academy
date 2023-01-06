@@ -108,4 +108,18 @@ return [
 
     'password_timeout' => 10800,
 
+    /* 'multi' => [
+        'admin' => [
+            'driver' => 'database',
+            'table' => 'admin',
+            'email' => 'client.emails.password'
+        ],
+        'users' => [
+            'driver' => 'database',
+            'table' => 'users',
+            'email' => 'client.emails.password',
+        ]
+    ], */
+
+
 ];
