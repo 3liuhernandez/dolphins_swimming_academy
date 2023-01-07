@@ -11,8 +11,6 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style_panel.css') }}">
-
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
 
@@ -25,11 +23,10 @@
 
 <body>
     <main>
-        <div class="container-fluid flex-grow-1 d-flex flex-column flex-sm-row overflow-auto">
+        <div class="container-fluid flex-grow-1 d-flex flex-column flex-sm-row">
             <div class="row flex-grow-sm-1 flex-grow-0">
                 @include('admin.layouts.includes.aside')
-
-                <div class="col col-lg-10 overflow-auto h-100 p-4">
+                <div class="col col-lg-10 h-100 p-4">
                     @yield('body')
                 </div>
             </div>
