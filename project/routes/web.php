@@ -31,6 +31,10 @@ Route::prefix('auth')->middleware(['web'])->group( function() {
     Route::get('registro', [PageController::class, 'register'])->name('register');
     // validacion de registro
     Route::post('registro', [UserController::class, 'register_validation'])->name('register.store');
+
+
+    Route::get('contacto', [PageController::class, 'contact'])->name('contact');
+    Route::get('clases', [PageController::class, 'class'])->name('class');
 });
 
 Route::prefix("admin")->group( function() {
@@ -46,7 +50,7 @@ Route::prefix("admin")->group( function() {
         Route::get('/dashboard', [AdminPageController::class, 'home'])->name('admin.dashboard');
         Route::get('/home', [AdminPageController::class, 'home'])->name('admin.home');
 
-        Route::get('/students', [AdminPageController::class, 'home'])->name('students');
+        Route::get('/students', [AdminPageController::class, 'students'])->name('students');
     });
 
 });

@@ -9,7 +9,13 @@ use Illuminate\Http\Request;
 class PageController extends Controller {
 
     public function home() {
+        session()->put('section', 'home');
         return view('admin.dashboard');
+    }
+
+    public function students() {
+        session()->put('section', 'students');
+        return view('admin.students.home');
     }
 
 

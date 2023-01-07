@@ -11,35 +11,37 @@
             <hr class="d-none d-md-block">
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="{{ route('admin.home') }}" class="nav-link w-100 p-md-2 {{session('admin') === 'dashboard' ? 'active' : 'active'}}">
+                <a href="{{ route('admin.home') }}"
+                    class="nav-link w-100 p-md-2 {{ session('section') === 'home' ? 'active' : '' }}">
                     <i class="bi bi-speedometer h4 me-md-3"></i>
                     <span class="d-none d-sm-inline">Dashboard</span>
                 </a>
             </li>
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="{{ route('students') }}" class="nav-link w-100 p-md-2 {{session('admin') === 'students' ? 'active' : '000'}}">
+                <a href="{{ route('students') }}"
+                    class="nav-link w-100 p-md-2 {{ session('section') === 'students' ? 'active' : '' }}">
                     <i class="bi bi-card-text h4 me-md-3"></i>
                     <span class="d-none d-sm-inline">Estudiantes</span>
                 </a>
             </li>
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="#" class="nav-link w-100 p-md-2 {{session('admin') === 'home' ? 'active' : 'asdasd'}}">
+                <a href="#" class="nav-link w-100 p-md-2 {{ session('section') === 'parents' ? 'active' : '' }}">
                     <i class="bi bi-bricks h4 me-md-3"></i>
                     <span class="d-none d-sm-inline">Representates</span>
                 </a>
             </li>
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="#" class="nav-link w-100 p-md-2 {{session('admin') === 'home' ? 'active' : ''}}">
+                <a href="#" class="nav-link w-100 p-md-2 {{ session('section') === 'planes' ? 'active' : '' }}">
                     <i class="bi bi-people h4 me-md-3"></i>
                     <span class="d-none d-sm-inline">Planes</span>
                 </a>
             </li>
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="#" class="nav-link w-100 p-md-2 {{session('admin') === 'home' ? 'active' : ''}}">
+                <a href="#" class="nav-link w-100 p-md-2 {{ session('section') === 'users' ? 'active' : '' }}">
                     <i class="bi bi-people h4 me-md-3"></i>
                     <span class="d-none d-sm-inline">Usuarios</span>
                 </a>
@@ -48,7 +50,7 @@
             <hr class="d-none d-md-block">
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="{{ route('admin.logout') }}" class="nav-link w-100 p-md-2 {{session('admin') === 'home' ? 'active' : ''}}">
+                <a href="{{ route('admin.logout') }}" class="nav-link w-100 p-md-2">
                     <i class="bi bi-power h4 me-md-2"></i>
                     <span class="d-none d-sm-inline">Cerrar sesión</span>
                 </a>

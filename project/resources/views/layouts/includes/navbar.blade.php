@@ -12,13 +12,13 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1">
                     <li class="nav-item selected">
-                        <a class="nav-link rounded me-3 active" href="{{ route('home') }} {{session('welcome') === 'home' ? '' : 'active'}}">Home</a>
+                        <a class="nav-link rounded me-3 {{session('section') === 'home' ? 'active' : ''}}" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item selected">
                         <a class="nav-link rounded me-3" href="">Trainings</a>
                     </li>
                     <li class="nav-item selected">
-                        <a class="nav-link rounded me-3" href="">Clases</a>
+                        <a class="nav-link rounded me-3 {{session('section') === 'class' ? 'active' : ''}}" href="{{route('class')}}">Clases</a>
                     </li>
                     <li class="nav-item selected">
                         <a class="nav-link rounded me-3" href="">Shows</a>
@@ -27,7 +27,7 @@
                         <a class="nav-link rounded me-3" href="">Shortcodes</a>
                     </li>
                     <li class="nav-item selected">
-                        <a class="nav-link rounded me-3" href="">Contact</a>
+                        <a class="nav-link rounded me-3 {{session('section') === 'contact' ? 'active' : ''}}" href="{{route('contact')}}">Contact</a>
                     </li>
                     <li class="nav-item selected">
                         <a class="nav-link rounded" href="{{ route('login') }}">Ingreso</a>

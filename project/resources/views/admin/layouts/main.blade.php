@@ -24,8 +24,9 @@
 <body>
     <main>
         <div class="container-fluid flex-grow-1 d-flex flex-column flex-sm-row">
-            <div class="row flex-grow-sm-1 flex-grow-0">
+            <div class="row flex-grow-sm-1 flex-grow-0 w-100">
                 @include('admin.layouts.includes.aside')
+
                 <div class="col col-lg-10 h-100 p-4">
                     @yield('body')
                 </div>

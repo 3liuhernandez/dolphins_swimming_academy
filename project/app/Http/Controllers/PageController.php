@@ -11,7 +11,15 @@ class PageController extends Controller
         return view('welcome');
     }
 
+    public function contact() {
+        session()->put('section', 'contact');
+        return view('contact');
+    }
 
+    public function class() {
+        session()->put('section', 'class');
+        return view('class');
+    }
 
     /* AUTH VIEWS */
     public function login() {
