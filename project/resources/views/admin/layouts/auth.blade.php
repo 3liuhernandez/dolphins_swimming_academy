@@ -8,19 +8,10 @@
     <title>Dolphins Swimming Academy</title>
 
     <!-- MY STYLES -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
 
     <!-- BOOTSTRAP 5.2 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
-
-    <!-- VENDOR ICONS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/mdi/css/materialdesignicons.min.css') }}"
-        media="all" />
-
-    <link rel="stylesheet" href="{{ asset('vendor/toast/toast.css') }}">
-
-    <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
     @yield('header')
 

@@ -8,8 +8,8 @@
     <title>Dolphins Swimming Academy</title>
 
     <!-- MY STYLES -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/styles.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/master.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
 
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
@@ -37,9 +37,7 @@
 
     <div id="toast_msg" class="toast align-items-center text-white bg_color-green_main border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-delay="2000" data-bs-autoHide="true">
         <div class="d-flex">
-            <div class="toast-body text-center">
-                Hello, world! This is a toast message.
-            </div>
+            <div class="toast-body text-center">Hello, world! This is a toast message.</div>
             <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
         </div>
     </div>
@@ -59,23 +57,6 @@
     {{-- JS BOOTSTRAP 5.3 --}}
     <script src="{{ asset('vendor/bs/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js') }}"></script>
-
-
-    {{-- <script src="{{ asset('vendor/popper/popper.min.js') }}"></script> --}}
-
-    {{-- <script src="{{ asset('vendor/slick/slick.min.js') }}"></script> --}}
-
-    {{-- <script src="{{ asset('vendor/snackbar/custom_snackbar.js') }}"></script> --}}
-    {{-- <script src="{{ asset('vendor/toast/toast.js') }}"></script> --}}
-
-    <!-- MY APP JS -->
-    {{-- <script src="{{ asset('js/slice-carusel.js') }}" id="js_slick"></script> --}}
-    <!-- TOOLTIP TIGGER -->
-    {{-- <script src="{{ asset('js/tooltip_trigger.js') }}"></script> --}}
-
-    {{-- <script src="{{ asset('js/master.js') }}"></script> --}}
-
-    {{-- <script src="{{ asset('vendor/axios/axios.min.js') }}"></script> --}}
 
     <script>
         jQuery(() => {
