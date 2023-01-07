@@ -1,15 +1,21 @@
-aside .panel_container ul .selected a {
+ul .selected a {
     font-weight: 500;
     font-size: 1.1rem;
+    color: var(--color-blue-derivate)
 }
 
-aside .panel_container ul .selected a:hover {
+ul .selected a.active {
+    background-color: var(--color-blue-derivate) !important;
+    color: var(--color-text-main) !important;
+}
+
+ul .selected a:hover {
     background-color: var(--color-blue-derivate) !important;
     color: var(--color-text-main) !important;
     transition: all .4s ease;
 }
 
-aside .panel_container ul .selected a:active {
+ul .selected a:active {
     position: relative;
     top: 2px;
 }

@@ -11,7 +11,7 @@
             <hr class="d-none d-md-block">
 
             <li class="nav-item mb-md-3 d-flex align-items-center selected">
-                <a href="{{ route('admin.home') }}" class="nav-link w-100 p-md-2 {{session('admin') === 'dashboard' ? 'active' : '123'}}">
+                <a href="{{ route('admin.home') }}" class="nav-link w-100 p-md-2 {{session('admin') === 'dashboard' ? 'active' : 'active'}}">
                     <i class="bi bi-speedometer h4 me-md-3"></i>
                     <span class="d-none d-sm-inline">Dashboard</span>
                 </a>

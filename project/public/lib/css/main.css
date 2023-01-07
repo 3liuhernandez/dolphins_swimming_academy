@@ -22,7 +22,7 @@
 
 /* BACKGROUND DERIVATE BLUE */
 .bg_color-blue-derivate {
-    background-color: var(--color-blue-derivate);
+    background-color: var(--color-blue-derivate) !important;
 }
 
 /* COLOR TEXT DEVIVATE BLUE */
@@ -74,4 +74,8 @@
 .information_section .container .row .col-12 .text-profesional p {
     width: 80%;
     margin: 0 auto;
+}
+
+header ul li .selected {
+    color: red;
 }

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow p-0">
     <div class="container">
-        <a class="navbar-brand m-0 p-0" href="{{ route('home') }}"><img src="{{ asset('imgs/logo_white.jpg') }}" style="width: 100px; height: 80px;" alt="logo"></a>
+        <a class="navbar-brand m-0 p-0 selected" href="{{ route('home') }}"><img src="{{ asset('imgs/logo_white.jpg') }}" style="width: 100px; height: 80px;" alt="logo"></a>
         <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,26 +11,26 @@
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('home') }}">HOME</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded me-3 active" href="{{ route('home') }} {{session('welcome') === 'home' ? '' : 'active'}}">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">TRAININGS</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded me-3" href="">Trainings</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CLASSES</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded me-3" href="">Clases</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">SHOWS</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded me-3" href="">Shows</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">SHORTCODES</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded me-3" href="">Shortcodes</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="">CONTACT</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded me-3" href="">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">INGRESO</a>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded" href="{{ route('login') }}">Ingreso</a>
                     </li>
                 </ul>
             </div>
