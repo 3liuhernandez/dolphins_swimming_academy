@@ -45,9 +45,9 @@
     @include('layouts.includes.footer')
 
     <!-- copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <p class="copyright_text text-center">2020 All Rights Reserved. Design by</p>
+    <div class="copyright_section bg-black">
+        <div class="container p-0">
+            <p class="copyright_text text-center m-0 text-white">2020 All Rights Reserved. Design by</p>
         </div>
     </div>
 

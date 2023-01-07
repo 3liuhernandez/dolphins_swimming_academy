@@ -29,8 +29,7 @@
                 <?php for($i = 0; $i < 6; $i++) { ?>
                 <div class="col">
                     <div class="card shadow border-0">
-                        <a class="nav-link" href="#"><img src="{{ asset('imgs/img_banner.png') }}" class="img-fluid"
-                                alt="..."></a>
+                        <a class="nav-link" href="#"><img src="{{ asset('imgs/img_banner.png') }}" class="img-fluid" alt="..."></a>
                         <div class="card-body">
                             <div class="d-flex justify-content-between align-items-center">
                                 <p class="m-0 text_color-blue-derivate fw-semibold">Entrenamientos</p>
@@ -70,6 +69,75 @@
     </section>
     <!-- information section end -->
 
+    <!-- information youtube start -->
+    <section class="api-youtube">
+        <div class="container">
+            <div class="row">
+                <div class="title-iframe my-5 pt-4">
+                    <h2 class="text-center m-0 fw-semibold text_color-blue-main">Síguenos en nuestro canal de YouTube</h2>
+                </div>
+                <div class="row box-iframe d-flex justify-content-center">
+                    <div class="col col-lg-8 video-iframe p-3" style="background: var(--color-blue-derivate">
+                        <iframe class="rounded w-100 h-100" style="height:50.5vh !important" src="https://www.youtube.com/embed/hu_CdkWZdFk" title="Como Nadar sin Cansarse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <ul class="col-12 col-lg-4 nav m-0 px-0 py-3 bg_color-blue-derivate" style="height: 55.6vh;">
+                        <div class="lista-iframe overflow-y-scroll h-100">
+                            <li class="nav-item w-100 border-top border-bottom border-primary my-1 px-0">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="Como Nadar sin Cansarse en AGUAS ABIERTAS" href="https://www.youtube.com/embed/cKkLBBLNvpk" data-youtubeid="cKkLBBLNvpk">
+                                    <img src="https://i.ytimg.com/vi/hu_CdkWZdFk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDRgOJJQVNCrKcZdkdUeh3h10nvw" alt="..” AGUAS ABIERTAS" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">Como Nadar sin Cansarse</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="DESAFÍO OLÍMPICO - Nastya y Artem aprende a nadar en la piscina" href="https://www.youtube.com/embed/BEAsbtpK3Bc" data-youtubeid="BEAsbtpK3Bc">
+                                    <img src="https://i.ytimg.com/vi/cKkLBBLNvpk/mqdefault.jpg" alt="..” AGUAS ABIERTAS" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">DESAFÍO OLÍMPICO - Nastya y Artem aprende a nadar en la piscina</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="Episodio 3 | “A day in the life…” AGUAS ABIERTAS" href="https://www.youtube.com/embed/cKkLBBLNvpk" data-youtubeid="cKkLBBLNvpk">
+                                    <img src="https://i.ytimg.com/vi/cKkLBBLNvpk/mqdefault.jpg" alt="Episodio 3 | “A day in the life…” AGUAS ABIERTAS" style="width: 23%; vertical-align: top">
+                                <span style="width: 50%;">Episodio 2 | “A day in the life…” AGUAS ABIERTAS</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023" href="https://www.youtube.com/embed/5lVa5T-b7_Q" data-youtubeid="5lVa5T-b7_Q">
+                                    <img src="https://i.ytimg.com/vi/5lVa5T-b7_Q/mqdefault.jpg" alt="PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="APRENDE A NADAR | Club Acuático de Santurce" href="https://www.youtube.com/embed/3CJxZuONLTk" data-youtubeid="3CJxZuONLTk">
+                                    <img src="https://i.ytimg.com/vi/3CJxZuONLTk/mqdefault.jpg" alt="APRENDE A NADAR | Club Acuático de Santurce" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">APRENDE A NADAR | Club Acuático de Santurce</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="BTS | CCCAN NATACIÓN 2022" href="https://www.youtube.com/embed/n8MH4Pi2z7E" data-youtubeid="n8MH4Pi2z7E">
+                                    <img src="https://i.ytimg.com/vi/n8MH4Pi2z7E/mqdefault.jpg" alt="BTS | CCCAN NATACIÓN 2022" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">BTS | CCCAN NATACIÓN 2022</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="PING PONG CON POLO ACUÁTICO FEMENINO" href="https://www.youtube.com/embed/AHRj2X-HN2w" data-youtubeid="AHRj2X-HN2w">
+                                    <img src="https://i.ytimg.com/vi/AHRj2X-HN2w/mqdefault.jpg" alt="PING PONG CON POLO ACUÁTICO FEMENINO" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">PING PONG CON POLO ACUÁTICO FEMENINO</span>
+                                </a>
+                            </li>
+                            <li class="nav-item w-100 border-bottom border-primary my-1">
+                                <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="BTS | CCCAN NATACIÓN 2022" href="https://www.youtube.com/embed/n8MH4Pi2z7E" data-youtubeid="n8MH4Pi2z7E">
+                                    <img src="https://i.ytimg.com/vi/d6rKa_lp3e0/mqdefault.jpg" alt="BTS | CCCAN NATACIÓN 2022" style="width: 23%; vertical-align: top">
+                                    <span style="width: 50%;">BTS | CCCAN NATACIÓN 2022</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- information youtube end -->
+
     <!-- opening hours section start -->
     <section class="opening_section">
         <div class="container">
@@ -77,7 +145,10 @@
                 <div class="col-12 text-center my-lg-5">
                     <div class="information_horarios">
                         <h2 class="display-4 fw-semibold mt-5 text_color-blue-main">horario de apertura</h2>
-                        <p class="fw-semibold text_color-blue-derivate my-3">Es importante seguir el proceso de coaching, pero es hora de trabajar</p>
+                        <p class="fw-semibold text_color-blue-derivate my-3">
+                            Es importante seguir el proceso de coaching,
+                            pero es hora de trabajar
+                        </p>
                     </div>
                 </div>
                 <div class="col-12 p-0 py-5">
@@ -139,7 +210,7 @@
                         <h2 class="display-4 fw-semibold text_color-blue-main ">Niveles de Natacion</h2>
                         <p class="fw-semibold text_color-blue-derivate ">
                             amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore 
+                            tempor incididunt ut labore
                         </p>
                     </div>
                 </div>
@@ -152,11 +223,13 @@
                             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing
                         </p>
                     </div>
-                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel1.jpg') }}" class="img-fluid rounded" alt="..."></div>
+                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel1.jpg') }}"
+                            class="img-fluid rounded" alt="..."></div>
                 </div>
 
                 <div class="row m-0 p-5 bg-primary bg-opacity-25">
-                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel2.jpg') }}" class="img-fluid rounded" alt="..."></div>
+                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel2.jpg') }}"
+                            class="img-fluid rounded" alt="..."></div>
                     <div class="col-12 col-lg-10 rounded">
                         <h2 class="bw-semibold text_color-blue-main">Nivel 2</h2>
                         <p class="fw-semibold text_color-blue-derivate">
@@ -175,11 +248,87 @@
                             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing
                         </p>
                     </div>
-                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel3.jpg') }}" class="img-fluid rounded" alt="..."></div>
+                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel3.jpg') }}"
+                            class="img-fluid rounded" alt="..."></div>
                 </div>
             </div>
         </div>
 
+        <!-- section contact start -->
+        <section class="contact">
+                <div class="container bg-light border rounded my-5 py-3">
+                    <h2 class="h1 fw-semibold text-center mb-3">Contactame !</h2>
+                    <p class="text-center fw-semibold mb-3 mb-lg-0">¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. <br class="d-none d-md-block"> Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.</p>
+                    <div class="row m-0">
+                        <div class="col-12 col-lg-8 mb-md-0 mb-3 p-md-3">
+                            <form name="contact-form" action="">
+                                <div class="row m-0">
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
+                                            <input type="text" name="name" id="name" class="form-control text-dark ps-2 fw-semibold" placeholder="Ingrese su Nombre" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
+                                            <input type="text" name="lastName" id="apellido" class="form-control text-dark ps-2 fw-semibold" placeholder="Ingrese su Apellido" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-0">
+                                    <div class="col-12 col-md-7">
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-envelope-at-fill text-white"></i></span>
+                                            <input type="email" name="email" id="email" class="form-control text-dark ps-2 fw-semibold" placeholder="Correo Electronico" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-5">
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-telephone-fill text-white"></i></span>
+                                            <input type="tel" name="tel" id="telefono" class="form-control text-dark ps-1 fw-semibold" placeholder="Telef:" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-0">
+                                    <div class="col-12">
+                                        <div class="input-group mb-2">
+                                            <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-file-text-fill text-white"></i></span>
+                                            <textarea class="form-control fw-semibold text-dark" name="mensaje" id="mensaje" cols="10" rows="2" placeholder="Escribenos tus comentarios"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center col-6 mx-auto">
+                                    <button class="btn text-white fw-semibold w-75 bg_color-blue-derivate" type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-lg-4 my-4 my-lg-0 d-flex justify-content-center p-3">
+                            <!-- <ul class="navbar-nav d-flex flex-row flex-lg-column justify-content-evenly">
+                                <li class="nav-item d-flex flex-column justify-content-center align-items-center">
+                                    <span class="input-group-text bg_color-blue-derivate">
+                                        <i class="bi bi-geo-alt-fill m-0 text-white"></i>
+                                    </span>
+                                    <p class="fw-semibold m-0 mt-2 small">Maracaibo, CA 94126</p>
+                                </li>
+                                <li class="nav-item d-flex flex-column justify-content-center align-items-center mx-4 mx-md-5">
+                                    <span class="input-group-text bg_color-blue-derivate">
+                                        <i class="bi bi-telephone-fill m-0 text-white"></i>
+                                    </span>
+                                    <p class="fw-semibold m-0 mt-2 small">+ 58 412 567 891 </p> 
+                                </li>
+                                <li class="nav-item d-none d-md-flex flex-column justify-content-center align-items-center">
+                                    <span class="input-group-text bg_color-blue-derivate">
+                                        <i class="bi bi-envelope-fill m-0 text-white"></i>
+                                    </span>
+                                    <p class="fw-semibold m-0 small">contact@example.com</p>
+                                </li> -->
+                                <iframe class="rounded img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250953.15110838244!2d-71.77411525196692!3d10.64599806263847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89998e7a5bd625%3A0xce0904e0ea8de74b!2sMaracaibo%2C%20Zulia%2C%20Venezuela!5e0!3m2!1ses!2sus!4v1668629272011!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- section contact end -->
     </section>
     <!-- shortcode section end -->
 @endsection

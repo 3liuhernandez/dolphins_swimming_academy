@@ -1,9 +1,9 @@
-<footer class="bg-light border-top">
+<footer class="bg_color-blue-derivate border-top">
     <!-- footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-4">
+            <div class="row m-0 justify-content-between">
+                <div class="col-sm-6 col-lg-4 text_color-white-main ">
                     <h1 class="adderss_text">Adderss</h1>
                     <div class="map_icon">
                         <img src="{{asset('template/images/map-icon.png')}}">
@@ -17,7 +17,7 @@
                         <img src="{{asset('template/images/mail-icon.png')}}"><span class="paddlin_left_0">volim@gmail.com</span>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4">
+                <div class="col-sm-6 col-lg-4 text_color-white-main ">
                     <h1 class="adderss_text">Opeing time</h1>
                     <div class="hiphop_text_1">Hip Hop Dance :<span style="text-align: right; float: right;"> 07:00am - 1700</span></div>
                     <div class="hiphop_text_1">Ballet : <span style="text-align: right; float: right;"> 09:00am - 1200</span></div>
