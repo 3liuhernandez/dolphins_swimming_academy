@@ -24,13 +24,16 @@
 </head>
 
 <body>
-
-    <header class="sticky-top bg-light">
-        @include('admin.layouts.includes.navbar')
-    </header>
-
     <main>
-        @yield('body')
+        <div class="container-fluid flex-grow-1 d-flex flex-column flex-sm-row overflow-auto">
+            <div class="row flex-grow-sm-1 flex-grow-0">
+                @include('admin.layouts.includes.aside')
+
+                <div class="col col-lg-10 overflow-auto h-100 p-4">
+                    @yield('body')
+                </div>
+            </div>
+        </div>
     </main>
 
     <div id="snackbar_container">

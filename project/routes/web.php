@@ -45,6 +45,8 @@ Route::prefix("admin")->group( function() {
         Route::get('/', [AdminPageController::class, 'home'])->name('admin');
         Route::get('/dashboard', [AdminPageController::class, 'home'])->name('admin.dashboard');
         Route::get('/home', [AdminPageController::class, 'home'])->name('admin.home');
+
+        Route::get('/students', [AdminPageController::class, 'home'])->name('students');
     });
 
 });
