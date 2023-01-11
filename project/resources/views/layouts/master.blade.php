@@ -10,9 +10,13 @@
     <!-- MY STYLES -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css') }}">
 
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
+
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     @yield('header')
 
@@ -25,7 +29,10 @@
     </header>
 
     <main>
-        @include('layouts.includes.banner_home')
+        @if(session('section') !== 'class')
+            @include('layouts.includes.banner_home')
+        @endif
+
         @yield('body')
     </main>
 
@@ -45,9 +52,9 @@
     @include('layouts.includes.footer')
 
     <!-- copyright section start -->
-    <div class="copyright_section bg-black">
+    <div class="copyright_section bg-dark">
         <div class="container p-0">
-            <p class="copyright_text text-center m-0 text-white">2020 All Rights Reserved. Design by</p>
+            <p class="text-center m-0 text-white">2023 All Rights Reserved. Design by</p>
         </div>
     </div>
 

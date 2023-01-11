@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dolphins Swimming Academy</title>
-
     <!-- MY STYLES -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/user_login.css') }}">
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
+    <!-- ICONS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     @yield('header')
 
@@ -23,7 +24,7 @@
         @include('layouts.includes.navbar')
     </header>
 
-    <main class="py-5">
+    <main>
         @yield('body')
     </main>
 
@@ -37,14 +38,15 @@
     @include('layouts.includes.footer')
 
     <!-- copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
-            <p class="copyright_text text-center">2020 All Rights Reserved. Design by</p>
+    <div class="copyright_section bg-dark">
+        <div class="container p-0">
+            <p class="text-center m-0 text-white">2023 All Rights Reserved. Design by</p>
         </div>
     </div>
 
     <!-- CDN SLICE -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{asset('vendor/bs/js/bootstrap.min.js')}}"></script>
     <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/popper/popper.min.js') }}"></script>
 

@@ -7,11 +7,11 @@
             <div class="row m-0">
                 <div class="col-12">
                     <div class="text-welcome my-5 pt-5 mb-lg-0 text-center d-flex flex-column justify-content-around align-items-center">
-                        <h1 class="display-2 fw-semibold text_color-blue-main">¡Bienvenidos nuevos estudiantes!</h1>
+                        <h1 class="display-2 fw-semibold text_color-blue-main w-75 lh-1" style="text-shadow: 1px 1px 2px #7c7c7c;">¡Bienvenidos nuevos estudiantes!</h1>
                         <p class="fw-semibold text_color-blue-derivate">
                             Regístrese ahora para recibir una lección de prueba de 25 minutos, ¡completamente gratis!
                         </p>
-                        <button type="button" class="btn btn-md px-5 bg_color-blue-main text-white mt-4" href="#">Haga click para registrarse</button>
+                        <button type="button" class="btn btn-md bg_color-blue-derivate text-white mt-4" href="#">Haga click para registrarse</button>
                     </div>
                 </div>
             </div>
@@ -21,11 +21,11 @@
 
     <!-- class section start-->
     <section class="card_section">
-        <div class="container p-sm-3 py-lg-5 my-4">
+        <div class="container p-sm-3 py-lg-0 my-5">
             <div class="col-12 px-2">
-                <h2 class="fw-semibold display-5">Clases</h2>
+                <h2 class="fw-semibold display-5 text_color-blue-main m-0" style="text-shadow: 1px 1px 2px #7c7c7c;">Clases</h2>
             </div>
-            <div class="row m-0 g-4 p-3 p-md-3 p-lg-4 row-cols-1 row-cols-sm-2 row-cols-md-3 flex-wrap justify-content-center">
+            <div class="row m-0 g-4 p-3 p-md-3 p-lg-0 row-cols-1 row-cols-sm-2 row-cols-md-3 flex-wrap justify-content-center">
                 <?php for($i = 0; $i < 6; $i++) { ?>
                 <div class="col">
                     <div class="card shadow border-0">
@@ -39,29 +39,29 @@
                 </div>
                 <?php }?>
                 <div class="btns mt-5 text-center">
-                    <button type="button" class="btn btn-md px-5 bg_color-blue-main text-white mt-4" href="#">Ver mas</button>
+                    <button type="button" class="btn btn-md px-5 bg_color-blue-derivate text-white mt-4" href="#">Ver mas</button>
                 </div>
             </div>
 
         </div>
     </section>
     <!-- class section end -->
-    {{--  --}}
+
     <!-- information section start -->
     <section class="information_section">
         <div class="container">
             <div class="row m-0">
                 <div class="col-12 p-0 mt-0 my-lg-5 mt-lg-0">
-                    <div class="text-profesional my-5 py-5 text-center d-flex flex-column justify-content-center align-items-center">
-                        <h2 class="display-3 mb-5 fw-semibold text_color-blue-main">Natacion Profesional</h2>
-                        <p class="fw-semibold lh-sm text_color-blue-derivate">
+                    <div class="my-4 py-5 text-center d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="display-3 mb-5 fw-semibold text_color-blue-main" style="text-shadow: 1px 1px 2px #7c7c7c;">Natacion Profesional</h2>
+                        <p class="fw-semibold lh-sm text_color-blue-derivate w-75">
                             Él buscará la educación del estudiante, pero esto sucederá al mismo tiempo
                             que con un gran trabajo y dolor. De hecho, para ir al más mínimo detalle, nadie
                             puede lograr ningún tipo de formación en el entrenamiento, pero sucede
                             mismo tiempo que con mucho esfuerzo y dolor. De hecho, para llegar al más
                             mínimo detalle, nadie debería ejercer ninguno de ellos.
                         </p>
-                        <button type="button" class="btn btn-md px-5 bg_color-blue-main text-white mt-5" href="#">Haga click para registrarse</button>
+                        <button type="button" class="btn btn-md px-5 bg_color-blue-derivate text-white mt-5" href="#">Haga click para registrarse</button>
                     </div>
                 </div>
             </div>
@@ -142,16 +142,16 @@
     <section class="opening_section">
         <div class="container">
             <div class="row m-0">
-                <div class="col-12 text-center my-lg-5">
+                <div class="col-12 text-center mt-5 ">
                     <div class="information_horarios">
-                        <h2 class="display-4 fw-semibold mt-5 text_color-blue-main">horario de apertura</h2>
+                        <h2 class="display-3 fw-semibold mt-5 text_color-blue-main" style="text-shadow: 1px 1px 2px #7c7c7c;">horario de apertura</h2>
                         <p class="fw-semibold text_color-blue-derivate my-3">
                             Es importante seguir el proceso de coaching,
                             pero es hora de trabajar
                         </p>
                     </div>
                 </div>
-                <div class="col-12 p-0 py-5">
+                <div class="col-12 p-0 pt-3 pb-5">
                     <div class="table-responsive rounded border">
                         <table class="table m-0">
                             <thead class="bg_color-blue-main text-white small">
@@ -207,7 +207,7 @@
             <div class="row m-0 my-5 py-5">
                 <div class="col-12">
                     <div class="niveles_natacion text-center border-bottom">
-                        <h2 class="display-4 fw-semibold text_color-blue-main ">Niveles de Natacion</h2>
+                        <h2 class="display-3 fw-semibold text_color-blue-main" style="text-shadow: 1px 1px 2px #7c7c7c;">Niveles de Natacion</h2>
                         <p class="fw-semibold text_color-blue-derivate ">
                             amet, consectetur adipiscing elit, sed do eiusmod
                             tempor incididunt ut labore
@@ -248,82 +248,62 @@
                             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcoconsectetur adipiscing
                         </p>
                     </div>
-                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel3.jpg') }}"
-                            class="img-fluid rounded" alt="..."></div>
+                    <div class="col-12 col-lg-2 shortcode_right"><img src="{{ asset('imgs/nivel3.jpg') }}" class="img-fluid rounded" alt="..."></div>
                 </div>
             </div>
         </div>
 
         <!-- section contact start -->
         <section class="contact">
-                <div class="container bg-light border rounded my-5 py-3">
-                    <h2 class="h1 fw-semibold text-center mb-3">Contactame !</h2>
-                    <p class="text-center fw-semibold mb-3 mb-lg-0">¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. <br class="d-none d-md-block"> Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.</p>
+                <div class="container bg-light border-top border-bottom rounded my-5 py-3">
+                    <h2 class="fw-semibold text-center mb-3 text_color-blue-derivate">Contactame !</h2>
+                    <p class="text-center mb-4 mb-lg-0">¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos directamente. Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.</p>
                     <div class="row m-0">
                         <div class="col-12 col-lg-8 mb-md-0 mb-3 p-md-3">
-                            <form name="contact-form" action="">
+                            <form action="#eviando.." method="POST">
                                 <div class="row m-0">
                                     <div class="col-12 col-md-6">
-                                        <div class="input-group mb-2">
+                                        <div class="input-group input-group-sm mb-2">
                                             <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                            <input type="text" name="name" id="name" class="form-control text-dark ps-2 fw-semibold" placeholder="Ingrese su Nombre" required="">
+                                            <input type="text" name="name" id="name" class="form-control form-control-sm text-dark ps-2" placeholder="Ingrese su Nombre" required="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <div class="input-group mb-2">
+                                        <div class="input-group input-group-sm mb-2">
                                             <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                            <input type="text" name="lastName" id="apellido" class="form-control text-dark ps-2 fw-semibold" placeholder="Ingrese su Apellido" required="">
+                                            <input type="text" name="lastName" id="apellido" class="form-control form-control-sm text-dark ps-2" placeholder="Ingrese su Apellido" required="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row m-0">
                                     <div class="col-12 col-md-7">
-                                        <div class="input-group mb-2">
+                                        <div class="input-group input-group-sm mb-2">
                                             <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-envelope-at-fill text-white"></i></span>
-                                            <input type="email" name="email" id="email" class="form-control text-dark ps-2 fw-semibold" placeholder="Correo Electronico" required="">
+                                            <input type="email" name="email" id="email" class="form-control form-control-sm text-dark ps-2" placeholder="Correo Electronico" required="">
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-5">
-                                        <div class="input-group mb-2">
+                                        <div class="input-group input-group-sm mb-2">
                                             <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-telephone-fill text-white"></i></span>
-                                            <input type="tel" name="tel" id="telefono" class="form-control text-dark ps-1 fw-semibold" placeholder="Telef:" required="">
+                                            <input type="tel" name="tel" id="telefono" class="form-control form-control-sm text-dark ps-1" placeholder="Telef:" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row m-0">
                                     <div class="col-12">
-                                        <div class="input-group mb-2">
+                                        <div class="input-group input-group-sm mb-2">
                                             <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-file-text-fill text-white"></i></span>
-                                            <textarea class="form-control fw-semibold text-dark" name="mensaje" id="mensaje" cols="10" rows="2" placeholder="Escribenos tus comentarios"></textarea>
+                                            <textarea class="form-control form-control-sm text-dark" name="mensaje" id="mensaje" cols="10" rows="2" placeholder="Escribenos tus comentarios"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-center col-6 mx-auto">
-                                    <button class="btn text-white fw-semibold w-75 bg_color-blue-derivate" type="submit">Enviar</button>
+                                    <button class="btn text-white w-75 bg_color-blue-derivate" type="submit">Enviar</button>
                                 </div>
                             </form>
                         </div>
                         <div class="col-12 col-lg-4 my-4 my-lg-0 d-flex justify-content-center p-3">
-                            <!-- <ul class="navbar-nav d-flex flex-row flex-lg-column justify-content-evenly">
-                                <li class="nav-item d-flex flex-column justify-content-center align-items-center">
-                                    <span class="input-group-text bg_color-blue-derivate">
-                                        <i class="bi bi-geo-alt-fill m-0 text-white"></i>
-                                    </span>
-                                    <p class="fw-semibold m-0 mt-2 small">Maracaibo, CA 94126</p>
-                                </li>
-                                <li class="nav-item d-flex flex-column justify-content-center align-items-center mx-4 mx-md-5">
-                                    <span class="input-group-text bg_color-blue-derivate">
-                                        <i class="bi bi-telephone-fill m-0 text-white"></i>
-                                    </span>
-                                    <p class="fw-semibold m-0 mt-2 small">+ 58 412 567 891 </p> 
-                                </li>
-                                <li class="nav-item d-none d-md-flex flex-column justify-content-center align-items-center">
-                                    <span class="input-group-text bg_color-blue-derivate">
-                                        <i class="bi bi-envelope-fill m-0 text-white"></i>
-                                    </span>
-                                    <p class="fw-semibold m-0 small">contact@example.com</p>
-                                </li> -->
-                                <iframe class="rounded img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250953.15110838244!2d-71.77411525196692!3d10.64599806263847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89998e7a5bd625%3A0xce0904e0ea8de74b!2sMaracaibo%2C%20Zulia%2C%20Venezuela!5e0!3m2!1ses!2sus!4v1668629272011!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="rounded img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250953.15110838244!2d-71.77411525196692!3d10.64599806263847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89998e7a5bd625%3A0xce0904e0ea8de74b!2sMaracaibo%2C%20Zulia%2C%20Venezuela!5e0!3m2!1ses!2sus!4v1668629272011!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

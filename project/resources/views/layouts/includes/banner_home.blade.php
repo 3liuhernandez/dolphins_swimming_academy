@@ -3,7 +3,7 @@
         <div class="row m-0">
             <div class="col-12 p-0">
                 <div id="carouselExampleligth" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-indicators m-0 p-3">
+                    <div class="carousel-indicators m-0 py-4">
                         <button type="button" data-bs-target="#carouselExampleligth" data-bs-slide-to="0" class="btn-select active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleligth" data-bs-slide-to="1" class="btn-select" aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleligth" data-bs-slide-to="2" class="btn-select" aria-label="Slide 3"></button>

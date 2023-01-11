@@ -41,41 +41,53 @@
 .select_images .container-fluid .row .col-12 .carousel-indicators .btn-select {
     border-radius: 50%;
     margin: 0 .5rem;
-    width: 25px;
-    background: var(--color-blue-main);
+    width: 20px;
+    background: var(--color-blue-derivate);
 }
 
 /* SECTION 1 */
-.card_section .container .row {
-    border-left: 1px solid var(--color-blue-derivate);
-    border-right: 1px solid var(--color-blue-derivate);
-    border-bottom: 1px solid var(--color-blue-derivate);
-    border-radius: 10px;
-}
-
-.card_section .container .col-12 h2 {
-    width: fit-content;
-    margin: 0;
-    color: var(--color-blue-main);
-    border-bottom: 1px solid var(--color-blue-derivate);
-}
 
 /* SECTION 2 */
-.information_section .container .row {
-    border-left: 1px solid var(--color-blue-derivate);
-    border-right: 1px solid var(--color-blue-derivate);
-    border-radius: 10px;
-}
-
-.information_section .container .row .col-12 .text-profesional h2 {
-    border-bottom: 1px solid var(--color-blue-derivate);
-}
 
 .information_section .container .row .col-12 .text-profesional p {
     width: 80%;
     margin: 0 auto;
 }
 
-header ul li .selected {
-    color: red;
+header ul .selected .nav-link {
+    font-weight: 500;
+    padding: .2rem;
+    color: var(--color-blue-derivate) !important;
+}
+
+header ul .selected .nav-link.active {
+    background-color: var(--color-blue-derivate) !important;
+    color: var(--color-text-main) !important;
+}
+
+header ul .selected .nav-link:hover {
+    background-color: var(--color-blue-derivate) !important;
+    color: var(--color-text-main) !important;
+    transition: all .4s ease !important;
+}
+
+header ul .selected .nav-link:active {
+    position: relative !important;
+    top: 2px !important;
+    color: var(--color-text-main) !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn:focus,
+.btn-close:focus,
+.navbar-toggler:focus {
+    border-color: var(--color-blue-main) !important;
+    outline: 0 !important;
+    box-shadow: 0 0 0 0.10rem rgba(0, 52, 172, 0.401) !important;
+}
+
+footer .footer_section {
+    background-image: url(../imgs/footer-bg.svg) !important;
+    background-position: center !important;
 }
