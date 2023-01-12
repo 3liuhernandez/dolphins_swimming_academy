@@ -56,41 +56,41 @@
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header bg_color-blue-derivate">
-                            <h2 class="modal-title fs-4 lh-1 text-center text-white fw-bold w-100" id="staticBackdropLabel">Aprende en nuestra academia</h2>
-                            <button type="button" class="btn-close me-2 text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row m-0">
-                                <div class="col-12 col-6">
-                                    <h4 class="text-center text_color-blue-derivate">Perfil Baby name</h4>
-                                    <img src="{{ asset('imgs/img_banner.png') }}" class="img-fluid my-3" alt="...">
-                                    <ul>
-                                        <p class="m-m fw-semibold text_color-blue-derivate">Nivel de aprendizaje</p>
-                                        <li>Edad: 2 años</li>
-                                        <li>Nombre: relleno</li>
-                                        <li>Apellido: relleno</li>
-                                        <li>Prof: relleno</li>
-                                        <li>Nivel: Principiante</li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-6">
-                                    <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Odio eius maiores iste debitis veniam iste!
-                                        <br><br>
-                                        Laborum cumque reprehenderit esse, 
-                                        veritatis aspernatur, quibusdam amet, animi voluptatibus nulla sapiente 
-                                        commodi natus. Iste, animi.
-                                    </p>
+                        <div class="modal-content">
+                            <div class="modal-header bg_color-blue-derivate">
+                                <h2 class="modal-title fs-4 lh-1 text-center text-white fw-bold w-100" id="staticBackdropLabel">Aprende en nuestra academia</h2>
+                                <button type="button" class="btn-close me-2 text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row m-0">
+                                    <div class="col-12 col-sm-6">
+                                        <h4 class="text-center text_color-blue-derivate">Perfil Baby name</h4>
+                                        <img src="{{ asset('imgs/img_banner.png') }}" class="img-fluid my-3" alt="...">
+                                        <ul>
+                                            <p class="m-m fw-semibold text_color-blue-derivate">Nivel de aprendizaje</p>
+                                            <li>Edad: 2 años</li>
+                                            <li>Nombre: relleno</li>
+                                            <li>Apellido: relleno</li>
+                                            <li>Prof: relleno</li>
+                                            <li>Nivel: Principiante</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Odio eius maiores iste debitis veniam iste!
+                                            <br><br>
+                                            Laborum cumque reprehenderit esse, 
+                                            veritatis aspernatur, quibusdam amet, animi voluptatibus nulla sapiente 
+                                            commodi natus. Iste, animi.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-md px-5 bg_color-blue-derivate text-white" href="{{route('register')}}">Registrate gratis</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-md px-5 bg_color-blue-derivate text-white" href="{{route('register')}}">Registrate gratis</button>
-                        </div>
-                    </div>
                     </div>
                 </div>
 
@@ -316,7 +316,7 @@
     <section id="contact">
         <div class="container bg-light border rounded my-5 py-4 py-lg-5">
             <h2 class="fw-semibold display-3 text-center mb-3 text_color-blue-derivate">Contactame !</h2>
-            <p class="text-center text-center my-5 mx-3">
+            <p class="text-center text-center my-5 mx-3 w-75 mx-auto">
                 ¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos
                 directamente. Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.
             </p>

@@ -1,54 +1,75 @@
-<footer class="border-2 border-top bg-light">
-    <!-- footer section start -->
-    <div class="footer_section layout_padding">
-        <div class="container">
-            <div class="row m-0 justify-content-between">
-                <div class="col-sm-6 col-lg-4 text-start my-3">
-                    <h2 class="mb-3 fw-1 fw-semibold text-center text_color-blue-derivate">Dirección</h2>
-                    <div class="border-bottom d-flex justify-content-evenly">
-                        <i class="bi bi-geo-alt"></i>
-                        <span class="text-body-secondary">London 145 United Kingdom</span>
-                    </div>
-                    <div class="border-bottom d-flex justify-content-evenly">
-                        <i class="bi bi-phone"></i>
-                        <span class="text-body-secondary">+7586656566 / +9876543210</span>
-                    </div>
-                    <div class="border-bottom d-flex justify-content-evenly">
-                        <i class="bi bi-envelope-at"></i>
-                        <span class="text-body-secondary">emails_examples@gmail.com</span>
-                    </div>
-                </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row m-0 text-center text-lg-start">
+            <div class="col-sm-6 col-md-4 footer-navigation">
+                <h4 class="text_color-blue-derivate fw-bold">Dolphins Swimming Academy</h4>
+                <p class="links">
+                    <a href="{{ route('home') }}">Home</a>
+                    <strong> &middot; </strong>
+                    <a href="{{ route('class') }}">Clases</a>
+                    <strong> &middot; </strong>
+                    <a href="#">Planes</a>
+                    <strong> &middot; </strong>
+                    <a href="#">About</a>
+                    <strong> &middot; </strong>
+                    <a href="#">Faq</a>
+                    <strong> &middot; </strong>
+                    <a href="{{ route('contact') }}">Contact</a>
+                </p>
+                <p class="company-name">Programers &copy; 2022 - 2025</p>
+            </div>
+            <div class="col-sm-6 col-md-4 footer-contacts">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <i class="bi bi-geo-alt-fill fs-5 me-3"></i>
+                        <p class="m-0 ">21 Revolution Venezuela, Maracaibo / Zulia</p>
+                    </li>
+                    <li class="nav-item my-3">
+                        <i class="bi bi-phone footer-contacts-icon fs-5 me-3"></i>
+                        <p class="m-0 footer-center-info email text-left"> +58 9485045958</p>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-envelope footer-contacts-icon fs-5 me-3"></i>
+                        <a class="" href="#" target="_blank">Dolphins_Academy@gmail.com</a>
+                    </li>
+                </ul> 
+            </div>
+            <div class="col-md-4">
+                <h4 class="text_color-blue-derivate fw-bold">About the company</h4>
+                <p class="m-0 lh-1 fw-normal">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sint sunt non ipsa, sit voluptatum commodi. dignissimos 
+                    ducimus? Incidunt expedita dolor adipisci labore 
+                    perferendis vero accusantium, culpa similique id 
+                    cumque.
+                </p>
+                <ul class="navbar-nav flex-row my-3 justify-content-end align-items-center">
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded p-2" href="#">
+                            <i class="bi bi-facebook fs-5"></i>
+                        </a>
+                    </li>
 
-                <div class="col-sm-6 col-lg-4 text-start my-3">
-                    <h2 class="mb-3 fw-1 fw-semibold text-center text_color-blue-derivate">Opeing time</h2>
-                    <div class="border-bottom d-flex justify-content-around">información :
-                        {{-- <i class="bi bi-water"></i> --}}
-                        <span class="text-body-secondary"> 07:00am - 03:00pm</span>
-                    </div>
-                    
-                    <div class="border-bottom d-flex justify-content-around">información :
-                        {{-- <i class="bi bi-water"></i> --}}
-                        <span class="text-body-secondary"> 11:00am - 12:00pm</span>
-                    </div>
-                    
-                    <div class="border-bottom d-flex justify-content-around">información :
-                        {{-- <i class="bi bi-water"></i> --}}
-                        <span class="text-body-secondary"> 18:00am - 12:00pm</span>
-                    </div>
-                    
-                    <div class="border-bottom d-flex justify-content-around">información :
-                        {{-- <i class="bi bi-water"></i> --}}
-                        <span class="text-body-secondary"> 18:00am - 11:00pm</span>
-                    </div>
-                    
-                    <div class="d-flex justify-content-around">información :
-                        {{-- <i class="bi bi-water"></i> --}}
-                        <span class="text-body-secondary"> 07:00am - 08:00pm</span>
-                    </div>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded p-2" href="#">
+                            <i class="bi bi-twitter fs-5"></i>
+                        </a>
+                    </li>
 
-                </div>
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded p-2" href="#">
+                            <i class="bi bi-linkedin fs-5"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav-item selected">
+                        <a class="nav-link rounded p-2" href="#">
+                            <i class="bi bi-github fs-5"></i>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
         </div>
     </div>
 </footer>
-<!-- footer section end -->

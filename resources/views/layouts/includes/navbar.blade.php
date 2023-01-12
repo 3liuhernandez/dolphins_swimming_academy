@@ -25,7 +25,7 @@
                         <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'class' ? 'active' : '' }}" href="{{ route('class') }}">Clases</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0" href="">Shows</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0" href="">Planes</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
@@ -46,25 +46,25 @@
                 <ul class="navbar-nav flex-row flex-wrap d-lg-none">
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://www.facebook.com/GoodLo0.k" target="_blank" rel="">
-                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-facebook fs-4"></i>
                             <small class="d-lg-none ms-3">Facebook</small>
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://twitter.com/_GoodLook_" target="_blank" rel="">
-                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-twitter fs-4"></i>
                             <small class="d-lg-none ms-3">Twitter</small>
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://www.instagram.com/andresitojh/" target="_blank" rel="">
-                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-instagram fs-4"></i>
                             <small class="d-lg-none ms-3">Instagram</small>
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="#galeria" target="_blank" rel="">
-                            <i class="bi bi-person-workspace"></i>
+                            <i class="bi bi-person-workspace fs-4"></i>
                             <small class="d-lg-none ms-3">Galeria</small>
                         </a>
                     </li>

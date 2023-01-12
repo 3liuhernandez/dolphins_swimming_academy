@@ -52,7 +52,7 @@
     @include('layouts.includes.footer')
 
     <!-- copyright section start -->
-    <div class="copyright_section bg-dark">
+    <div class="copyright_section bg_color-blue-derivate">
         <div class="container p-0">
             <p class="text-center m-0 text-white">2023 All Rights Reserved. Design by</p>
         </div>
