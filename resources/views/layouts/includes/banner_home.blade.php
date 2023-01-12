@@ -35,7 +35,7 @@
                                 <div class="carousel-caption text-end mb-5">
                                     <h1>One more for good measure.</h1>
                                     <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                    <a class="btn btn-sm bg_color-blue-derivate text-white" href="#galery_card">Browse gallery</a>
+                                    <a class="btn btn-sm bg_color-blue-derivate text-white" href="#galery_card">Ver galeria</a>
                                 </div>
                             </div>
                         </div>

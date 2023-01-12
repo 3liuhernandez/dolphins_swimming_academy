@@ -35,8 +35,6 @@
     color: var(--color-text-derivate) !important;
 }
 
-/* STYLES CUSTOMISE */
-
 /* SECTION CARUSEL */
 .select_images .container-fluid .row .col-12 .carousel-indicators .btn-select {
     border-radius: 50%;
@@ -45,46 +43,77 @@
     background: var(--color-blue-derivate);
 }
 
-/* SECTION 1 */
-
-/* SECTION 2 */
-
 .information_section .container .row .col-12 .text-profesional p {
     width: 80%;
     margin: 0 auto;
 }
 
-header ul .selected .nav-link {
+.selected .nav-link {
     font-weight: 500;
     padding: .2rem;
     color: var(--color-blue-derivate) !important;
 }
 
-header ul .selected .nav-link.active {
+.selected .nav-link.active {
     background-color: var(--color-blue-derivate) !important;
     color: var(--color-text-main) !important;
 }
 
-header ul .selected .nav-link:hover {
+.selected .nav-link:hover {
     background-color: var(--color-blue-derivate) !important;
     color: var(--color-text-main) !important;
     transition: all .4s ease !important;
 }
 
-header ul .selected .nav-link:active {
+.selected .nav-link:active {
     position: relative !important;
     top: 2px !important;
     color: var(--color-text-main) !important;
 }
+
+/** 
+*   SECTIONS
+*/
+
+main #students_section {
+    position: relative;
+}
+
+main #students_section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    width: 100%;
+    border-top: 180px solid hsl(199, 98%, 40%);
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 180px solid hsl(199, 98%, 40%);
+}
+
+main #galery_card {}
+
+main #natacion_profesional {}
+
+main #iframe-youtube {}
+
+main #opening_section {}
+
+main #shortcode_section {}
+
+main #contact {}
+
+
+
+
 
 .form-control:focus,
 .form-select:focus,
 .btn:focus,
 .btn-close:focus,
 .navbar-toggler:focus {
-    border-color: var(--color-blue-main) !important;
     outline: 0 !important;
-    box-shadow: 0 0 0 0.10rem rgba(0, 52, 172, 0.401) !important;
+    box-shadow: 0 0 0 0.10rem rgb(0, 174, 255) !important;
 }
 
 footer .footer_section {

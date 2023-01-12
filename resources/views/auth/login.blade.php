@@ -14,7 +14,7 @@
     <section id="inicio_seccion">
         <div class="container">
             <div class="row m-0 d-flex justify-content-center align-items-center">
-                <div class="bg-light rounded-2 col-8 col-md-4 m-5 py-3 px-4">
+                <div class="bg-light rounded-2 col-12 col-md-4 m-5 py-3 px-4">
                     <div class="text-center">
                         <h2 class="fs-1 text_color-blue-derivate">Iniciar Sesión</h2>
                     </div>

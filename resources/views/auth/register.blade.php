@@ -7,14 +7,13 @@
                 <div class="row m-0 d-flex justify-content-center align-items-center">
                     @if (session('msg_register'))
                         <div class="row">
-                            <div
-                                class="alert {{ session('msg_type') === 'success' ? 'alert-success' : 'alert-danger' }} text-center">
+                            <div class="alert {{ session('msg_type') === 'success' ? 'alert-success' : 'alert-danger' }} text-center">
                                 <strong>{{ session('msg_register') }}</strong>
                             </div>
                         </div>
                     @endif
 
-                    <div class="bg-light rounded-2 col-8 col-md-4 m-5 py-3 px-4">
+                    <div class="bg-light rounded-2 col-12 col-md-4 m-5 py-3 px-4">
                         <div class="text-center">
                             <h2 class="fs-1 text_color-blue-derivate">Crear cuenta</h2>
                         </div>

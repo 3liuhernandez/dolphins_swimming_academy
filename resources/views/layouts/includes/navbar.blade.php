@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container pe-lg-0">
-        <a class="navbar-brand m-0 p-0 selected" href="{{ route('home') }}">
-            <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 127px;height: 57px;padding:.3rem;" alt="logo">
+        <a class="nav-link navbar-brand m-0 p-0 selected" href="{{ route('home') }}">
+            <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 127px;height: 57px;" alt="logo">
         </a>
 
         <button class="navbar-toggler p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -16,37 +16,37 @@
             <div class="offcanvas-body justify-content-end pb-0">
                 <ul class="navbar-nav row g-1 flex-row flex-wrap align-content-start h-75">
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0 {{ session('section') === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="">Trainings</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0" href="">Trainings</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0 {{ session('section') === 'class' ? 'active' : '' }}" href="{{ route('class') }}">Clases</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'class' ? 'active' : '' }}" href="{{ route('class') }}">Clases</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="">Shows</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0" href="">Shows</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0 {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
                     </li>
 
                     <div class="d-none d-lg-flex d-flex w-auto my-0 mx-2" style="height: 37px;">
-                        <div class="vr"></div>
+                        <div class="vr bg-primary rounded"></div>
                     </div>
 
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded px-3 {{ session('section') === 'login' ? 'active' : '' }}" href="{{ route('login') }}">Ingreso</a>
+                        <a class="nav-link rounded px-3 px-md-2{{ session('section') === 'login' ? 'active' : ''}}" href="{{ route('login') }}">Ingresar</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0 {{ session('section') === 'register' ? 'active' : '' }}" href="{{ route('register') }}">Registrarse</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'register' ? 'active' : ''}}" href="{{ route('register') }}" style="border: 1px solid var(--color-blue-derivate)">Registrarse</a>
                     </li>
                 </ul>
                 <hr class="d-lg-none-50">
                 <ul class="navbar-nav flex-row flex-wrap d-lg-none">
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://github.com/Abihatar" target="_blank" rel="">
-                            <i class="bi bi-github"></i>
+                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://www.facebook.com/GoodLo0.k" target="_blank" rel="">
+                            <i class="bi bi-facebook"></i>
                             <small class="d-lg-none ms-3">Facebook</small>
                         </a>
                     </li>
@@ -57,15 +57,15 @@
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="#" target="_blank" rel="">
-                            <i class="bi bi-hash"></i>
+                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://www.instagram.com/andresitojh/" target="_blank" rel="">
+                            <i class="bi bi-instagram"></i>
                             <small class="d-lg-none ms-3">Instagram</small>
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="#" target="_blank" rel="">
+                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="#galeria" target="_blank" rel="">
                             <i class="bi bi-person-workspace"></i>
-                            <small class="d-lg-none ms-3">Collective</small>
+                            <small class="d-lg-none ms-3">Galeria</small>
                         </a>
                     </li>
                 </ul>
