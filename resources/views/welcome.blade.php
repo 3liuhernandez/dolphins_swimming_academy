@@ -7,17 +7,103 @@
             <div class="row mb-5 mx-0">
                 <div class="col-12">
                     <div class="text-welcome my-5 py-5 text-center d-flex flex-column justify-content-around align-items-center">
-                        <h1 class="display-2 fw-semibold text-white lh-1 m-0" style="text-shadow: 1px 4px 4px #7c7c7c;">¡Bienvenidos nuevos estudiantes!</h1>
+                        <h1 class="display-2 fw-semibold text-white lh-1 m-0" style="text-shadow: -7px -3px 9px #002644;">¡Bienvenidos nuevos estudiantes!</h1>
                         <p class="fw-semibold my-4 text-white">
                             Regístrese ahora para recibir una lección de prueba de 25 minutos, ¡completamente gratis!
                         </p>
-                        <button type="button" class="btn btn-md text_color-blue-derivate bg-white" href="#">Haga click para registrarse</button>
+                        <button type="button" class="btn btn-md bg_color-blue-derivate text-white fw-semibold" role="button" href="{{ route('register') }}">Registrate</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Students section end -->
+
+    <section id="information">
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="fw-semibold display-5 text_color-blue-derivate m-0" style="text-shadow: 1px 4px 4px #7c7c7c;">Icon grid</h2>
+                <div class="row m-0 gap-0 gap-3 py-3">
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-bootstrap-reboot" viewBox="0 0 16 16">
+                            <path d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 1 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.812 6.812 0 0 0 1.16 8z"/>
+                            <path d="M6.641 11.671V8.843h1.57l1.498 2.828h1.314L9.377 8.665c.897-.3 1.427-1.106 1.427-2.1 0-1.37-.943-2.246-2.456-2.246H5.5v7.352h1.141zm0-3.75V5.277h1.57c.881 0 1.416.499 1.416 1.32 0 .84-.504 1.324-1.386 1.324h-1.6z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-cpu-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                            <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                            <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                            <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                            <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                            <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-toggles2" viewBox="0 0 16 16">
+                            <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
+                            <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
+                            <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start shadow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="4rem" height="4rem" fill="currentColor" class="bi bi-tools" viewBox="0 0 16 16">
+                            <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0Zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708ZM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11Z"/>
+                        </svg>
+                        <div class="p-3">
+                            <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
 
     <!-- class section start-->
     <section id="galeria">
@@ -55,7 +141,7 @@
 
                 <!-- Modal -->
                 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog mb-5">
                         <div class="modal-content">
                             <div class="modal-header bg_color-blue-derivate">
                                 <h2 class="modal-title fs-4 lh-1 text-center text-white fw-bold w-100" id="staticBackdropLabel">Aprende en nuestra academia</h2>
@@ -108,15 +194,15 @@
             <div class="row m-0">
                 <div class="col-12 p-0 mt-0 my-lg-5 mt-lg-0">
                     <div class="my-5 py-5 text-center d-flex flex-column justify-content-center align-items-center">
-                        <h2 class="display-3 m-0 fw-semibold text_color-blue-derivate" style="text-shadow: 1px 4px 4px #7c7c7c;">Natacion Profesional</h2>
-                        <p class="fw-semibold lh-sm text_color-blue-derivate my-5">
+                        <h2 class="display-3 m-0 fw-semibold text-white lh-1" style="text-shadow: -7px -3px 9px #002644;">Natacion Profesional</h2>
+                        <p class="fw-semibold lh-sm my-5 text-white">
                             Él buscará la educación del estudiante, pero esto sucederá al mismo tiempo
                             que con un gran trabajo y dolor. De hecho, para ir al más mínimo detalle, nadie
                             puede lograr ningún tipo de formación en el entrenamiento, pero sucede
                             mismo tiempo que con mucho esfuerzo y dolor. De hecho, para llegar al más
                             mínimo detalle, nadie debería ejercer ninguno de ellos.
                         </p>
-                        <button type="button" class="btn btn-md px-5 bg_color-blue-derivate text-white" href="#">Haga click para registrarse</button>
+                        <button type="button" class="btn btn-md px-5 bg_color-blue-derivate text-white fw-semibold" href="{{ route('register') }}">Haga click para registrarse</button>
                     </div>
                 </div>
             </div>
@@ -316,12 +402,12 @@
     <section id="contact">
         <div class="container bg-light border rounded my-5 py-4 py-lg-5">
             <h2 class="fw-semibold display-3 text-center mb-3 text_color-blue-derivate">Contactame !</h2>
-            <p class="text-center text-center my-5 mx-3 w-75 mx-auto">
+            <p class="text-center text-center my-3 w-75 mx-auto">
                 ¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos
                 directamente. Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.
             </p>
             <div class="row m-0">
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-8 ps-0">
                     <form class="w-100 d-flex flex-wrap" action="#eviando.." method="POST">
                         <div class="col-12 col-md-6">
                             <div class="input-group input-group-sm mb-2">

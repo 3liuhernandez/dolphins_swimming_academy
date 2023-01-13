@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dolphins Swimming Academy</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{asset('imgs/logo_fondo.jpg')}}" type="image/x-icon">
 
     <!-- MY STYLES -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
@@ -29,7 +31,7 @@
     </header>
 
     <main>
-        @if(session('section') !== 'class')
+        @if((session('section') !== 'class') && (session('section') !== 'contact') && (session('section') !== 'plans') && (session('section') !== 'characteristics'))
             @include('layouts.includes.banner_home')
         @endif
 
@@ -52,11 +54,11 @@
     @include('layouts.includes.footer')
 
     <!-- copyright section start -->
-    <div class="copyright_section bg_color-blue-derivate">
+    {{-- <div class="copyright_section bg_color-blue-derivate">
         <div class="container p-0">
             <p class="text-center m-0 text-white">2023 All Rights Reserved. Design by</p>
         </div>
-    </div>
+    </div> --}}
 
     <!-- CDN SLICE -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>

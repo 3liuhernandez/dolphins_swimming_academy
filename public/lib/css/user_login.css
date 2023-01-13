@@ -1,10 +1,5 @@
 main section {
-    background: url("../imgs/bg_user_login.gif") no-repeat;
-    object-fit: contain;
-    background-size: cover;
+    background: url("../imgs/bg_user_login.gif") center no-repeat;
+    background-size: 100% 100%;
 }
 
-main section .bg {
-    background: rgb(33 150 243 / 28%) !important;
-    border-radius: 10px;
-}

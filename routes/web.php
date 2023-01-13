@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [PageController::class, 'home_page'])->name('home');
 Route::get('home', [PageController::class, 'home_page'])->name('home.index');
 
-Route::prefix('auth')->middleware(['web'])->group( function() {
+Route::prefix('auth')->middleware(['web'])->group(function () {
     Route::get('login', [PageController::class, 'login'])->name('login');
     // validacion de login
     Route::post('login', [LoginController::class, 'check_login'])->name('login.validate');
@@ -35,22 +35,23 @@ Route::prefix('auth')->middleware(['web'])->group( function() {
 
     Route::get('contacto', [PageController::class, 'contact'])->name('contact');
     Route::get('clases', [PageController::class, 'class'])->name('class');
+    Route::get('planes', [PageController::class, 'plans'])->name('plans');
+    Route::get('characteristics', [PageController::class, 'characteristics'])->name('characteristics');
 });
 
-Route::prefix("admin")->group( function() {
+Route::prefix("admin")->group(function () {
 
-    Route::prefix('auth')->middleware(['web'])->group( function() {
+    Route::prefix('auth')->middleware(['web'])->group(function () {
         Route::get('login', [AdminPageController::class, 'login'])->name('admin.login');
         Route::post('login', [AdminLoginController::class, 'check_login'])->name('admin.login.validate');
         Route::get('logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
     });
 
-    Route::middleware("auth_admin")->group( function() {
+    Route::middleware("auth_admin")->group(function () {
         Route::get('/', [AdminPageController::class, 'home'])->name('admin');
         Route::get('/dashboard', [AdminPageController::class, 'home'])->name('admin.dashboard');
         Route::get('/home', [AdminPageController::class, 'home'])->name('admin.home');
 
         Route::get('/students', [AdminPageController::class, 'students'])->name('students');
     });
-
 });

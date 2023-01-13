@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dolphins Swimming Academy</title>
 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{asset('imgs/logo_fondo.jpg')}}" type="image/x-icon">
+
     <!-- MY STYLES -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
 

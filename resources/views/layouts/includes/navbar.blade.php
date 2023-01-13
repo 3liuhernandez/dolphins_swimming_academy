@@ -13,22 +13,22 @@
                 <h4 class="offcanvas-title w-100 text-center text_color-blue-derivate py-1" id="offcanvasNavbarLabel">Dolphins Swimming</h4>
                 <button type="button" class="btn-close selected" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body justify-content-end pb-0">
-                <ul class="navbar-nav row g-1 flex-row flex-wrap align-content-start h-75">
+            <div class="offcanvas-body justify-content-end py-0">
+                <ul class="navbar-nav row g-1 flex-row flex-wrap align-content-start h-75 pt-3 p-md-0">
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
-                    </li>
-                    <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0" href="">Trainings</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'class' ? 'active' : '' }}" href="{{ route('class') }}">Clases</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0" href="">Planes</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'plans' ? 'active' : '' }}" href="{{ route('plans') }}">Planes</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contact</a>
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'characteristics' ? 'active' : '' }}" href="{{ route('characteristics') }}">Nosotros</a>
+                    </li>
+                    <li class="nav-item col-6 col-lg-auto selected">
+                        <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contacto</a>
                     </li>
 
                     <div class="d-none d-lg-flex d-flex w-auto my-0 mx-2" style="height: 37px;">
@@ -36,13 +36,13 @@
                     </div>
 
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded px-3 px-md-2{{ session('section') === 'login' ? 'active' : ''}}" href="{{ route('login') }}">Ingresar</a>
+                        <a class="nav-link rounded px-3 px-md-2 {{ session('section') === 'login' ? 'active' : ''}}" href="{{ route('login') }}">Ingresar</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'register' ? 'active' : ''}}" href="{{ route('register') }}" style="border: 1px solid var(--color-blue-derivate)">Registrarse</a>
                     </li>
                 </ul>
-                <hr class="d-lg-none-50">
+                <hr class="d-lg-none-50 my-0">
                 <ul class="navbar-nav flex-row flex-wrap d-lg-none">
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="https://www.facebook.com/GoodLo0.k" target="_blank" rel="">
@@ -63,7 +63,7 @@
                         </a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="#galeria" target="_blank" rel="">
+                        <a class="nav-link rounded mb-2 px-3 mb-lg-0" href="#galeria" rel="">
                             <i class="bi bi-person-workspace fs-4"></i>
                             <small class="d-lg-none ms-3">Galeria</small>
                         </a>

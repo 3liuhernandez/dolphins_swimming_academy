@@ -5,6 +5,7 @@
     -moz-user-select: none;
     user-select: none;
 }
+
 .carousel {
     margin-bottom: 4rem;
 }
@@ -14,8 +15,10 @@
     z-index: 10;
 }
 
-.carousel-item {
-    height: 32rem;
+@media (min-width: 998px) {
+    .carousel-item {
+        height: 36.5rem;
+    }
 }
 
 .marketing .col-lg-4 {
@@ -23,15 +26,10 @@
     text-align: center;
 }
 
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-
 /* Featurettes
   ------------------------- */
 .featurette-divider {
-    margin: 5rem 0;
+    margin: 3rem 0;
     /* Space out the Bootstrap <hr> more */
 }
 
@@ -77,27 +75,4 @@
     flex-shrink: 0;
     width: 1.5rem;
     height: 100vh;
-}
-
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
-}
-
-.nav-scroller {
-    position: relative;
-    z-index: 2;
-    height: 2.75rem;
-    overflow-y: hidden;
-}
-
-.nav-scroller .nav {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-bottom: 1rem;
-    margin-top: -1px;
-    overflow-x: auto;
-    text-align: center;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
 }

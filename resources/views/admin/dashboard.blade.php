@@ -3,9 +3,9 @@
 @section('body')
 
     <div class="bg-light border p-4">
-        <h2>Main</h2>
+        <h2 class="text_color-blue-derivate fw-semibold">Main</h2>
 
-        <p>
+        <p class="m-0 lh-1">
             Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing
             brunch.
             Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf
@@ -18,7 +18,7 @@
             hella DIY 90's blog.
         </p>
 
-        <p>
+        <p class="m-0 lh-1">
             Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free
             Kickstarter artisan Wes
             Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table
@@ -32,9 +32,9 @@
 
         <hr />
 
-        <h4>More content...</h4>
+        <h4 clas="text_color-blue-derivate fw-semibold">More content...</h4>
 
-        <p>
+        <p class="m-0 lh-1">
             Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free
             Kickstarter artisan Wes Anderson
             wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg
@@ -48,9 +48,9 @@
 
         <hr />
 
-        <h4>More content...</h4>
+        <h4 clas="text_color-blue-derivate fw-semibold">More content...</h4>
 
-        <p>
+        <p class="m-0 lh-1">
             Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing
             brunch.
             Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf
@@ -66,9 +66,9 @@
 
         <hr />
 
-        <h4>More content...</h4>
+        <h4 class="text_color-blue-derivate fw-semibold">More content...</h4>
 
-        <p>
+        <p class="m-0 lh-1">
             Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing
             brunch.
             Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf
@@ -84,9 +84,9 @@
 
         <hr />
 
-        <h4>More content...</h4>
+        <h4 class="text_color-blue-derivate fw-semibold">More content...</h4>
 
-        <p>
+        <p class="m-0 lh-1">
             Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing
             brunch.
             Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf

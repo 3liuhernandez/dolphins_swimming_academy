@@ -38,11 +38,11 @@
     @include('layouts.includes.footer')
 
     <!-- copyright section start -->
-    <div class="copyright_section bg-dark">
+    {{-- <div class="copyright_section bg-dark">
         <div class="container p-0">
             <p class="text-center m-0 text-white">2023 All Rights Reserved. Design by</p>
         </div>
-    </div>
+    </div> --}}
 
     <!-- CDN SLICE -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>

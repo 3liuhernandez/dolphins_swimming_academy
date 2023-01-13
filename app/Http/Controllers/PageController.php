@@ -21,6 +21,16 @@ class PageController extends Controller
         return view('class');
     }
 
+    public function plans() {
+        session()->put('section', 'plans');
+        return view('plans');
+    }
+
+    public function characteristics() {
+        session()->put('section', 'characteristics');
+        return view('characteristics');
+    }
+
     /* AUTH VIEWS */
     public function login() {
         $msg_login = session('msg_login');
