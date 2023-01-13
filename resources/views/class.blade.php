@@ -67,12 +67,7 @@
                     <div class="box-card d-flex justify-content-center justify-content-sm-evnely justify-content-md-center align-items-center flex-wrap shadow-sm rounded p-3 border">
                         <img src="https://st2.depositphotos.com/1518767/5691/i/600/depositphotos_56913629-stock-photo-handsome-swimming-instructor-smiling-at.jpg" class="rounded-circle" width="140" height="140" alt="">
                         <div class="col-8 col-lg-12 text-inf d-flex flex-column">
-                            <h2 class="fw-semibold text_color-blue-derivate">Instructor Nombre</h2>
-                            {{-- <ul class="navbar-nav">
-                                <li class="nav-item">Nivel Intruccion: <span class="text_color-blue-derivate">3</span></li>
-                                <li class="nav-item">Experiencia: <span class="text_color-blue-derivate">100%</span></li>
-                                <li class="nav-item">Edad:</li>
-                            </ul> --}}
+                            <h4 class="fw-semibold text_color-blue-derivate">Instructor Nombre</h4>
                         </div>
                         <p class="text-muted fw-semibold">
                             Some representative placeholder content for the three columns of text below the carousel. This is the
@@ -85,12 +80,7 @@
                     <div class="box-card d-flex justify-content-center justify-content-sm-evnely justify-content-md-center align-items-center flex-wrap shadow-sm rounded p-3 border">
                         <img src="https://st2.depositphotos.com/1518767/5725/i/600/depositphotos_57252277-stock-photo-cute-swimming-class-listening-to.jpg" class="rounded-circle" width="140" height="140" alt="">
                         <div class="col-8 col-lg-12 text-inf d-flex flex-column">
-                            <h2 class="fw-semibold text_color-blue-derivate">Instructor Nombre</h2>
-                            {{-- <ul class="navbar-nav">
-                                <li class="nav-item">Nivel Intruccion: <span class="text_color-blue-derivate">3</span></li>
-                                <li class="nav-item">Experiencia: <span class="text_color-blue-derivate">100%</span></li>
-                                <li class="nav-item">Edad:</li>
-                            </ul> --}}
+                            <h4 class="fw-semibold text_color-blue-derivate">Instructor Nombre</h4>
                         </div>
                         <p class="text-muted fw-semibold">
                             Another exciting bit of representative placeholder content. This time, we've moved on to the second
@@ -103,12 +93,7 @@
                     <div class="box-card d-flex justify-content-center justify-content-sm-evnely justify-content-md-center align-items-center flex-wrap shadow-sm rounded p-3 border">
                         <img src="https://st3.depositphotos.com/1518767/14955/i/600/depositphotos_149557154-stock-photo-swim-coach-holding-stopwatch-at.jpg" class="rounded-circle" width="140" height="140" alt="">
                         <div class="col-8 col-lg-12 text-inf d-flex flex-column">
-                            <h2 class="fw-semibold text_color-blue-derivate">Instructor Nombre</h2>
-                            {{-- <ul class="navbar-nav">
-                                <li class="nav-item">Nivel Intruccion: <span class="text_color-blue-derivate">3</span></li>
-                                <li class="nav-item">Experiencia: <span class="text_color-blue-derivate">100%</span></li>
-                                <li class="nav-item">Edad:</li>
-                            </ul> --}}
+                            <h4 class="fw-semibold text_color-blue-derivate">Instructor Nombre</h4>
                         </div>
                         <p class="text-muted fw-semibold">
                             And lastly this, the third column of representative placeholder content. 
@@ -131,11 +116,10 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    <img src="https://i.pinimg.com/originals/6a/f6/69/6af669296f9314db344375fb046f570a.gif" class="figure-img img-fluid rounded" alt="">
-                    {{-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                    </svg> --}}
+                    <figure class="figure border rounded p-3">
+                        <img src="https://i.pinimg.com/originals/6a/f6/69/6af669296f9314db344375fb046f570a.gif" class="figure-img img-fluid rounded" alt="">
+                        <figcaption class="figure-caption text-start text_color-blue-derivate fw-semibold">Dolphins Swimming Academy</figcaption>
+                    </figure>
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -150,11 +134,10 @@
                     </p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img src="https://www.triatlonnoticias.com/wp-content/uploads/2020/11/natacion_estilo_braza.gif" class="figure-img img-fluid rounded" alt="">
-                    {{-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                    </svg> --}}
+                    <figure class="figure border rounded p-3">
+                        <img src="https://www.triatlonnoticias.com/wp-content/uploads/2020/11/natacion_estilo_braza.gif" class="figure-img img-fluid rounded" alt="">
+                        <figcaption class="figure-caption text-start text_color-blue-derivate fw-semibold">Dolphins Swimming Academy</figcaption>
+                    </figure>
                 </div>
             </div>
             <hr class="featurette-divider">
@@ -170,17 +153,13 @@
                     </p>
                 </div>
                 <div class="col-md-5">
-                    {{-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-                    </svg> --}}
-                    <figure class="figure border">
+                    <figure class="figure border rounded p-3">
                         <img src="https://www.arenaswim.com/media/immagini/267_z_breaststroke_swim.gif?width=1200&height=630&mode=crop" class="figure-img img-fluid rounded" alt="">
-                        <figcaption class="figure-caption text-start">Some Word</figcaption>
+                        <figcaption class="figure-caption text-start text_color-blue-derivate fw-semibold">Dolphins Swimming Academy</figcaption>
                     </figure>
                 </div>
             </div>
-            {{-- <hr class="featurette-divider"> --}}
+            <hr class="featurette-divider">
         </div>
     </section>
 

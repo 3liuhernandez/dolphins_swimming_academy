@@ -11,7 +11,7 @@
                         <p class="fw-semibold my-4 text-white">
                             Regístrese ahora para recibir una lección de prueba de 25 minutos, ¡completamente gratis!
                         </p>
-                        <button type="button" class="btn btn-md bg_color-blue-derivate text-white fw-semibold" role="button" href="{{ route('register') }}">Registrate</button>
+                        <a class="btn btn-md bg_color-blue-derivate text-white fw-semibold px-5" role="button" href="{{ route('register') }}">Registrate</a>
                     </div>
                 </div>
             </div>
