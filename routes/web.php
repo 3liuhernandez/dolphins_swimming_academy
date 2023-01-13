@@ -31,13 +31,12 @@ Route::prefix('auth')->middleware(['web'])->group(function () {
     Route::get('registro', [PageController::class, 'register'])->name('register');
     // validacion de registro
     Route::post('registro', [UserController::class, 'register_validation'])->name('register.store');
-
-
-    Route::get('contacto', [PageController::class, 'contact'])->name('contact');
-    Route::get('clases', [PageController::class, 'class'])->name('class');
-    Route::get('planes', [PageController::class, 'plans'])->name('plans');
-    Route::get('characteristics', [PageController::class, 'characteristics'])->name('characteristics');
 });
+
+Route::get('contacto', [PageController::class, 'contact'])->name('contact');
+Route::get('clases', [PageController::class, 'class'])->name('class');
+Route::get('planes', [PageController::class, 'plans'])->name('plans');
+Route::get('characteristics', [PageController::class, 'characteristics'])->name('characteristics');
 
 Route::prefix("admin")->group(function () {
 
