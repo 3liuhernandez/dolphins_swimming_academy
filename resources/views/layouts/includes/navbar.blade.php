@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light shadow">
+<nav class="navbar navbar-expand-lg navbar-light shadow p-0">
     <div class="container pe-lg-0">
         <a class="nav-link navbar-brand m-0 p-0 selected" href="{{ route('home') }}">
-            <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 127px;height: 57px;" alt="logo">
+            <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 100px;height: auto;" alt="logo">
         </a>
 
         <button class="navbar-toggler p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">

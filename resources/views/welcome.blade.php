@@ -4,9 +4,9 @@
     <!-- Students section start -->
     <section id="students_section">
         <div class="container">
-            <div class="row mb-5 mx-0">
+            <div class="row mx-0">
                 <div class="col-12">
-                    <div class="text-welcome my-5 py-5 text-center d-flex flex-column justify-content-around align-items-center">
+                    <div class="text-welcome py-5 text-center d-flex flex-column justify-content-around align-items-center">
                         <h1 class="display-2 fw-semibold text-white lh-1 m-0" style="text-shadow: -7px -3px 9px #002644;">¡Bienvenidos nuevos estudiantes!</h1>
                         <p class="fw-semibold my-4 text-white">
                             Regístrese ahora para recibir una lección de prueba de 25 minutos, ¡completamente gratis!
@@ -192,8 +192,8 @@
     <section id="natacion_profesional">
         <div class="container">
             <div class="row m-0">
-                <div class="col-12 p-0 mt-0 my-lg-5 mt-lg-0">
-                    <div class="my-5 py-5 text-center d-flex flex-column justify-content-center align-items-center">
+                <div class="col-12">
+                    <div class="py-5 text-center d-flex flex-column justify-content-center align-items-center">
                         <h2 class="display-3 m-0 fw-semibold text-white lh-1" style="text-shadow: -7px -3px 9px #002644;">Natacion Profesional</h2>
                         <p class="fw-semibold lh-sm my-5 text-white">
                             Él buscará la educación del estudiante, pero esto sucederá al mismo tiempo
@@ -209,6 +209,8 @@
         </div>
     </section>
     <!-- information section end -->
+
+    
 
     <!-- information youtube start -->
     <section id="iframe-youtube">

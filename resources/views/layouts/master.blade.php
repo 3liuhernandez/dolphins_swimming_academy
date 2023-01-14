@@ -14,10 +14,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css') }}">
-
-    <!-- STYLE API GOOGLE -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slice_hero.css') }}">
+    
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
 
@@ -70,9 +68,6 @@
     {{-- JS BOOTSTRAP 5.3 --}}
     <script src="{{ asset('vendor/bs/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js') }}"></script>
-
-    {{-- JS API GOOGLE --}}
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=true"></script>
 
     <script>
         jQuery(() => {
