@@ -12,7 +12,7 @@
                         <div class="carousel-item active">
                             <img src="{{ asset('imgs/img_banner.png') }}" class="w-100" alt="...">
                             <div class="container">
-                                <div class="carousel-caption text-start mb-5" style="z-index: 23">
+                                <div class="carousel-caption text-start pb-5" style="z-index: 23">
                                     <h1>Example headline.</h1>
                                     <p>Some representative placeholder content for the first slide of the carousel.</p>
                                     <a class="btn btn-sm bg_color-blue-derivate text-white" href="{{ route('register') }}">Regístrate hoy</a>
@@ -32,7 +32,7 @@
                         <div class="carousel-item">
                             <img src="{{ asset('imgs/img_banner4.png') }}" class="w-100" alt="...">
                             <div class="container">
-                                <div class="carousel-caption text-end mb-5" style="z-index: 23">
+                                <div class="carousel-caption text-end pb-5" style="z-index: 23">
                                     <h1>One more for good measure.</h1>
                                     <p>Some representative placeholder content for the third slide of this carousel.</p>
                                     <a class="btn btn-sm bg_color-blue-derivate text-white" href="#galery_card">Ver galeria</a>

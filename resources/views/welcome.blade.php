@@ -412,7 +412,7 @@
                         <div class="col-12 col-md-6">
                             <div class="input-group input-group-sm mb-2">
                                 <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                <input type="text" name="name" id="name" class="form-control form-control-sm text-dark ps-2" placeholder="Ingrese su Nombre" required="">
+                                <input type="text" name="name" id="name" class="form-control form-control-sm text-dark ps-2" placeholder="Ingrese su Nombre" required>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">

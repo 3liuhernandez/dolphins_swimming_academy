@@ -10,14 +10,15 @@
     margin-bottom: 4rem;
 }
 
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
 @media (min-width: 998px) {
     .carousel-item {
-        height: 36.5rem;
+        height: 36.5rem !important;
+    }
+}
+
+@media (min-width: 280px) {
+    .carousel {
+        margin-bottom: 2rem !important;
     }
 }
 
