@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/slice_hero.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/carrusel.css') }}">
     
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
@@ -22,11 +22,14 @@
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <!-- FLICKITY FRAMEWORK -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/flickity/css/flickity.min.css') }}">
+
     @yield('header')
 
 </head>
 
-<body>
+<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
 
     <header class="sticky-top bg-light">
         @include('layouts.includes.navbar')
@@ -39,6 +42,10 @@
 
         @yield('body')
     </main>
+        
+    <button type="button" class="btn bg_color-blue-derivate btn-floating btn-sm rounded-circle" id="scroll-top">
+        <i class="bi bi-chevron-up text-white"></i>
+    </button>
 
     <div id="snackbar_container">
         <div class="side cont-left"></div>
@@ -55,14 +62,10 @@
 
     @include('layouts.includes.footer')
 
-    <!-- copyright section start -->
-    {{-- <div class="copyright_section bg_color-blue-derivate">
-        <div class="container p-0">
-            <p class="text-center m-0 text-white">2023 All Rights Reserved. Design by</p>
-        </div>
-    </div> --}}
+    {{-- MY SCRIPT BTN UP --}}
+    <script src="{{ asset('js/btn-float.js') }}"></script>
 
-    <!-- CDN SLICE -->
+    {{-- JQUERY FRAMEWORK --}}
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 
     {{-- JS BOOTSTRAP 5.3 --}}

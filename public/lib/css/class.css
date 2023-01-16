@@ -7,18 +7,18 @@
 }
 
 .carousel {
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 
 @media (min-width: 998px) {
     .carousel-item {
-        height: 36.5rem !important;
+        /* height: 36.5rem !important; */
     }
 }
 
 @media (min-width: 280px) {
     .carousel {
-        margin-bottom: 2rem !important;
+        /* margin-bottom: 2rem !important; */
     }
 }
 

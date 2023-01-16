@@ -35,19 +35,63 @@
     color: var(--color-text-derivate) !important;
 }
 
-/* SECTION CARUSEL */
-.select_images .container-fluid .row .col-12 .carousel-indicators .btn-select {
-    border-radius: 50%;
-    margin: 0 .5rem;
-    width: 20px;
-    background: var(--color-blue-derivate);
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+body #scroll-top {
+    display: none;
+    color: #fff;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    z-index: 200;
+    bottom: 15px;
 }
 
-.information_section .container .row .col-12 .text-profesional p {
-    width: 80%;
-    margin: 0 auto;
+body #scroll-top:hover {
+    box-shadow: 0px 2px 6px 1px rgb(0 0 0 / 30%);
+    height: 31px;
+    width: 32px;
 }
 
+body #scroll-top:hover i {
+    animation: 800ms linear 0s normal none infinite running scroll-ani-to-top;
+    height: 100%;
+    left: 0;
+    margin-bottom: -15px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes scroll-ani-to-top {
+    0% {
+        opacity: 0;
+        bottom: 0;
+    }
+
+    50% {
+        opacity: 1;
+        bottom: 50%;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 75%;
+    }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ========= SELECT NAVBAR NAV START ========= */
 .selected .nav-link {
     font-weight: 500;
     padding: .2rem;
@@ -71,19 +115,275 @@
     color: var(--color-text-main) !important;
 }
 
-/** 
-*   SECTIONS
-*/
+/* ========= SELECT NAVBAR NAV END ========= */
 
-main #students_section {
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* =========== SECTION CARUSEL HOME start =========== */
+.select_images .carousel-inner #item-carusel {
+    position: relative;
+}
+
+.select_images .carousel-inner #item-carusel img {
+    height: 50vh;
+    width: 100% !important;
+}
+
+.select_images .carousel-inner #item-carusel .carousel-caption {
+    color: var(--color-text-main);
+}
+
+.select_images .carousel-inner #item-carusel::before {
+    content: " ";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.401);
+    width: 100% !important;
+    height: 100%;
+}
+
+.select_images .carousel-indicators .btn-select {
+    border-radius: 50%;
+    margin: 0 .5rem;
+    width: 20px;
+    background: var(--color-blue-derivate);
+}
+
+@media (max-width: 992px) {
+    .select_images .carousel-inner #item-carusel img {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .select_images .carousel-inner #item-carusel img {
+        height: 40vh;
+    }
+
+    .select_images .carousel-inner #item-carusel .carousel-caption {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .select_images .carousel-inner #item-carusel .carousel-caption h2 {
+        font-size: 17px;
+        line-height: 1;
+    }
+
+    .select_images .carousel-inner #item-carusel .carousel-caption p {
+        font-size: 14px;
+        line-height: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .select_images .carousel-inner #item-carusel .carousel-caption a {
+        padding: .1rem 0.2rem;
+        font-size: 13px;
+    }
+}
+
+/* =========== SECTION CARUSEL HOME END =========== */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ========= SECTION SVG MOVE START =========  */
+#svg-move {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(0deg, #00bcd4 0%, #2196f3 100%);
+    padding: 0;
+}
+
+#svg-move .hero-waves .wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+#svg-move .hero-waves {
+    display: block;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+#svg-move .hero-waves .wave1 use {
+    -webkit-animation: move-forever1 10s linear infinite;
+    animation: move-forever1 10s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+#svg-move .hero-waves .wave2 use {
+    -webkit-animation: move-forever2 8s linear infinite;
+    animation: move-forever2 8s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+#svg-move .hero-waves .wave3 use {
+    -webkit-animation: move-forever3 6s linear infinite;
+    animation: move-forever3 6s linear infinite;
+    -webkit-animation-delay: -2s;
+    animation-delay: -2s;
+}
+
+@-webkit-keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@-webkit-keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+/* ========= SECTION SVG MOVE END =========  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* =========== SECTION WLCOME HOME PAGE START =========== */
+main #students_section {}
+
+main #students_section .text-welcome {}
+
+main #students_section .text-welcome h1 {
+    text-shadow: -7px -3px 9px #00000047;
+    color: var(--color-blue-derivate);
+    width: 75%;
+}
+
+main #students_section .text-welcome p {
+    width: 65%;
+    margin: 2rem 0 !important;
+    line-height: 1;
+}
+
+main #students_section .text-welcome a {}
+
+@media (max-width: 992px) {
+    main #students_section .text-welcome h1 {}
+
+    main #students_section .text-welcome p {
+        width: 70%;
+    }
+
+    main #students_section .text-welcome a {}
+
+}
+
+@media (max-width: 768px) {
+    main #students_section .text-welcome h1 {
+        width: 100%;
+    }
+
+    main #students_section .text-welcome p {
+        margin: 1.5rem 0;
+    }
+
+    main #students_section .text-welcome a {
+        padding: .2rem .5rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    main #students_section .text-welcome h1 {
+        /* font-size: 2rem; */
+    }
+
+    main #students_section .text-welcome p {
+        margin: 1.5rem 0 1rem 0;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    main #students_section .text-welcome a {}
+}
+
+/* ============= END SECTION WLCOME HOME PAGE ============= */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ========== SECTION STADISTIC HOME PAGE START ========== */
+main #stadistic_section {
     background-image: url(../imgs/banner_home.png);
     position: relative;
     background-size: 100% 100%;
     z-index: 10;
     background-attachment: fixed;
+    color: var(--color-text-main);
 }
 
-main #students_section::before {
+main #stadistic_section::before {
     content: "";
     z-index: -10;
     position: absolute;
@@ -92,17 +392,187 @@ main #students_section::before {
     height: 100%;
 }
 
-main #galery_card {}
+@media (max-width: 992px) {}
 
-main #natacion_profesional {
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+/* ========== SECTION STADISTIC HOME PAGE END ==========  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* =========== SECTION ABOUT HOME PAGE START =========== */
+main #about {
+    color: #203a4b;
+    margin: 6rem 0 !important;
+}
+
+main #about h2 {}
+
+main #about .text_inf {
+    font-size: 17px;
+}
+
+main #about .nav {
+    font-size: 18px;
+}
+
+main #about .nav li {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+/* ============ SECTION ABOUT HOME PAGE END ============ */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ========== SECTION GALERIA HOME PAGE START ==========  */
+main #galeria_section {
+    margin: 5rem 0 !important;
+}
+
+main #galeria_section svg {
+    width: 100%;
+    max-width: 100%;
+    height: 64px;
+    margin: 2rem 0 0rem 0;
+}
+
+main #galeria_section svg path {
+    fill: var(--color-blue-derivate);
+}
+
+main .title_section {
+    color: var(--color-blue-derivate);
+    font-size: 15px;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main .subtitle_section {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #203a4b;
+}
+
+main .title_section::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: var(--color-blue-derivate);
+    margin: 4px 10px;
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    main .title_section {}
+
+    main .subtitle_section {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 576px) {
+    main .title_section {
+        font-size: 20px;
+        font-weight: 600 !important;
+        letter-spacing: 3px;
+    }
+
+    main .subtitle_section {
+        font-size: 17px;
+        /* margin: 0; */
+    }
+}
+
+/* ========== SECTION GALERIA HOME PAGE END ==========  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ========== SECTION SERVICES HOME PAGE START ========== */
+main #services {
+    margin: 6rem 0 !important;
+}
+
+main #services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #80808029;
+    /* background: #fff; */
+    /* box-shadow: 0 2px 29px 0 rgb(68 88 144 / 12%); */
+    width: 100%;
+    height: 100%;
+}
+
+main #services .icon {
+    position: absolute;
+    left: -20px;
+    top: calc(50% - 30px);
+}
+
+main #services .icon i {
+    font-size: 64px;
+    line-height: 1;
+    transition: 0.5s;
+}
+
+main #services .title {
+    margin-left: 40px;
+    font-weight: 700;
+    /* margin-bottom: .5rem !important; */
+    /* font-size: 18px; */
+}
+
+main #services .description {
+    font-size: 14px;
+    margin-left: 40px;
+    /* line-height: 24px; */
+    margin-bottom: 0;
+    line-height: 1.25;
+}
+
+/* ========== SECTION SERVICES HOME PAGE END ========== */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* ========== SECTION NATACION PROFESIONAL HOME PAGE START ========== */
+main #natacion_profesional_section {
     background-image: url(../imgs/banner_profesional.png);
     position: relative;
     background-size: 100% 100%;
     z-index: 10;
+    height: 50vh;
+    width: 100%;
+    display: flex;
     background-attachment: fixed;
+    align-items: center;
 }
 
-main #natacion_profesional::before {
+main #natacion_profesional_section::before {
     content: "";
     z-index: -10;
     position: absolute;
@@ -111,13 +581,202 @@ main #natacion_profesional::before {
     height: 100%;
 }
 
-main #iframe-youtube {}
+main #natacion_profesional_section .text-profesional {}
 
-main #opening_section {}
+main #natacion_profesional_section .text-profesional h2 {
+    text-shadow: -7px -3px 9px #00000047;
+    color: var(--color-blue-derivate);
+    width: 75%;
+}
 
-main #shortcode_section {}
+main #natacion_profesional_section .text-profesional p {
+    line-height: 1;
+    /* width: 50%; */
+    margin: 2rem 0;
+}
 
+@media (max-width: 992px) {
+    main #natacion_profesional_section .text-profesional {
+        /* width: 70%; */
+    }
+}
+
+/* ========== SECTION NATACION PROFESIONAL HOME PAGE END ==========  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION CONTACT HOME PAGE START  */
 main #contact {}
+
+main #contact .info {
+    width: 100%;
+    background: #fff;
+}
+
+main #contact .info i {
+    font-size: 20px;
+    color: var(--color-text-main);
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--color-blue-derivate);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+main #contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #203a4b;
+}
+
+main #contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #203a4b;
+}
+
+main #contact .info .email,
+#contact .info .phone {
+    margin-top: 40px;
+}
+
+main #contact .php-email-form {
+    width: 100%;
+    background: #fff;
+}
+
+main #contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+main #contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+main #contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+main #contact .php-email-form .form-group {padding: .5rem;}
+
+main #contact .php-email-form input {
+    height: 44px;
+}
+
+#contact .php-email-form input,
+#contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+#contact .php-email-form textarea {
+    padding: 10px 12px;
+}
+
+/* SECTION CONTACT HOME PAGE END  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*============== SECTION FEATURE LEVELS HOME PAGE START============== */
+main #features {
+    margin: 6rem 0 !important;
+}
+
+main #features .nav-link {
+    border: 1px solid #d4d6df;
+    padding: 15px;
+    transition: 0.3s;
+    color: #2a2c39;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main #features .nav-link:hover {
+    color: var(--color-blue-derivate);
+}
+
+main #features .nav-link.active {
+    background: var(--color-blue-derivate);
+    color: #fff;
+    border-color: var(--color-blue-derivate);
+}
+
+main #features .nav-link i {
+    /* padding-right: 15px; */
+    font-size: 48px;
+}
+
+main #features .nav-link h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+main #features .tab-content {
+    margin-top: 30px;
+}
+
+main #features .tab-pane h3 {
+    /* font-size: 26px; */
+}
+
+main #features .tab-pane ul {
+    list-style: none;
+    padding: 0;
+}
+
+main #features .tab-pane ul li {
+    padding-bottom: 5px;
+}
+
+main #features .tab-pane p:last-child {
+    margin-bottom: 0;
+}
+
+/*============== SECTION FEATURE LEVELS HOME PAGE END============== */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+main #contact {
+    margin: 6rem 0 !important;
+    color: #203a4b;
+}
 
 .form-control:focus,
 .form-select:focus,
@@ -128,4 +787,63 @@ main #contact {}
     box-shadow: 0 0 0 0.10rem rgb(0, 174, 255) !important;
 }
 
-footer {}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION FOOTER START */
+
+#footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 30px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+}
+
+#footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+#footer .footer-links {
+    margin-bottom: 20px;
+}
+
+#footer .social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: var(--color-blue-derivate);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background-color: var(--color-blue-derivate) !important;
+    color: var(--color-text-main) !important;
+}
+
+#footer .copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 0 -1rem 0;
+}
+
+/* SECTION FOOTER END */

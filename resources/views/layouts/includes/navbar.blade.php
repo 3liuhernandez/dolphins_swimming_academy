@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light shadow p-0">
-    <div class="container pe-lg-0">
+    <div class="container">
         <a class="nav-link navbar-brand m-0 p-0 selected" href="{{ route('home') }}">
             <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 100px;height: auto;" alt="logo">
         </a>
@@ -13,7 +13,7 @@
                 <h4 class="offcanvas-title w-100 text-center text_color-blue-derivate py-1" id="offcanvasNavbarLabel">Dolphins Swimming</h4>
                 <button type="button" class="btn-close selected" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body justify-content-end py-0">
+            <div class="offcanvas-body justify-content-end">
                 <ul class="navbar-nav row g-1 flex-row flex-wrap align-content-start h-75 pt-3 p-md-0">
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded mb-2 px-3 px-md-2 mb-lg-0 {{ session('section') === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
