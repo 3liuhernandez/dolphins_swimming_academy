@@ -86,15 +86,6 @@
 
 /*========= SECTION CLASS START ========= */
 
-main #section_class {
-    /* height: 30vh; */
-    /* display: flex; */
-}
-
-main #section_class .container-title {
-    background: var(--color-blue-derivate);
-}
-
 main #section_class .container-img>img {
     width: 100%;
     /* width: 150px; */

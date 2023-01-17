@@ -5,7 +5,6 @@
         <div class="container">
             <div class="row m-0">
                 <div class="shadow-lg my-4 border p-0 rounded">
-                    
                     <div class="col-12 d-flex bg_color-blue-derivate mb-4 rounded-top">
                         <div class="col-9 col-lg-10 container-title d-flex align-items-center justify-content-center">
                             <h2 class="fw-semibold text-white text-center p-0 p-md-2 m-0">ACTIVIDADES INFANTILES Y JUVENILES</h2>
@@ -14,11 +13,9 @@
                             <img src="{{ asset('imgs/logo_fondo.jpg') }}" class="img-banner img-fluid rounded-top" alt="">
                         </div>
                     </div>
-                    
                     <div class="col-12 col-lg-8 text-center mx-auto py-2 bg_color-blue-derivate my-5">
                         <h3 class="text-white">ESCUELA DE NATACIÓN INFANTIL</h3>
                     </div>
-
                     <div class="container p-md-3 p-lg-5">
                         <div class="col-12 mb-4 mb-lg-5">
                             <h6 class="title_section">Descripción de la actividad</h6>
@@ -270,16 +267,11 @@
                             </ul>
                         </div>
                     </div>
-
-                    {{--  --}}
-                    {{--  --}}
-
                     <div class="col-12 col-lg-8 text-center mx-auto py-2 bg_color-blue-derivate my-5">
                         <h3 class="text-white">ESCUELA DE ESPALDA INFANTIL</h3>
                     </div>
-
                     <div class="container p-md-3 p-lg-5">
-                        <div class="col-12 mb-4 mb-lg-5">
+                        <div class="col-12 mb-4 mb-lg-2">
                             <h6 class="title_section">Descripción de la actividad</h6>
                             <p class="fw-semibold text-muted lh-1 my-4">
                                 Actividad que permite paliar o reducir alguna patología asociada a problemas posturales, de
@@ -288,16 +280,10 @@
                             </p>
                         </div>
                     </div>
-
-
-                    {{--  --}}
-                    {{--  --}}
-
                     <div class="container p-md-3 p-lg-5">
                         <div class="col-12">
-                            <h2 class="title_section">Características</h2>
+                            <h2 class="display-4 fw-semibold text_color-blue-derivate text-center">Características</h2>
                         </div>
-                        
                         <div class="col-12">
                             <h5 class="text_color-blue-derivate border-bottom">Grupos</h5>
                             <div class="numerate d-flex align-items-start">
@@ -320,9 +306,7 @@
                                 </p>
                             </div>
                         </div>
-                        
                         <hr>
-                        
                         <div class="col-12">
                             <h5 class="text_color-blue-derivate border-bottom">Cursos</h5>
                             <div class="d-flex align-items-start">
@@ -343,9 +327,7 @@
                                 </p>
                             </div>
                         </div>
-                        
                         <hr>
-                        
                         <div class="col-12">
                             <h5 class="text_color-blue-derivate border-bottom">Lecciones</h5>
                             <div class="d-flex align-items-start">
@@ -368,7 +350,6 @@
                             </div>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>
