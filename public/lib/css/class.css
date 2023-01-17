@@ -77,3 +77,36 @@
     width: 1.5rem;
     height: 100vh;
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*========= SECTION CLASS START ========= */
+
+main #section_class {
+    /* height: 30vh; */
+    /* display: flex; */
+}
+
+main #section_class .container-title {
+    background: var(--color-blue-derivate);
+}
+
+main #section_class .container-img>img {
+    width: 100%;
+    /* width: 150px; */
+    height: 150px;
+}
+
+main #section_class .container-subtitle {
+    padding: 1rem;
+    background: var(--color-blue-derivate);
+    text-align: center;
+    color: #fff;
+}
+
+
+/*========= SECTION CLASS END ========= */

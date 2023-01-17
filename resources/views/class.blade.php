@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('body')
+
     <section id="section_class">
         <div class="container-fluid p-0">
             <div class="row m-0">
@@ -490,4 +491,5 @@
             <hr class="featurette-divider">
         </div>
     </section>
+
 @endsection

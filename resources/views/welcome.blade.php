@@ -22,8 +22,8 @@
     <!-- Students section end -->
 
     <section id="stadistic_section">
-        <div class="container container py-lg-5" id="icon-grid">
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 m-0 gx-4 gy-3 flex-wrap justify-content-center">
+        <div class="container px-5 py-2 py-lg-5" id="icon-grid">
+            <div class="row row-cols-md-3 row-cols-lg-4 m-0 gx-4 gy-3 flex-wrap justify-content-center">
                 <?php for($i=0; $i < 3 ; $i++) { ?>
                     <div class="col">
                         <div class="d-flex flex-wrap justify-content-center p-3">
@@ -70,7 +70,7 @@
     <section id="about">
         <div class="container py-lg-5">
             <div class="row m-0">
-                <h2 class="title_section fw-semibold display-5 d-flex align-items-center">Acerca de</h2>
+                <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center">Acerca de <span class="me-2"></span></h2>
                 <p class="subtitle_section">Quienes somos</p>
                 <div class="col-lg-6">
                     <p class="lh-1 text_inf">
@@ -112,11 +112,11 @@
     <!-- class section start-->
     <section id="galeria_section">
         <div class="container p-sm-3 py-lg-0 my-5">
-            <h2 class="title_section fw-semibold display-5 d-flex align-items-center ps-2">Galeria</h2>
+            <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center ps-2">Galeria <span class="me-2"></span></h2>
             <p class="subtitle_section ps-2">Nuestros mejores alumnos</p>
-            <div class="row m-0 g-2 g-lg-4 py-2 py-md-3 p-lg-0 row-cols-1 row-cols-sm-2 row-cols-md-3 flex-wrap justify-content-center">
+            <div class="row m-0 g-2 g-lg-4 py-2 py-md-3 p-lg-0 row-cols-1 row-cols-sm-2 row-cols-md-3 flex-wrap justify-content-center ">
                 <?php for($i = 0; $i < 6; $i++) { ?>
-                <div class="col-6">
+                <div class="col">
                     <div class="card border mx-1 mx-lg-0">
                         <!-- Button trigger modal -->
                         <a class="nav-link" data-bs-toggle="modal" role="button" data-bs-target="#staticBackdrop">
@@ -245,7 +245,7 @@
     <section id="services">
         <div class="container">
             <div class="row m-0">
-                <h2 class="title_section fw-semibold display-5 d-flex align-items-center">Servicios</h2>
+                <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center">Servicios <span class="me-2"></span></h2>
                 <p class="subtitle_section">lo que ofrecemos</p>
                 <div class="col-lg-4 col-md-6">
                     <div class="icon-box shadow">
@@ -333,7 +333,7 @@
             <div class="row m-0">
                 <div class="col-12">
                     <div class="text-profesional py-5 text-center d-flex flex-column justify-content-center align-items-center">
-                        <h2 class="display-4 fw-semibold text-white lh-1">Natacion Profesional</h2>
+                        <h2 class="display-4 fw-semibold text-white lh-1">Natacion Profesional <span class="me-2"></span></h2>
                         <p class="fw-semibold text-white my-2 my-lg-3">
                             Él buscará la educación del estudiante, pero esto sucederá al mismo tiempo
                             que con un gran trabajo y dolor. De hecho, para ir al más mínimo detalle, nadie
@@ -352,9 +352,9 @@
     <!-- information youtube start -->
     <section id="iframe-youtube">
         <div class="container">
-            <div class="row my-5 py-5 mx-0 px-2">
+            <div class="row my-5 py-5 m-0">
                 {{-- <h2 class="text-center display-4 lh-1 mx-auto fw-semibold text_color-blue-derivate">Síguenos en nuestro canal de YouTube</h2> --}}
-                <h2 class="title_section fw-semibold display-5 d-flex align-items-center">Síguenos</h2>
+                <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center">Síguenos <span class="me-2"></span></h2>
                 <p class="subtitle_section">en nuestro canal de YouTube</p>
                 <div class="row p-0 my-4 mx-0 box-iframe d-flex justify-content-center">
                     <div class="col col-lg-8 video-iframe p-3 border-dark border-bottom" style="background:#222">
@@ -422,16 +422,7 @@
     <section id="opening_section">
         <div class="container">
             <div class="row mx-0 my-5 py-5">
-                {{-- <div class="col-12 text-center p-0">
-                    <div class="information_horarios">
-                        <h2 class="display-3 fw-semibold text_color-blue-derivate" style="text-shadow: 1px 4px 4px #7c7c7c;">Horarios de apertura</h2>
-                        <p class="fw-semibold text_color-blue-derivate pb-3 m-0">
-                            Es importante seguir el proceso de coaching,
-                            pero es hora de trabajar
-                        </p>
-                    </div>
-                </div> --}}
-                <h2 class="title_section fw-semibold display-5 d-flex align-items-center">Nuestros Horarios</h2>
+                <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center">Nuestros <span class="mx-2">Horarios</span></h2>
                 <p class="subtitle_section mb-3">Horarios flexibles</p>
                 <div class="col-12">
                     <div class="table-responsive rounded border">
@@ -486,29 +477,29 @@
     <!-- feature section start -->
     <section id="features">
         <div class="container">
-            <h2 class="title_section fw-semibold display-5 d-flex align-items-center ps-2">Niveles de Natacion</h2>
-            <p class="subtitle_section ps-2">Texto informacion</p>
+            <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center ps-3">Niveles <span class="mx-2">de</span> Natacion<span class="me-2"></span></h2>
+            <p class="subtitle_section ps-3">Texto informacion</p>
             <ul class="nav nav-tabs row d-flex border-0 m-0" role="tablist">
                 <li class="nav-item col-3"> 
-                    <a class="nav-link show active" data-bs-toggle="tab" href="#tab-1" aria-selected="true" role="tab"> 
+                    <a class="nav-link show active py-0 px-lg-3 py-md-2" onmousedown="sonido.play()" data-bs-toggle="tab" href="#tab-1" aria-selected="true" role="tab"> 
                         <i class="bi bi-geo-alt p-0 pe-lg-3"></i>
                         <h4 class="d-none d-lg-block">Nivel principiante</h4> 
                     </a>
                 </li>
                 <li class="nav-item col-3">
-                    <a class="nav-link" data-bs-toggle="tab" href="#tab-2" aria-selected="false" role="tab" tabindex="-1"> 
+                    <a class="nav-link py-0 px-lg-3 py-md-2" onmousedown="sonido.play()" data-bs-toggle="tab" href="#tab-2" aria-selected="false" role="tab" tabindex="-1"> 
                         <i class="bi bi-fingerprint p-0 pe-lg-3"></i>
                         <h4 class="d-none d-lg-block">Nivel aprendiz</h4> 
                     </a>
                 </li>
                 <li class="nav-item col-3"> 
-                    <a class="nav-link" data-bs-toggle="tab" href="#tab-3" aria-selected="false" role="tab" tabindex="-1"> 
+                    <a class="nav-link py-0 px-lg-3 py-md-2" onmousedown="sonido.play()" data-bs-toggle="tab" href="#tab-3" aria-selected="false" role="tab" tabindex="-1"> 
                         <i class="bi bi-person-bounding-box p-0 pe-lg-3"></i>
                         <h4 class="d-none d-lg-block">Nivel intermedio</h4> 
                     </a>
                 </li>
                 <li class="nav-item col-3"> 
-                    <a class="nav-link" data-bs-toggle="tab" href="#tab-4" aria-selected="false" role="tab" tabindex="-1"> 
+                    <a class="nav-link py-0 px-lg-3 py-md-2" onmousedown="sonido.play()" data-bs-toggle="tab" href="#tab-4" aria-selected="false" role="tab" tabindex="-1"> 
                         <i class="bi bi-shop-window p-0 pe-lg-3"></i>
                         <h4 class="d-none d-lg-block">Nivel avanzado</h4> 
                     </a>
@@ -554,7 +545,7 @@
                                 abandonan sus deberes, el alma se ablanda, es decir, se afana.
                             </p>
                             </div>
-                            <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center p-5"> 
+                            <div class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center justify-content-center p-5"> 
                                 <img src="{{ asset('imgs/levels_natacion/nivel_principiante.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
@@ -605,7 +596,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center p-5"> 
+                            <div class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center justify-content-center p-5"> 
                                 <img src="{{ asset('imgs/levels_natacion/nivel_intermedio.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
@@ -648,7 +639,7 @@
                                 pero es un momento de mucho dolor y sufrimiento.
                             </p>
                         </div>
-                        <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center p-5"> 
+                        <div class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center justify-content-center p-5"> 
                             <img src="{{ asset('imgs/levels_natacion/nivel_moderado.png') }}" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -695,7 +686,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center justify-content-center p-5">                         
+                        <div class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center justify-content-center p-5">                         
                             <img src="{{ asset('imgs/levels_natacion/nivel_avanzado.png') }}" alt="" class="img-fluid">
                         </div>
                     </div>
@@ -705,63 +696,10 @@
     </section>
     <!-- feature section end -->
 
-    <!-- section contact start -->
-    {{-- <section id="contact">
-        <div class="container bg-light border rounded my-5 py-4 py-lg-5">
-            <h2 class="fw-semibold display-3 text-center mb-3 text_color-blue-derivate">Contactame !</h2>
-            <p class="text-center text-center my-3 w-75 mx-auto">
-                ¿Tiene usted alguna pregunta? Por favor, no dude en contactarnos
-                directamente. Nuestro equipo se comunicará contigo en cuestión de horas para ayudarte.
-            </p>
-            <div class="row m-0">
-                <div class="col-12 col-lg-8 ps-0">
-                    <form class="w-100 d-flex flex-wrap" action="#eviando.." method="POST">
-                        <div class="col-12 col-md-6">
-                            <div class="input-group input-group-sm mb-2">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                <input type="text" name="name" id="name" class="form-control form-control-sm text-dark ps-2" placeholder="Ingrese su Nombre" required>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="input-group input-group-sm mb-2">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                <input type="text" name="lastName" id="apellido" class="form-control form-control-sm text-dark ps-2" placeholder="Ingrese su Apellido" required="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-7">
-                            <div class="input-group input-group-sm mb-2">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-envelope-at-fill text-white"></i></span>
-                                <input type="email" name="email" id="email" class="form-control form-control-sm text-dark ps-2" placeholder="Correo Electronico" required="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-5">
-                            <div class="input-group input-group-sm mb-2">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-telephone-fill text-white"></i></span>
-                                <input type="tel" name="tel" id="telefono" class="form-control form-control-sm text-dark ps-1" placeholder="Telef:" required>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="input-group input-group-sm mb-2">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-file-text-fill text-white"></i></span>
-                                <textarea class="form-control form-control-sm text-dark" name="mensaje" id="mensaje" cols="10" rows="2" placeholder="Escribenos tus comentarios"></textarea>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 col-6 mx-auto">
-                            <button class="btn text-white w-75 bg_color-blue-derivate" type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-12 col-lg-4 py-4 p-lg-0 d-flex justify-content-center">
-                    <iframe class="rounded img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250953.15110838244!2d-71.77411525196692!3d10.64599806263847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89998e7a5bd625%3A0xce0904e0ea8de74b!2sMaracaibo%2C%20Zulia%2C%20Venezuela!5e0!3m2!1ses!2sus!4v1668629272011!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
     <section id="contact">
         <div class="container">
         <div class="row m-0 mt-5">
-            <h2 class="title_section fw-semibold display-5 d-flex align-items-center">contacto</h2>
+            <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center">contacto<span class="me-2"></span></h2>
             <p class="subtitle_section mb-5">Contáctenos</p>
             <div class="col-lg-4">
                 <div class="info">

@@ -62,6 +62,11 @@
 
     @include('layouts.includes.footer')
 
+    <script>
+        var sonido = new Audio();
+        sonido.src="http://www.sonidosmp3gratis.com/sounds/deslizar_1.mp3";
+    </script>
+
     {{-- MY SCRIPT BTN UP --}}
     <script src="{{ asset('js/btn-float.js') }}"></script>
 

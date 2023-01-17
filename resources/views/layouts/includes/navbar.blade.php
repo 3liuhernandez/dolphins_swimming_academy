@@ -4,14 +4,14 @@
             <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 100px;height: auto;" alt="logo">
         </a>
 
-        <button class="navbar-toggler p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler p-1" onmousedown="sonido.play()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header border-bottom">
                 <h4 class="offcanvas-title w-100 text-center text_color-blue-derivate py-1" id="offcanvasNavbarLabel">Dolphins Swimming</h4>
-                <button type="button" class="btn-close selected" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close selected" data-bs-dismiss="offcanvas" onmousedown="sonido.play()" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body justify-content-end">
                 <ul class="navbar-nav row g-1 flex-row flex-wrap align-content-start h-75 pt-3 p-md-0">
