@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\admin\LoginController as AdminLoginController;
-use App\Http\Controllers\Admin\PageController as AdminPageController;
+use App\Http\Controllers\admin\PageController as AdminPageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\UserController;
@@ -22,6 +22,11 @@ Route::get('/', [PageController::class, 'home_page'])->name('home');
 Route::get('home', [PageController::class, 'home_page'])->name('home.index');
 
 Route::prefix('auth')->middleware(['web'])->group(function () {
+
+    Route::get('/', function() {
+        return redirect()->route('login');
+    });
+
     Route::get('login', [PageController::class, 'login'])->name('login');
     // validacion de login
     Route::post('login', [LoginController::class, 'check_login'])->name('login.validate');
@@ -41,6 +46,10 @@ Route::get('characteristics', [PageController::class, 'characteristics'])->name(
 Route::prefix("admin")->group(function () {
 
     Route::prefix('auth')->middleware(['web'])->group(function () {
+        Route::get('/', function() {
+            return redirect()->route('admin.login');
+        });
+
         Route::get('login', [AdminPageController::class, 'login'])->name('admin.login');
         Route::post('login', [AdminLoginController::class, 'check_login'])->name('admin.login.validate');
         Route::get('logout', [AdminLoginController::class, 'logout'])->name('admin.logout');
