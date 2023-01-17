@@ -5,17 +5,20 @@
         <div class="container">
             <div class="row m-0">
                 <div class="shadow-lg my-4 border p-0 rounded">
-                    <div class="col-12 d-flex bg_color-blue-derivate mb-4 rounded-top">
-                        <div class="col-9 col-lg-10 container-title d-flex align-items-center justify-content-center">
-                            <h2 class="fw-semibold text-white text-center p-0 p-md-2 m-0">ACTIVIDADES INFANTILES Y JUVENILES</h2>
+                    
+                    <div class="col-12 d-flex mb-4 rounded-top">
+                        <div class="col-8 col-lg-9 d-flex rounded-top justify-content-center align-items-center container-title bg_color-blue-derivate">
+                            <span class="display-6 fw-semibold text-white text-center">ACTIVIDADES INFANTILES Y JUVENILES</span>
                         </div>
-                        <div class="col-3 col-lg-2 container-img p-0">
-                            <img src="{{ asset('imgs/logo_fondo.jpg') }}" class="img-banner img-fluid rounded-top" alt="">
+                        <div class="col-4 col-lg-3 container-img p-0">
+                            <img src="{{ asset('imgs/imagenes_promociones/img_academia.jpeg') }}" class="img-banner img-fluid" alt="">
                         </div>
                     </div>
+                    
                     <div class="col-12 col-lg-8 text-center mx-auto py-2 bg_color-blue-derivate my-5">
-                        <h3 class="text-white">ESCUELA DE NATACIÓN INFANTIL</h3>
+                        <h4 class="text-white">ESCUELA DE NATACIÓN INFANTIL</h4>
                     </div>
+                    
                     <div class="container p-md-3 p-lg-5">
                         <div class="col-12 mb-4 mb-lg-5">
                             <h6 class="title_section">Descripción de la actividad</h6>
@@ -27,8 +30,8 @@
                             <h3 class="subtitle_section">OBJETIVOS</h3>
                         </div>
 
-                        <div class="col-12 my-5">
-                            <h5 class="text_color-blue-derivate border-bottom">Nivel 1</h5>
+                        <div class="col-12">
+                            <h5 class="text_color-blue-derivate">Nivel 1</h5>
                             <ul class="pt-3 ps-2 ps-md-4">
                                 <div class="numerate mb-2 d-flex align-items-center fw-semibold text-muted">
                                         1. 
@@ -81,8 +84,10 @@
                             </ul>
                         </div>
 
-                        <div class="col-12 my-5">
-                            <h5 class="text_color-blue-derivate border-bottom">Nivel 2</h5>
+                        <hr class="featurette-divider">
+
+                        <div class="col-12">
+                            <h5 class="text_color-blue-derivate">Nivel 2</h5>
                             <ul class="pt-3 ps-2 ps-md-4">
                                 <div class="numerate mb-2 d-flex align-items-center fw-semibold text-muted">
                                         1. 
@@ -129,8 +134,10 @@
                             </ul>
                         </div>
 
-                        <div class="col-12 my-5">
-                            <h5 class="text_color-blue-derivate border-bottom">Nivel 3</h5>
+                        <hr class="featurette-divider">
+
+                        <div class="col-12">
+                            <h5 class="text_color-blue-derivate">Nivel 3</h5>
                             <ul class="pt-3 ps-2 ps-md-4">
                                 <div class="numerate mb-2 d-flex align-items-center fw-semibold text-muted">
                                         1. 
@@ -206,9 +213,11 @@
                                 </div>
                             </ul>
                         </div>
-                        
-                        <div class="col-12 my-5">
-                            <h5 class="text_color-blue-derivate border-bottom">Nivel 4</h5>
+
+                        <hr class="featurette-divider">
+
+                        <div class="col-12">
+                            <h5 class="text_color-blue-derivate">Nivel 4</h5>
                             <ul class="pt-3 ps-2 ps-md-4">
                                 <div class="numerate mb-2 d-flex align-items-center fw-semibold text-muted">
                                         1.
@@ -267,26 +276,22 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 text-center mx-auto py-2 bg_color-blue-derivate my-5">
-                        <h3 class="text-white">ESCUELA DE ESPALDA INFANTIL</h3>
-                    </div>
+
+                    <!-- CONTAINER CATACTERISTICAS -->
                     <div class="container p-md-3 p-lg-5">
-                        <div class="col-12 mb-4 mb-lg-2">
+                        <div class="col-12 mb-4 mb-lg-5">
                             <h6 class="title_section">Descripción de la actividad</h6>
                             <p class="fw-semibold text-muted lh-1 my-4">
                                 Actividad que permite paliar o reducir alguna patología asociada a problemas posturales, de
                                 columna, de equilibrio de fuerzas o de la musculatura de la espalda, a través de ejercicios adaptados y controlados por personal 
                                 sanitario altamente cualificado.
                             </p>
+                            <h3 class="subtitle_section">Características</h3>
                         </div>
-                    </div>
-                    <div class="container p-md-3 p-lg-5">
+                        
                         <div class="col-12">
-                            <h2 class="display-4 fw-semibold text_color-blue-derivate text-center">Características</h2>
-                        </div>
-                        <div class="col-12">
-                            <h5 class="text_color-blue-derivate border-bottom">Grupos</h5>
-                            <div class="numerate d-flex align-items-start">
+                            <h5 class="text_color-blue-derivate">Grupos</h5>
+                            <div class="d-flex align-items-start pt-3">
                                 <strong class="me-3 text_color-blue-derivate"> &middot; </strong>
                                 <p class="fw-semibold text-muted">
                                     Un grupo de entrenamiento puede verse como “su equipo”. Todos son bienvenidos a ser miembros
@@ -296,7 +301,7 @@
                                     reciben sus nadadores a diario.
                                 </p>
                             </div>
-                            <div class="numerate d-flex align-items-start">
+                            <div class="d-flex align-items-start pt-3">
                                 <strong class="me-3 text_color-blue-derivate"> &middot; </strong>
                                 <p class="fw-semibold text-muted">
                                     Con un Grupo de Entrenamiento, los entrenadores tienen la capacidad de moldear el contenido
@@ -306,10 +311,12 @@
                                 </p>
                             </div>
                         </div>
-                        <hr>
+                        
+                        <hr class="featurette-divider">
+                        
                         <div class="col-12">
-                            <h5 class="text_color-blue-derivate border-bottom">Cursos</h5>
-                            <div class="d-flex align-items-start">
+                            <h5 class="text_color-blue-derivate">Cursos</h5>
+                            <div class="d-flex align-items-start pt-3">
                                 <strong class="me-3 text_color-blue-derivate"> &middot; </strong>
                                 <p class="fw-semibold text-muted">
                                     Nuestros cursos son un grupo de videos que se enfocan en el mismo tema. Ya sea el enfoque en
@@ -317,7 +324,7 @@
                                     desarrollar una mejor técnica mientras se enfocan en una habilidad o en un atleta a la vez.
                                 </p>
                             </div>
-                            <div class="d-flex align-items-start">
+                            <div class="d-flex align-items-start pt-3">
                                 <strong class="me-3 text_color-blue-derivate"> &middot; </strong>
                                 <p>
                                     Los miembros tienen la capacidad de autodirigir estos cursos, ya sea con un "observador
@@ -327,10 +334,12 @@
                                 </p>
                             </div>
                         </div>
-                        <hr>
+                        
+                        <hr class="featurette-divider">
+                        
                         <div class="col-12">
-                            <h5 class="text_color-blue-derivate border-bottom">Lecciones</h5>
-                            <div class="d-flex align-items-start">
+                            <h5 class="text_color-blue-derivate">Lecciones</h5>
+                            <div class="d-flex align-items-start pt-3">
                                 <strong class="me-3 text_color-blue-derivate"> &middot; </strong>
                                 <p class="fw-semibold text-muted">
                                     Nuestras Lecciones son los videos individuales que residen dentro de un curso. Si bien
@@ -340,7 +349,7 @@
                                     varias habilidades, las lecciones son buenas, pero en un curso, son mejores.
                                 </p>
                             </div>
-                            <div class="d-flex align-items-start">
+                            <div class="d-flex align-items-start pt-3">
                                 <strong class="me-3 text_color-blue-derivate"> &middot; </strong>
                                 <p class="fw-semibold text-muted">
                                     Los miembros actualizados tienen la capacidad de ver CUALQUIER lección, en CUALQUIER

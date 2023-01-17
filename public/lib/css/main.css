@@ -3,7 +3,7 @@
     --color-blue-derivate: #02adfc;
     --color-text-main: #ffffff;
     --color-text-derivate: #dff5fe;
-    --shadow-body-color-rgb: 33,37,41;
+    --shadow-body-color-rgb: 33, 37, 41;
 }
 
 /* BACKGROUND BLUE */
@@ -481,10 +481,10 @@ main .title_section::after {
 
 @media (max-width: 768px) {
     main .title_section {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-}
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
 
     main .subtitle_section {
         font-size: 23px;
@@ -511,6 +511,7 @@ main .title_section::after {
         margin: 15px 0px 0;
     }
 }
+
 /* ========== SECTION GALERIA HOME PAGE END ==========  */
 
 /*  */
@@ -520,6 +521,7 @@ main .title_section::after {
 /*  */
 
 /* ========== SECTION SERVICES HOME PAGE START ========== */
+
 main #services {
     margin: 0 0 6rem !important;
 }
@@ -570,6 +572,7 @@ main #services .description {
 /*  */
 
 /* ========== SECTION NATACION PROFESIONAL HOME PAGE START ========== */
+
 main #natacion_profesional_section {
     background-image: url(../imgs/banner_profesional.png);
     position: relative;
@@ -619,7 +622,7 @@ main #natacion_profesional_section .text-profesional p {
 /*  */
 /*  */
 
-main 
+main
 
 /* SECTION CONTACT HOME PAGE START  */
 main #contact {}
@@ -693,7 +696,9 @@ main #contact .php-email-form .sent-message {
     font-weight: 600;
 }
 
-main #contact .php-email-form .form-group {padding: .5rem;}
+main #contact .php-email-form .form-group {
+    padding: .5rem;
+}
 
 main #contact .php-email-form input {
     height: 44px;
@@ -781,18 +786,30 @@ main #features .tab-pane p:last-child {
     margin-bottom: 0;
 }
 
-/*============== SECTION FEATURE LEVELS HOME PAGE END============== */
+/* ============== SECTION FEATURE LEVELS HOME PAGE END ============== */
 
 /*  */
 /*  */
 /*  */
 /*  */
 /*  */
+
+/* ================== SECTION CONTACT HOME PAGE START ================== */
 
 main #contact {
+    background-image: url(../imgs/home-featured-bg.svg) center no-repeat;
     margin: 6rem 0 !important;
     color: #203a4b;
 }
+
+/* ================== SECTION CONTACT HOME PAGE END ================== */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
 
 .form-control:focus,
 .form-select:focus,
@@ -802,6 +819,8 @@ main #contact {
     outline: 0 !important;
     box-shadow: 0 0 0 0.10rem rgb(0, 174, 255) !important;
 }
+
+
 
 /*  */
 /*  */

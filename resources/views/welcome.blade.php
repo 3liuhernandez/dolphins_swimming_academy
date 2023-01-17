@@ -21,6 +21,7 @@
     </section>
     <!-- Students section end -->
 
+    <!-- stadistic section start -->
     <section id="stadistic_section">
         <div class="container px-5 py-2 py-lg-5" id="icon-grid">
             <div class="row row-cols-md-3 row-cols-lg-4 m-0 gx-4 gy-3 flex-wrap justify-content-center">
@@ -65,6 +66,7 @@
             </div>
         </div>
     </section>
+    <!-- stadistic section end -->
 
     <!-- about section start -->
     <section id="about">
@@ -696,6 +698,7 @@
     </section>
     <!-- feature section end -->
 
+<!-- section contact start -->
     <section id="contact">
         <div class="container">
         <div class="row m-0 mt-5">
@@ -748,6 +751,6 @@
             </div>
         </div>
     </section>
-
     <!-- section contact end -->
+
 @endsection

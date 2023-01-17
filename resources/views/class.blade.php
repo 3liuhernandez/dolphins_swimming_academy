@@ -49,6 +49,7 @@
     <section id="section_instructor">
         <div class="container marketing">
             <div class="row row-cols-sm-2 g-4 row-cols-lg-4 m-0 justify-content-center">
+                {{-- FERFIL 1 --}}
                 <div class="col">
                     <div class="card text-center">
                         <div class="card-header">
@@ -112,6 +113,7 @@
                     </div>
                 </div>
 
+                {{-- PERFIL 2 --}}
                 <div class="col">
                     <div class="card text-center">
                         <div class="card-header">
@@ -133,7 +135,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Modal -->
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog mb-5">
@@ -176,6 +177,7 @@
                     </div>
                 </div>
                 
+                {{-- PERFIL 3 --}}
                 <div class="col">
                     <div class="card text-center">
                         <div class="card-header">
@@ -239,6 +241,7 @@
                     </div>
                 </div>
                 
+                {{-- PERFIL 4 --}}
                 <div class="col">
                     <div class="card text-center">
                         <div class="card-header">
@@ -336,6 +339,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col">
                     <div class="card border-0 shadow-none">
                         <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
@@ -367,6 +371,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col">
                     <div class="card border-0 shadow-none">
                         <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
@@ -398,6 +403,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col">
                     <div class="card border-0 shadow-none">
                         <div class="card-body text-center d-flex flex-column align-items-center p-0"><img class="rounded-circle mb-3 fit-cover" width="130" height="130" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
@@ -431,8 +437,9 @@
                 </div>
             </div>
 
-            <!-- START THE FEATURETTES -->
             <hr class="featurette-divider">
+
+            <!-- START THE FEATURETTES -->
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-semibold fw-semibold text_color-blue-derivate lh-1">First featurette heading<br>
@@ -451,7 +458,9 @@
                     </figure>
                 </div>
             </div>
+            
             <hr class="featurette-divider">
+            
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
                     <h2 class="featurette-heading fw-semibold text_color-blue-derivate lh-1">Oh yeah, it’s that good <br>
@@ -469,7 +478,9 @@
                     </figure>
                 </div>
             </div>
+            
             <hr class="featurette-divider">
+            
             <div class="row featurette">
                 <div class="col-md-7">
                     <h2 class="featurette-heading fw-semibold text_color-blue-derivate lh-1">And lastly, this one <br>
@@ -488,6 +499,7 @@
                     </figure>
                 </div>
             </div>
+            
             <hr class="featurette-divider">
         </div>
     </section>
