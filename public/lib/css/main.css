@@ -198,9 +198,9 @@ body #scroll-top:hover i {
 
 /* ========= SECTION SVG MOVE START =========  */
 #svg-move {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    /* width: 100%; */
+    /* overflow: hidden; */
+    /* position: relative; */
     background: linear-gradient(0deg, #00bcd4 0%, #2196f3 100%);
     padding: 0;
 }
@@ -215,7 +215,7 @@ body #scroll-top:hover i {
 #svg-move .hero-waves {
     display: block;
     width: 100%;
-    height: 80px;
+    height: 40px;
     position: relative;
 }
 

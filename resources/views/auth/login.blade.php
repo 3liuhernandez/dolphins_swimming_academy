@@ -13,8 +13,8 @@
 @section('body')
     <section id="inicio_seccion">
         <div class="container">
-            <div class="row vh-100 m-0 d-flex justify-content-center align-items-center">
-                <div class="bg-light rounded-2 col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 m-5 py-3 px-4">
+            <div class="row m-0 py-5 py-md-0 ">
+                <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 bg-light mx-auto rounded-2 p-3">
                     <div class="text-center">
                         <h2 class="fs-1 text_color-blue-derivate">Iniciar Sesión</h2>
                     </div>
