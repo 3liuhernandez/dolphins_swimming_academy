@@ -5,9 +5,10 @@
         <div class="container">
             <div class="row m-0">
                 <div class="shadow-lg my-4 border rounded p-0">
+                    
                     <div class="col-12 px-0 py-4 bg_color-blue-derivate mb-4 rounded-top">
                         <div class="text-center pt-md-4 pb-md-2 text-white">
-                            <h1 class="fw-semibold text-white m-0">INSCÌBETE CON ESTILO</h1>
+                            <h1 class="fw-semibold text-white m-0">INSCRÍBETE CON ESTILO</h1>
                             <form class="d-flex d-flex justify-content-end mt-3 mt-md-0 me-4">
                                 <a class="btn btn-sm bg-white text-dark" href="#" type="submit">
                                     <i class="bi-cart-fill me-1"></i>
@@ -17,6 +18,7 @@
                             </form>
                         </div>
                     </div>
+                    
                     <div class="container p-md-3 p-lg-5">
                         <div class="row g-4 g-lg-5 mb-3 mb-lg-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 justify-content-center">
                             
@@ -52,7 +54,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -128,7 +130,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -196,7 +198,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -272,7 +274,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -340,7 +342,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -408,7 +410,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -484,7 +486,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
@@ -560,7 +562,7 @@
                                                         <div class="row m-0">
                                                             <div class="col-12 col-sm-6">
                                                                 <figure class="figure">
-                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="">
+                                                                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpg') }}" class="figure-img img-fluid rounded" alt="Photo Academy">
                                                                     <figcaption class="figure-caption text-center text-lg-start fw-bold small">Dolphins Swimming Academy</figcaption>
                                                                 </figure>
                                                                 <ul>
