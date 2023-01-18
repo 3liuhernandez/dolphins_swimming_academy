@@ -13,7 +13,7 @@
 @section('body')
     <section id="inicio_seccion">
         <div class="container">
-            <div class="row m-0 py-5 py-md-0 ">
+            <div class="row m-0">
                 <div class="col-10 col-sm-8 col-md-6 col-lg-5 col-xl-4 col-xxl-3 bg-light mx-auto rounded-2 p-3">
                     <div class="text-center">
                         <h2 class="fs-1 text_color-blue-derivate">Iniciar Sesión</h2>
@@ -30,8 +30,7 @@
                                 <i class="bi bi-key-fill text-white"></i></span>
                             <input type="password" class="form-control" placeholder="password" name="pass" required value="{{ old('pass') }}">
                         </div>
-                        <button type="submit" class="btn btn-md w-100 fw-semibold bg_color-blue-derivate text-white"
-                            href="#">Login</button>
+                        <button type="submit" class="btn btn-md w-100 fw-semibold bg_color-blue-derivate text-white" href="#">Login</button>
                         <p class="text-center mt-4 mb-0">
                             <a class="text_color-blue-derivate" href="#">¿Olvidaste tucontraseña?</a>
                         </p>

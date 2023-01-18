@@ -240,6 +240,12 @@ body #scroll-top:hover i {
     animation-delay: -2s;
 }
 
+@media (max-width: 576px) {
+    #svg-move .hero-waves {
+        height: 30px;
+    }
+}
+
 @-webkit-keyframes move-forever1 {
     0% {
         transform: translate(85px, 0%);

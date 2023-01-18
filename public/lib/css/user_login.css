@@ -1,5 +1,53 @@
-main section {
+main #inicio_seccion {
     background: url("../imgs/bg_user_login.gif") center no-repeat;
     background-size: 100% 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
+@media (max-width: 480px) {
+
+    main #inicio_seccion {
+        height: 100%;
+    }
+
+    main #inicio_seccion .row {
+        margin: 5rem 0 !important;
+    }
+
+    main #inicio_seccion .row>div {
+        padding: .5rem !important;
+    }
+
+    main #inicio_seccion .row>div .text-center h2 {
+        font-size: 20px !important;
+        margin: 0 0 10px 0 !important;
+    }
+
+    main #inicio_seccion .row>div form .input-group span {
+        padding: 5px;
+    }
+
+    main #inicio_seccion .row>div form .input-group input {
+        padding: 0 5px;
+    }
+
+    main #inicio_seccion .row>div form button {
+        padding: 0 !important;
+        width: 60% !important;
+        margin: auto !important;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main #inicio_seccion .row>div form p {
+        margin: 10px 0 0 !important;
+    }
+
+    main #inicio_seccion .row>div form p a {
+        font-size: 13px !important;
+    }
+}

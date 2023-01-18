@@ -351,7 +351,7 @@
                 <div class="col-12">
                     <div class="text-profesional py-5 text-center d-flex flex-column justify-content-center align-items-center">
                         <h2 class="display-4 fw-semibold text-white lh-1">Natacion Profesional <span class="me-2"></span></h2>
-                        <p class="fw-semibold text-white my-2 my-lg-3">
+                        <p class="fw-semibold text-white my-4 my-lg-3">
                             Él buscará la educación del estudiante, pero esto sucederá al mismo tiempo
                             que con un gran trabajo y dolor. De hecho, para ir al más mínimo detalle, nadie
                             puede lograr ningún tipo de formación en el entrenamiento, pero sucede
