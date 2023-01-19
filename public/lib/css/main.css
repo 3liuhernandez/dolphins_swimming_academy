@@ -1,9 +1,12 @@
 :root {
     --color-blue-main: #0034ac;
-    --color-blue-derivate: #02adfc;
+    --color-blue-derivate: rgb(2, 173, 252);
     --color-text-main: #ffffff;
     --color-text-derivate: #dff5fe;
-    --shadow-body-color-rgb: 33, 37, 41;
+    --shadow-color-rgb: 33, 37, 41;
+    --color-secondary-rgb: 72, 86, 100;
+    --color-blue-derivate-transparent: 2, 173, 252;
+    --color-black-transparent: 0, 0, 0;
 }
 
 /* BACKGROUND BLUE */
@@ -41,6 +44,10 @@
 /*  */
 /*  */
 /*  */
+
+body {
+    color: #444444 !important;
+}
 
 body #scroll-top {
     display: none;
@@ -85,6 +92,54 @@ body #scroll-top:hover i {
         bottom: 75%;
     }
 }
+
+body main .title_section {
+    color: var(--color-blue-derivate);
+    font-size: 15px;
+    line-height: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+body main .subtitle_section {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #203a4b;
+}
+
+body main .title_section::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: var(--color-blue-derivate);
+    margin: 4px 10px;
+}
+
+main .svg {
+    width: 100%;
+    max-width: 100%;
+    height: 64px;
+    margin: 2rem 0 0rem 0;
+}
+
+main .svg path {
+    fill: var(--color-blue-derivate);
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /*  */
 /*  */
@@ -390,6 +445,10 @@ main #stadistic_section {
     color: var(--color-text-main);
 }
 
+main #stadistic_section svg {
+    fill: var(--color-text-main);
+}
+
 main #stadistic_section::before {
     content: "";
     z-index: -10;
@@ -416,7 +475,7 @@ main #stadistic_section::before {
 /* =========== SECTION ABOUT HOME PAGE START =========== */
 main #about {
     color: #203a4b;
-    margin: 6rem 0 !important;
+    margin: 6rem 0 4rem 0 !important;
 }
 
 main #about h2 {}
@@ -443,45 +502,113 @@ main #about .nav li {
 /*  */
 /*  */
 
-/* ========== SECTION GALERIA HOME PAGE START ==========  */
-main #galeria_section {
-    margin: 5rem 0 4rem !important;
+/* ========== SECTION galeria HOME PAGE START ==========  */
+
+main #galeria {
+    padding: 40px 0 60px 0;
 }
 
-main #galeria_section svg {
+main #galeria .galeria-flters {
+    padding: 0;
+    margin: 0 auto 30px auto;
+    list-style: none;
+    text-align: center;
+}
+
+main #galeria .galeria-item {
+    padding: 0;
+    position: relative;
+    /* border: 1px solid var(--color-blue-derivate); */
+    border: 10px solid transparent;
+    overflow: hidden;
+    z-index: 1;
+    /* margin: 0 !important; */
+}
+
+main #galeria .galeria-item img {
+    transition: all 0.3s;
     width: 100%;
-    max-width: 100%;
-    height: 64px;
-    margin: 2rem 0 0rem 0;
+    height: 230px;
+    border-radius: 3%;
 }
 
-main #galeria_section svg path {
-    fill: var(--color-blue-derivate);
-}
-
-main .title_section {
-    color: var(--color-blue-derivate);
-    font-size: 15px;
-    line-height: 1px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-main .subtitle_section {
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #203a4b;
-}
-
-main .title_section::after {
+main #galeria .galeria-item:before {
     content: "";
-    width: 120px;
-    height: 1px;
-    display: inline-block;
-    background: var(--color-blue-derivate);
-    margin: 4px 10px;
+    inset: 0;
+    position: absolute;
+    background: rgba(var(--color-black-transparent), 0.8);
+    z-index: 2;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
 }
+
+main #galeria .galeria-item .galeria-info {
+    opacity: 0;
+    position: absolute;
+    inset: auto 40px 40px 40px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    padding: 20px;
+}
+
+main #galeria .galeria-item .galeria-info h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text-main);
+    padding-right: 50px;
+}
+
+main #galeria .galeria-item .galeria-info .preview-link,
+main #galeria .galeria-item .galeria-info .details-link {
+    position: absolute;
+    right: 50px;
+    font-size: 24px;
+    top: calc(50% - 14px);
+    color: rgba(var(--color-black-transparent), 0.7);
+    transition: 0.3s;
+    line-height: 0;
+    color: gray;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+main #galeria .galeria-item .galeria-info .preview-link:hover,
+main #galeria .galeria-item .galeria-info .details-link:hover {
+    color: var(--color-text-main);
+    transform: scale(1.2) rotate(45deg);
+}
+
+main #galeria .galeria-item .galeria-info .details-link {
+    right: 14px;
+    font-size: 28px;
+    color: gray;
+}
+
+main #galeria .galeria-item:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+main #galeria .galeria-item:hover img {
+    transform: scale(1.2);
+}
+
+main #galeria .galeria-item:hover .galeria-info {
+    opacity: 1;
+    inset: auto 10px 0 10px;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 @media (max-width: 992px) {}
 
@@ -508,7 +635,8 @@ main .title_section::after {
 
     main .subtitle_section {
         font-size: 17px;
-        /* margin: 0; */
+        margin: 2rem 0 !important;
+        text-align: center;
     }
 }
 
@@ -518,7 +646,7 @@ main .title_section::after {
     }
 }
 
-/* ========== SECTION GALERIA HOME PAGE END ==========  */
+/* ========== SECTION galeria HOME PAGE END ==========  */
 
 /*  */
 /*  */
@@ -529,7 +657,7 @@ main .title_section::after {
 /* ========== SECTION SERVICES HOME PAGE START ========== */
 
 main #services {
-    margin: 0 0 6rem !important;
+    margin: 4rem 0 6rem !important;
 }
 
 main #services .icon-box {
@@ -589,6 +717,7 @@ main #natacion_profesional_section {
     display: flex;
     background-attachment: fixed;
     align-items: center;
+    padding: 3rem 0 !important;
 }
 
 main #natacion_profesional_section::before {
@@ -627,8 +756,6 @@ main #natacion_profesional_section .text-profesional p {
 /*  */
 /*  */
 /*  */
-
-main
 
 /* SECTION CONTACT HOME PAGE START  */
 main #contact {}
@@ -710,14 +837,14 @@ main #contact .php-email-form input {
     height: 44px;
 }
 
-#contact .php-email-form input,
-#contact .php-email-form textarea {
+main #contact .php-email-form input,
+main #contact .php-email-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
 }
 
-#contact .php-email-form textarea {
+main #contact .php-email-form textarea {
     padding: 10px 12px;
 }
 
@@ -731,7 +858,7 @@ main #contact .php-email-form input {
 
 /*============== SECTION FEATURE LEVELS HOME PAGE START============== */
 main #features {
-    margin: 6rem 0 !important;
+    margin: 3rem auto !important;
 }
 
 main #features .nav-link {

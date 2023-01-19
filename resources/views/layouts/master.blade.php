@@ -14,22 +14,18 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/carrusel.css') }}">
-    
+
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
 
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <!-- FLICKITY FRAMEWORK -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/flickity/css/flickity.min.css') }}">
-
     @yield('header')
 
 </head>
 
-<body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+<body>
 
     <header class="sticky-top bg-light">
         @include('layouts.includes.navbar')
