@@ -185,7 +185,7 @@
                     <img src="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" class="img-fluid preview-img" alt="">
                     <div class="galeria-info">
                         <h4>App 1</h4>
-                        <a href="{{ URL::asset('imgs/fotos_academia/photo_1.jpeg') }}" title="Ver imagen" class="preview-link">
+                        <a href="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" title="Ver imagen" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
                         <a href="" title="More Details" class="details-link">
@@ -219,7 +219,7 @@
                         </a>
                     </div>
                 </div>
-    
+
                 <div class="col-12 galeria-item">
                     <img src="{{ asset('imgs/fotos_academia/photo_4.jpeg') }}" class="img-fluid preview-img" alt="">
                     <div class="galeria-info">
@@ -886,7 +886,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-8 mt-5 mt-lg-0">
                     <form action="#" method="post" class="php-email-form">
                         <div class="row m-0">
