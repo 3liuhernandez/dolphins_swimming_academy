@@ -1,3 +1,9 @@
+@php
+    define('SITE_VERSION', 1);
+    function asset_v(){
+        return '?v='.SITE_VERSION;
+    }
+@endphp
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,10 +17,10 @@
     <link rel="shortcut icon" href="{{asset('imgs/logo_fondo.jpg')}}" type="image/x-icon">
 
     <!-- MY STYLES -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css').asset_v() }}">
 
     <!-- BOOTSTRAP 5.3 -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css').asset_v() }}">
 
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -48,13 +54,13 @@
     </div>
 
     <!-- CDN SLICE -->
-    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('vendor/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendor/jquery/jquery.min.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/popper/popper.min.js').asset_v() }}"></script>
 
-    <script src="{{ asset('vendor/toast/toast.js') }}"></script>
+    <script src="{{ asset('vendor/toast/toast.js').asset_v() }}"></script>
 
-    <script src="{{ asset('vendor/axios/axios.min.js') }}"></script>
+    <script src="{{ asset('vendor/axios/axios.min.js').asset_v() }}"></script>
 
     <script>
         jQuery(() => {
