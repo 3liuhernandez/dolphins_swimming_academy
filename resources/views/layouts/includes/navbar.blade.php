@@ -1,66 +1,53 @@
 <nav class="navbar navbar-expand-lg bg-white shadow p-0">
     <div class="container">
         <a class="nav-link navbar-brand m-0 p-0 selected" href="{{ route('home') }}">
-            <img src="{{ asset('imgs/logo_white-removebg.png') }}" style="width: 100px;height: auto;" alt="logo">
+            <img src="{{ asset('imgs/logo_white-removebg.png') }}" width="100px" alt="logo">
         </a>
-        <button class="navbar-toggler p-1" onmousedown="sonido.play()" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler p-1" onmousedown="sonido.play()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header border-bottom text-center py-1">
                 <div class="col-11">
-                    <h4 class="display-5 offcanvas-title w-100 text-center text_color-blue-derivate py-2"
-                        id="offcanvasNavbarLabel">Dolphins Swimming</h4>
+                    <h4 class="display-5 offcanvas-title w-100 text-center text_color-blue-derivate py-2" id="offcanvasNavbarLabel">Dolphins Swimming</h4>
                 </div>
                 <div class="col-1">
-                    <button type="button" class="btn-close mt-1" onmousedown="sonido.play()"
-                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close mt-1" onmousedown="sonido.play()" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
             </div>
-            <div class="offcanvas-body d-flex flex-column justify-content-between flex-row-lg">
-                <ul id="menu_top"
-                    class="navbar-nav row g-0 align-items-lg-center justify-content-lg-end flex-row flex-wrap align-content-start">
+            <div class="offcanvas-body d-flex flex-column justify-content-between flex-lg-row justify-content-lg-end">
+                
+                <ul id="menu_top" class="navbar-nav justify-content-lg-end flex-row flex-wrap">
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link mb-2 px-1 pt-lg-0 mb-lg-0 {{ session('section') === 'home' ? 'active' : '' }}"
-                            href="{{ route('home') }}">Home</a>
+                        <a class="nav-link {{ session('section') === 'home' ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link mb-2 px-1 pt-lg-0 mx-lg-2 mb-lg-0 {{ session('section') === 'class' ? 'active' : '' }}"
-                            href="{{ route('class') }}">Clases</a>
+                        <a class="nav-link {{ session('section') === 'class' ? 'active' : '' }}" href="{{ route('class') }}">Clases</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link mb-2 px-1 pt-lg-0 mx-lg-2 mb-lg-0 {{ session('section') === 'plans' ? 'active' : '' }}"
-                            href="{{ route('plans') }}">Planes</a>
+                        <a class="nav-link {{ session('section') === 'plans' ? 'active' : '' }}" href="{{ route('plans') }}">Planes</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link mb-2 px-1 pt-lg-0 mx-lg-2 mb-lg-0 {{ session('section') === 'characteristics' ? 'active' : '' }}"
-                            href="{{ route('characteristics') }}">Nosotros</a>
+                        <a class="nav-link {{ session('section') === 'characteristics' ? 'active' : '' }}" href="{{ route('characteristics') }}">Nosotros</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a
-                            class="nav-link mb-2 px-1 pt-lg-0 mb-lg-0 {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contacto</a>
+                        <a class="nav-link {{ session('section') === 'contact' ? 'active' : '' }}" href="{{ route('contact') }}">Contacto</a>
                     </li>
 
-                    <div class="d-none d-lg-flex d-flex w-auto my-0 mx-2" style="height: 37px;">
-                        <div class="vr bg-primary rounded"></div>
+                    <div class="d-none mx-2 d-lg-flex h-100">
+                        <div class="vr"></div>
                     </div>
 
-                    <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link px-1 pt-lg-0 {{ session('section') === 'login' ? 'active' : '' }}"
-                            href="{{ route('login') }}">Ingresar</a>
+                    <li class="nav-item col-6 me-lg-2 col-lg-auto selected">
+                        <a class="nav-link {{ session('section') === 'login' ? 'active' : '' }}" href="{{ route('login') }}">Ingresar</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link px-2 pt-lg-0 py-1 ms-0 ms-lg-2 {{ session('section') === 'register' ? 'active' : '' }}"
-                            href="{{ route('register') }}"
-                            style="border: 1px solid var(--color-blue-derivate)">Registrarse</a>
+                        <a class="nav-link rounded {{ session('section') === 'register' ? 'active' : '' }}" href="{{ route('register') }}" style="border: 1px solid var(--color-blue-derivate)">Registrarse</a>
                     </li>
+                    
                 </ul>
 
-                <hr class="d-lg-none my-0">
-
-                <ul class="navbar-nav flex-row flex-wrap d-lg-none">
+                <ul class="navbar-nav flex-row flex-wrap pt-4 border-top d-lg-none">
                     <li class="nav-item col-6 col-lg-auto selected">
                         <a class="nav-link rounded" href="#" target="_blank" rel="">
                             <i class="bi bi-facebook"></i>
@@ -86,8 +73,8 @@
                         </a>
                     </li>
                 </ul>
+            
             </div>
-
         </div>
     </div>
 </nav>

@@ -1,4 +1,10 @@
 /* ========= SELECT NAVBAR NAV START ========= */
+
+.selected {
+    /* display: flex; */
+    /* align-items: center; */
+}
+
 .selected .nav-link {
     position: relative;
 }
@@ -63,11 +69,11 @@
     .selected .nav-link {
         padding: .2rem;
         color: var(--color-blue-derivate) !important;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
         border-radius: 5px;
-        width: 80%;
+        width: 89%;
         text-align: center;
         margin: 0 auto 1rem !important;
     }

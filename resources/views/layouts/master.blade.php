@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css').site_v() }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css').site_v() }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css').site_v() }}">
-
+    
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css').site_v() }}">
 
@@ -29,7 +29,7 @@
 
 <body>
 
-    <header class="sticky-top bg-light">
+    <header class="sticky-top">
         @include('layouts.includes.navbar')
     </header>
 

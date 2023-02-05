@@ -78,7 +78,7 @@
 
     <!-- about section start -->
     <section id="about">
-        <div class="container py-lg-5">
+        <div class="container py-lg-4">
             <div class="row m-0">
                 <h2 class="title_section fw-semibold display-5 d-flex justify-content-sm-start align-items-center">
                     Acerca de <span class="me-2"></span></h2>
@@ -180,12 +180,13 @@
         <div class="container">
             <h2 class="title_section mb-0 fw-semibold display-5 d-flex justify-content-sm-start align-items-center ps-2">Galeria <span class="me-2"></span></h2>
             <p class="subtitle_section ps-2">Nuestros mejores alumnos</p>
-            <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 galeria-container">
+            <div class="row m-0 row-cols-sm-1 row-cols-md-3 row-cols-lg-4 galeria-container">
+                
                 <div class="col-12 galeria-item">
                     <img src="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>App 1</h4>
-                        <a href="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" title="Ver imagen" class="preview-link">
+                        <a href="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" onclick="return false" title="Ver imagen" class="preview-link glightbox">
                             <i class="bi bi-zoom-in"></i>
                         </a>
                         <a href="#" title="More Details" class="details-link">
@@ -336,6 +337,7 @@
                         </a>
                     </div>
                 </div>
+                
                 </div>
             </div>
     </section>
