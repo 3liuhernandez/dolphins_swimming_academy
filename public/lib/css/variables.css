@@ -1,0 +1,10 @@
+:root {
+    --color-blue-main: #0034ac;
+    --color-blue-derivate: #02adfc;
+    --color-text-main: #ffffff;
+    --color-text-derivate: #dff5fe;
+    --shadow-color-rgb: 33, 37, 41;
+    --color-secondary-rgb: 72, 86, 100;
+    --color-blue-derivate-transparent: 2, 173, 252;
+    --color-black-transparent: 0, 0, 0;
+}

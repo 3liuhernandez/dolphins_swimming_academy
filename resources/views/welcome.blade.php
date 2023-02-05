@@ -8,7 +8,7 @@
                 <div class="col-12">
                     <div class="text-welcome py-3 my-0 my-sm-3 my-md-4 my-lg-5 text-center d-flex flex-column justify-content-around align-items-center">
                         <h1 class="display-3 fw-semibold lh-1">¡Bienvenidos nuevos estudiantes!</h1>
-                        <p class="fw-semibold text-muted my-4 my-lg-3">
+                        <p class="text-muted my-4 my-lg-3">
                             Concebimos al ejercicio como un apoyo para lograr alcanzar un estado de salud física y
                             emocional,
                             dado no solo por la ausencia de enfermedad, sino también por la posibilidad de disfrutar de las
@@ -85,35 +85,35 @@
                 <p class="subtitle_section">Quienes somos</p>
 
                 <div class="col-lg-6">
-                    <p class="lh-1 text_inf">
+                    <p class="text_inf">
                         Es importante cuidar al paciente, ser seguido por el médico,
                         pero es un momento de mucho dolor y sufrimiento.
                     </p>
                     <ul class="nav">
                         <li class="nav-item small">
                             <i class="bi bi-check-all text_color-blue-derivate fs-4 me-2"></i>
-                            <p class="m-0 lh-1">No trabajo para nada excepto para sacarle algún provecho</p>
+                            <p class="m-0">No trabajo para nada excepto para sacarle algún provecho</p>
                         </li>
                         <li class="nav-item small">
                             <i class="bi bi-check-all text_color-blue-derivate fs-4 me-2"></i>
-                            <p class="m-0 lh-1">Duda o dolor irrure en las reprimendas en el placer que quiere</p>
+                            <p class="m-0">Duda o dolor irrure en las reprimendas en el placer que quiere</p>
                         </li>
                         <li class="nav-item small">
                             <i class="bi bi-check-all text_color-blue-derivate fs-4 me-2"></i>
-                            <p class="m-0 lh-1">No trabajo para nada excepto para sacarle algún provecho</p>
+                            <p class="m-0">No trabajo para nada excepto para sacarle algún provecho</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <p class="lh-1 text_inf">
+                    <p class="text_inf">
                         No trabajo en absoluto excepto para sacar alguna ventaja de ello.
                         No te enojes con el dolor en la reprimenda en el placer que quiere ser un cabello del
                         dolor en la esperanza de que no haya crianza. A menos que estén cegados por la lujuria,
                         no salen, están en falta quienes abandonan sus deberes y ablandan su corazón,
                         eso es trabajo.
                     </p>
-                    <a class="btn btn-md bg_color-blue-derivate text-white fw-semibold px-5" href="#">Aprende más</a>
+                    {{-- <a class="btn btn-md bg_color-blue-derivate text-white fw-semibold px-5" href="#">Aprende más</a> --}}
                 </div>
 
             </div>
@@ -175,131 +175,131 @@
         </path>
     </svg>
 
-    <!--  -->
+    <!-- galeria -->
     <section id="galeria" class="galeria">
         <div class="container">
             <h2 class="title_section mb-0 fw-semibold display-5 d-flex justify-content-sm-start align-items-center ps-2">Galeria <span class="me-2"></span></h2>
             <p class="subtitle_section ps-2">Nuestros mejores alumnos</p>
             <div class="row row-cols-sm-1 row-cols-md-3 row-cols-lg-4 galeria-container">
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>App 1</h4>
                         <a href="{{ asset('imgs/fotos_academia/photo_1.jpeg') }}" title="Ver imagen" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
         
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_2.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Product 1</h4>
                         <a href="#" title="Product 1" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_3.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_3.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Branding 1</h4>
                         <a href="#" title="Branding 1" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
 
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_4.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_4.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Books 1</h4>
                         <a href="#" title="Branding 1" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_5.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_5.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>App 2</h4>
                         <a href="#" title="App 2" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_6.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_6.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Product 2</h4>
                         <a href="#" title="Product 2" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_7.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_7.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Branding 2</h4>
                         <a href="#" title="Branding 2" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_8.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_8.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Books 2</h4>
                         <a href="#" title="Branding 2" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_9.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_9.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                         <div class="galeria-info">
                         <h4>App 3</h4>
                         <a href="#" title="App 3" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_10.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_10.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Product 3</h4>
                         <a href="#" title="Product 3" class="preview-link">
@@ -312,26 +312,26 @@
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_11.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_11.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Branding 3</h4>
                         <a href="#" title="Branding 2" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
                 </div>
     
                 <div class="col-12 galeria-item">
-                    <img src="{{ asset('imgs/fotos_academia/photo_12.jpeg') }}" class="img-fluid preview-img" alt="">
+                    <img src="{{ asset('imgs/fotos_academia/photo_12.jpeg') }}" class="img-fluid preview-img" alt="" loading="lazy">
                     <div class="galeria-info">
                         <h4>Books 3</h4>
                         <a href="#" title="Branding 3" class="preview-link">
                             <i class="bi bi-zoom-in"></i>
                         </a>
-                        <a href="" title="More Details" class="details-link">
+                        <a href="#" title="More Details" class="details-link">
                             <i class="bi bi-link-45deg"></i>
                         </a>
                     </div>
@@ -464,49 +464,49 @@
                         <div class="lista-iframe overflow-y-scroll h-100">
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="Como Nadar sin Cansarse en AGUAS ABIERTAS" href="https://www.youtube.com/embed/cKkLBBLNvpk" data-youtubeid="cKkLBBLNvpk">
-                                    <img src="https://i.ytimg.com/vi/hu_CdkWZdFk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDRgOJJQVNCrKcZdkdUeh3h10nvw" alt="..” AGUAS ABIERTAS" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/hu_CdkWZdFk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDRgOJJQVNCrKcZdkdUeh3h10nvw" alt="..” AGUAS ABIERTAS" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">Como Nadar sin Cansarse</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="DESAFÍO OLÍMPICO - Nastya y Artem aprende a nadar en la piscina" href="https://www.youtube.com/embed/BEAsbtpK3Bc" data-youtubeid="BEAsbtpK3Bc">
-                                    <img src="https://i.ytimg.com/vi/cKkLBBLNvpk/mqdefault.jpg" alt="..” AGUAS ABIERTAS" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/cKkLBBLNvpk/mqdefault.jpg" alt="..” AGUAS ABIERTAS" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">DESAFÍO OLÍMPICO - Nastya y Artem aprende a nadar en la piscina</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="Episodio 3 | “A day in the life…” AGUAS ABIERTAS" href="https://www.youtube.com/embed/cKkLBBLNvpk" data-youtubeid="cKkLBBLNvpk">
-                                    <img src="https://i.ytimg.com/vi/cKkLBBLNvpk/mqdefault.jpg" alt="Episodio 3 | “A day in the life…” AGUAS ABIERTAS" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/cKkLBBLNvpk/mqdefault.jpg" alt="Episodio 3 | “A day in the life…” AGUAS ABIERTAS" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">Episodio 2 | “A day in the life…” AGUAS ABIERTAS</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023" href="https://www.youtube.com/embed/5lVa5T-b7_Q" data-youtubeid="5lVa5T-b7_Q">
-                                    <img src="https://i.ytimg.com/vi/5lVa5T-b7_Q/mqdefault.jpg" alt="PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/5lVa5T-b7_Q/mqdefault.jpg" alt="PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">PORTIA DEL RIO PONCHA SU BOLETO A SANTIAGO 2023</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="APRENDE A NADAR | Club Acuático de Santurce" href="https://www.youtube.com/embed/3CJxZuONLTk" data-youtubeid="3CJxZuONLTk">
-                                    <img src="https://i.ytimg.com/vi/3CJxZuONLTk/mqdefault.jpg" alt="APRENDE A NADAR | Club Acuático de Santurce" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/3CJxZuONLTk/mqdefault.jpg" alt="APRENDE A NADAR | Club Acuático de Santurce" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">APRENDE A NADAR | Club Acuático de Santurce</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="BTS | CCCAN NATACIÓN 2022" href="https://www.youtube.com/embed/n8MH4Pi2z7E" data-youtubeid="n8MH4Pi2z7E">
-                                    <img src="https://i.ytimg.com/vi/n8MH4Pi2z7E/mqdefault.jpg" alt="BTS | CCCAN NATACIÓN 2022" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/n8MH4Pi2z7E/mqdefault.jpg" alt="BTS | CCCAN NATACIÓN 2022" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">BTS | CCCAN NATACIÓN 2022</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="PING PONG CON POLO ACUÁTICO FEMENINO" href="https://www.youtube.com/embed/AHRj2X-HN2w" data-youtubeid="AHRj2X-HN2w">
-                                    <img src="https://i.ytimg.com/vi/AHRj2X-HN2w/mqdefault.jpg" alt="PING PONG CON POLO ACUÁTICO FEMENINO" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/AHRj2X-HN2w/mqdefault.jpg" alt="PING PONG CON POLO ACUÁTICO FEMENINO" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">PING PONG CON POLO ACUÁTICO FEMENINO</span>
                                 </a>
                             </li>
                             <li class="nav-item border-dark border-bottom w-100">
                                 <a class="nav-link d-flex justify-content-evenly text_color-white-main align-items-center" title="BTS | CCCAN NATACIÓN 2022" href="https://www.youtube.com/embed/n8MH4Pi2z7E" data-youtubeid="n8MH4Pi2z7E">
-                                    <img src="https://i.ytimg.com/vi/d6rKa_lp3e0/mqdefault.jpg" alt="BTS | CCCAN NATACIÓN 2022" style="width: 23%; vertical-align: top">
+                                    <img src="https://i.ytimg.com/vi/d6rKa_lp3e0/mqdefault.jpg" alt="BTS | CCCAN NATACIÓN 2022" style="width: 23%; vertical-align: top" loading="lazy">
                                     <span style="width: 50%;">BTS | CCCAN NATACIÓN 2022</span>
                                 </a>
                             </li>
@@ -705,7 +705,7 @@
                         </div>
                         <div
                             class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center pt-3 justify-content-center">
-                            <img src="{{ asset('imgs/levels_natacion/nivel_principiante.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('imgs/levels_natacion/nivel_principiante.png') }}" alt="" class="img-fluid" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -758,7 +758,7 @@
                         </div>
                         <div
                             class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center pt-3 justify-content-center">
-                            <img src="{{ asset('imgs/levels_natacion/nivel_intermedio.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('imgs/levels_natacion/nivel_intermedio.png') }}" alt="" class="img-fluid" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -804,7 +804,7 @@
                         </div>
                         <div
                             class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center pt-3 justify-content-center">
-                            <img src="{{ asset('imgs/levels_natacion/nivel_moderado.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('imgs/levels_natacion/nivel_moderado.png') }}" alt="" class="img-fluid" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -852,7 +852,7 @@
                             </ul>
                         </div>
                         <div class="col-lg-6 order-1 img-container order-lg-2 d-flex align-items-center pt-3 justify-content-center">
-                            <img src="{{ asset('imgs/levels_natacion/nivel_avanzado.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('imgs/levels_natacion/nivel_avanzado.png') }}" alt="" class="img-fluid" loading="lazy">
                         </div>
                     </div>
                 </div>

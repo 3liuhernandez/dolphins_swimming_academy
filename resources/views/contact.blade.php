@@ -10,22 +10,22 @@
                         <ul class="navbar-nav d-flex flex-row">
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <img src="{{ asset('imgs/icons/icon_facebook.png') }}" class="icons rounded" alt="Icono F m-0acebook">
+                                    <img src="{{ asset('imgs/icons/icon_facebook.png') }}" class="icons rounded" alt="Icono F m-0acebook" loading="lazy">
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <img src="{{ asset('imgs/icons/icon_twiter.png') }}" class="icons rounded" alt="Icono m-0 Tuiter">
+                                    <img src="{{ asset('imgs/icons/icon_twiter.png') }}" class="icons rounded" alt="Icono m-0 Tuiter" loading="lazy">
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <img src="{{ asset('imgs/icons/icon_whatsapp.png') }}" class="icons rounded" alt="Icono W m-0hatsapp">
+                                    <img src="{{ asset('imgs/icons/icon_whatsapp.png') }}" class="icons rounded" alt="Icono W m-0hatsapp" loading="lazy">
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    <img src="{{ asset('imgs/icons/icon_youtube.png') }}" class="icons rounded" alt="Icono  m-0Youtube">
+                                    <img src="{{ asset('imgs/icons/icon_youtube.png') }}" class="icons rounded" alt="Icono  m-0Youtube" loading="lazy">
                                 </a>
                             </li>
                         </ul>
@@ -164,10 +164,10 @@
                             <h6 class="text-white text-center m-0">Sponsored by</h6>
                         </div>
                         <figure class="figure">
-                            <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/12/ICAN_2023.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="">
+                            <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/12/ICAN_2023.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="" loading="lazy">
                         </figure>
                         <figure class="figure">
-                            <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/06/2023-baner-triatlon-noticias-308x314px.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="">
+                            <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/06/2023-baner-triatlon-noticias-308x314px.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="" loading="lazy">
                         </figure>
                     </div>
 
@@ -179,16 +179,16 @@
                                 <h6 class="text-white text-center m-0">Partner</h6>
                             </div>
                             <figure class="figure">
-                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/HALF_SEVILLA.jpeg.webp" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="">
+                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/HALF_SEVILLA.jpeg.webp" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="" loading="lazy">
                             </figure>
                             <figure class="figure">
-                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/banner_compex.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="">
+                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/banner_compex.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="" loading="lazy">
                             </figure>
                             <figure class="figure">
-                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/banner_triton_2023.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="">
+                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/banner_triton_2023.gif" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="" loading="lazy">
                             </figure>
                             <figure class="figure">
-                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/BANNER-PC23-CAST-308x314-px.jpg.webp" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="">
+                                <img src="https://www.triatlonnoticias.com/wp-content/uploads/2022/11/BANNER-PC23-CAST-308x314-px.jpg.webp" width="280" height="280" class="figure-img img-fluid rounded m-0" alt="" loading="lazy">
                             </figure>
                         </div>
                     </div>

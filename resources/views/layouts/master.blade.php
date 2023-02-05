@@ -1,6 +1,6 @@
 
 @php
-    define('SITE_VERSION', 1);
+    define('SITE_VERSION', 2);
     function asset_v(){
         return '?v='.SITE_VERSION;
     }
@@ -11,8 +11,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#02adfc">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolphins Swimming Academy</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="{{asset('imgs/logo_fondo.jpg')}}" type="image/x-icon">
@@ -21,6 +22,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css').asset_v() }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css').asset_v() }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css').asset_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css').asset_v() }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css').asset_v() }}">
 
     <!-- BOOTSTRAP 5.3 -->

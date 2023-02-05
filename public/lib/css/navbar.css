@@ -1,0 +1,103 @@
+/* ========= SELECT NAVBAR NAV START ========= */
+.selected .nav-link {
+    position: relative;
+}
+
+.selected .nav-link:active {
+    color: var(--color-blue-derivate) !important;
+    top: 1px;
+}
+
+.selected .nav-link::after {
+    content: '';
+    position: absolute;
+    /* top: 31px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-blue-derivate);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: width 0.25s ease;
+    transition: width 0.25s ease;
+}
+
+.selected .nav-link:hover {
+    color: var(--color-blue-derivate);
+}
+
+.selected .nav-link:active,
+.selected .nav-link:focus,
+.selected .nav-link:target {
+    color: var(--color-blue-derivate);
+}
+
+.selected .nav-link:hover::after {
+    width: 100%;
+}
+
+.selected .nav-link.active {
+    color: var(--color-blue-derivate) !important;
+    position: relative;
+}
+
+.selected .nav-link.active::after {
+    content: '';
+    position: absolute;
+    /* top: 31px; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-blue-derivate);
+}
+
+/* ========= SELECT NAVBAR NAV END ========= */
+
+@media (max-width: 992px) {
+    .selected .nav-link {
+        padding: .2rem;
+        color: var(--color-blue-derivate) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto 1rem !important;
+    }
+
+    .selected .nav-link:hover::after {
+        width: 0;
+    }
+
+    .selected .nav-link.active {
+        background-color: var(--color-blue-derivate) !important;
+        color: var(--color-text-main) !important;
+        border: 0;
+        padding: .2rem;
+    }
+
+    .selected .nav-link.active::after {
+        content: "";
+        width: 0;
+        height: 0;
+    }
+
+    .selected .nav-link:hover {
+        background-color: var(--color-blue-derivate) !important;
+        color: var(--color-text-main) !important;
+        transition: all .4s ease !important;
+    }
+
+    .selected .nav-link:active {
+        position: relative !important;
+        top: 2px !important;
+        color: var(--color-text-main) !important;
+    }
+}
