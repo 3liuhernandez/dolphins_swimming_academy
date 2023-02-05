@@ -1,11 +1,3 @@
-
-@php
-    define('SITE_VERSION', 2);
-    function asset_v(){
-        return '?v='.SITE_VERSION;
-    }
-@endphp
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,19 +6,19 @@
     <meta name="theme-color" content="#02adfc">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolphins Swimming Academy</title>
+    <title><?= app_name() ?></title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="{{asset('imgs/logo_fondo.jpg')}}" type="image/x-icon">
 
     <!-- MY STYLES -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css').asset_v() }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css').asset_v() }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css').asset_v() }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css').asset_v() }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css').asset_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css').site_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/admin.css').site_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/class.css').site_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/navbar.css').site_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/contact.css').site_v() }}">
 
     <!-- BOOTSTRAP 5.3 -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css').asset_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css').site_v() }}">
 
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -74,14 +66,14 @@
     </script>
 
     {{-- MY SCRIPT BTN UP --}}
-    <script src="{{ asset('js/btn-float.js').asset_v() }}"></script>
+    <script src="{{ asset('js/btn-float.js').site_v() }}"></script>
 
     {{-- JQUERY FRAMEWORK --}}
-    <script src="{{ asset('vendor/jquery/jquery.min.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/jquery/jquery.min.js').site_v() }}"></script>
 
     {{-- JS BOOTSTRAP 5.3 --}}
-    <script src="{{ asset('vendor/bs/js/bootstrap.min.js').asset_v() }}"></script>
-    <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/bs/js/bootstrap.min.js').site_v() }}"></script>
+    <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js').site_v() }}"></script>
 
     <script>
         jQuery(() => {

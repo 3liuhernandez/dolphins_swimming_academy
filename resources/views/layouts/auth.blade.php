@@ -1,10 +1,3 @@
-@php
-    define('SITE_VERSION', 1);
-    function asset_v(){
-        return '?v='.SITE_VERSION;
-    }
-@endphp
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -12,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dolphins Swimming Academy</title>
+    <title><?= app_name() ?></title>
     <!-- MY STYLES -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css').asset_v() }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/user_login.css').asset_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css').site_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/user_login.css').site_v() }}">
     <!-- BOOTSTRAP 5.3 -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css').asset_v() }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css').site_v() }}">
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
@@ -52,14 +45,14 @@
     </div> --}}
 
     <!-- CDN SLICE -->
-    <script src="{{ asset('vendor/jquery/jquery.min.js').asset_v() }}"></script>
-    <script src="{{asset('vendor/bs/js/bootstrap.min.js').asset_v()}}"></script>
-    <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js').asset_v() }}"></script>
-    <script src="{{ asset('vendor/popper/popper.min.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/jquery/jquery.min.js').site_v() }}"></script>
+    <script src="{{asset('vendor/bs/js/bootstrap.min.js').site_v()}}"></script>
+    <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js').site_v() }}"></script>
+    <script src="{{ asset('vendor/popper/popper.min.js').site_v() }}"></script>
 
-    <script src="{{ asset('vendor/toast/toast.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/toast/toast.js').site_v() }}"></script>
 
-    <script src="{{ asset('vendor/axios/axios.min.js').asset_v() }}"></script>
+    <script src="{{ asset('vendor/axios/axios.min.js').site_v() }}"></script>
 
     <script>
         jQuery(() => {
