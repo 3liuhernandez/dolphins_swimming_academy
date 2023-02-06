@@ -97,7 +97,7 @@ body main .subtitle_section {
     font-weight: 700;
     text-transform: uppercase;
     color: #203a4b;
-    margin: 0;
+    /* margin: 0 !important; */
 }
 
 body main .title_section::after {
@@ -176,7 +176,7 @@ main .svg path {
 }
 
 .select_images .carousel-inner #item-carusel img {
-    height: 50vh;
+    height: 70vh;
     width: 100% !important;
 }
 
@@ -261,7 +261,7 @@ main .svg path {
 #svg-move .hero-waves {
     display: block;
     width: 100%;
-    height: 50px;
+    height: 100px;
     position: relative;
 }
 
@@ -366,7 +366,7 @@ main #students_section {}
 main #students_section .text-welcome {}
 
 main #students_section .text-welcome h1 {
-    text-shadow: -7px -3px 9px #00000047;
+    text-shadow: 10px 6px 9px #00000047;
     color: var(--color-blue-derivate);
     width: 75%;
 }
@@ -379,8 +379,11 @@ main #students_section .text-welcome p {
 
 main #students_section .text-welcome a {}
 
+
 @media (max-width: 992px) {
-    main #students_section .text-welcome h1 {}
+    main #students_section .text-welcome h1 {
+        width: 100%;
+    }
 
     main #students_section .text-welcome p {
         width: 70%;
@@ -428,7 +431,7 @@ main #students_section .text-welcome a {}
 
 /* ========== SECTION STADISTIC HOME PAGE START ========== */
 main #stadistic_section {
-    background-image: url(../imgs/banner_home.png);
+    background-image: url(../imgs/images_banner_bg/banner_bg1.WebP);
     position: relative;
     background-size: 100% 100%;
     z-index: 10;
@@ -627,7 +630,7 @@ main #galeria .galeria-item:hover .galeria-info {
     }
 
     main .subtitle_section {
-        font-size: 17px;
+        font-size: 17px !important;
         margin: 2rem 0 0 !important;
         text-align: center;
     }
@@ -701,16 +704,18 @@ main #services .description {
 /* ========== SECTION NATACION PROFESIONAL HOME PAGE START ========== */
 
 main #natacion_profesional_section {
-    background-image: url(../imgs/banner_profesional.png);
+    background-image: url(../imgs/images_banner_bg/banner_bg2.WebP);
     position: relative;
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 10;
     /* height: 50vh; */
     width: 100%;
-    display: flex;
+    /* display: flex; */
     background-attachment: fixed;
     align-items: center;
-    padding: 3rem 0 !important;
+    /* padding: 3rem 0 !important; */
 }
 
 main #natacion_profesional_section::before {
@@ -851,33 +856,31 @@ main #contact .php-email-form textarea {
 
 /*============== SECTION FEATURE LEVELS HOME PAGE START============== */
 main #features {
-    margin: 3rem auto !important;
+    margin: 4rem auto;
 }
 
 main #features .nav-link {
     border: 1px solid #6ad0ff;
-    /* padding: 15px; */
+    padding: 0;
     transition: 0.3s;
     color: var(--color-blue-derivate);
-    border-radius: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    text-align: center;
+    position: relative;
 }
 
 main #features .nav-link:hover {
-    color: var(--color-blue-derivate);
+    background-color: var(--color-blue-derivate);
+    color: var(--color-text-main);
 }
 
 main #features .nav-link.active {
     background: var(--color-blue-derivate);
-    color: #fff;
-    border-color: var(--color-blue-derivate);
+    color: var(--color-text-main);
+    border-color:
+        var(--color-blue-derivate);
 }
 
 main #features .nav-link i {
-    /* padding-right: 15px; */
     font-size: 40px;
 }
 
@@ -895,10 +898,6 @@ main #features .tab-content .tab-pane .img-container {
     filter: drop-shadow(0px 3px 5px #212529);
 }
 
-main #features .tab-pane h3 {
-    /* font-size: 26px; */
-}
-
 main #features .tab-pane ul {
     list-style: none;
     padding: 0;
@@ -910,6 +909,17 @@ main #features .tab-pane ul li {
 
 main #features .tab-pane p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 350px) {
+
+    main #features .nav-link {
+        padding: 0px 17px;
+    }
+
+    main #features .nav-link i {
+        font-size: 100%;
+    }
 }
 
 /* ============== SECTION FEATURE LEVELS HOME PAGE END ============== */
@@ -989,7 +999,6 @@ main #contact {
     height: 40px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    font-size: 16px;
     color: var(--color-blue-derivate);
     margin-right: 10px;
     transition: 0.3s;

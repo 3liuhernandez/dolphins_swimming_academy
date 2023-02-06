@@ -1,9 +1,9 @@
-<nav class="navbar navbar-expand-lg bg-white shadow p-0">
+<nav class="navbar navbar-expand-lg bg-white shadow p-0 p-lg-auto">
     <div class="container">
         <a class="nav-link navbar-brand m-0 p-0 selected" href="{{ route('home') }}">
-            <img src="{{ asset('imgs/logo_white-removebg.png') }}" width="100px" alt="logo">
+            <img src="{{ asset('imgs/images_logos/logo_whitebgremove.WebP') }}" style="width: 50%; vertical-align: top" alt="logo">
         </a>
-        <button class="navbar-toggler p-1" onmousedown="sonido.play()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler p-1" aria-label="menu items" onmousedown="sonido.play()" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -42,7 +42,7 @@
                         <a class="nav-link {{ session('section') === 'login' ? 'active' : '' }}" href="{{ route('login') }}">Ingresar</a>
                     </li>
                     <li class="nav-item col-6 col-lg-auto selected">
-                        <a class="nav-link rounded {{ session('section') === 'register' ? 'active' : '' }}" href="{{ route('register') }}" style="border: 1px solid var(--color-blue-derivate)">Registrarse</a>
+                        <a class="nav-link rounded p-lg-1 {{ session('section') === 'register' ? 'active' : '' }}" href="{{ route('register') }}" style="border: 1px solid var(--color-blue-derivate)">Registrarse</a>
                     </li>
                     
                 </ul>

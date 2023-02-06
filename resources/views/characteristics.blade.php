@@ -11,7 +11,7 @@
                             <span class="display-6 text-white text-center">ACTIVIDADES INFANTILES Y JUVENILES</span>
                         </div>
                         <div class="col-4 col-lg-3 container-img p-0">
-                            <img src="{{ asset('imgs/imagenes_promociones/img_academia.jpeg') }}" class="img-banner img-fluid" alt="" loading="lazy">
+                            <img src="{{ asset('imgs/imagenes_promociones/img_academia.WebP') }}" class="img-banner img-fluid" alt="" loading="lazy">
                         </div>
                     </div>
                     
