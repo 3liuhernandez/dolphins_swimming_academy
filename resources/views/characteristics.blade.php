@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row m-0">
                 <div class="shadow-lg my-4 border p-0 rounded">
-                    
+                     
                     <div class="col-12 d-flex mb-4 rounded-top">
                         <div class="col-8 col-lg-9 d-flex rounded-top justify-content-center align-items-center container-title bg_color-blue-derivate">
                             <span class="display-6 text-white text-center">ACTIVIDADES INFANTILES Y JUVENILES</span>
