@@ -110,7 +110,7 @@
                         no salen, están en falta quienes abandonan sus deberes y ablandan su corazón,
                         eso es trabajo.
                     </p>
-                    {{-- <a class="btn btn-md bg_color-blue-derivate text-white fw-semibold px-5" href="#">Aprende más</a> --}}
+                    <!-- <a class="btn btn-md bg_color-blue-derivate text-white fw-semibold px-5" href="#">Aprende más</a> -->
                 </div>
 
             </div>

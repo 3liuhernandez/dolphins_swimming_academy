@@ -630,9 +630,9 @@ main #galeria .galeria-item:hover .galeria-info {
     }
 
     main .subtitle_section {
-        font-size: 17px !important;
-        margin: 2rem 0 0 !important;
-        text-align: center;
+        font-size: 20px !important;
+        /* margin: 2rem 0 0 !important; */
+        /* text-align: center; */
     }
 }
 
@@ -866,6 +866,7 @@ main #features .nav-link {
     color: var(--color-blue-derivate);
     text-align: center;
     position: relative;
+    
 }
 
 main #features .nav-link:hover {
@@ -909,6 +910,12 @@ main #features .tab-pane ul li {
 
 main #features .tab-pane p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 576px) {
+    main #features .nav-link {
+        width: 50px;
+    }
 }
 
 @media (max-width: 350px) {
