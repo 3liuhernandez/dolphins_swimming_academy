@@ -1024,3 +1024,26 @@ main #contact {
 }
 
 /* SECTION FOOTER END */
+
+
+/* ASSIDE */
+.asside {
+    position: fixed;
+    top: 10%;
+    bottom: 0;
+    min-height: 50vh;
+    background-color: #fff;
+    padding: 2rem;
+    /*TODO: hacer que tenga transition*/
+    /* transition: all 1s ease !important; */
+}
+
+.asside.right {
+    right: -200px;
+    width: 0;
+}
+
+.asside.right.open {
+    right: 0;
+    width: auto;
+}

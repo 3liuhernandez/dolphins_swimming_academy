@@ -15,7 +15,13 @@ return new class extends Migration
     {
         Schema::create('parents', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('code')->unique();
+            $table->string('name', 100);
+            $table->string('last_name', 100)->nullable();
+
+            $table->unsignedTinyInteger("status")->default(1);
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
