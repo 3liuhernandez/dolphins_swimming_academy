@@ -1,20 +1,21 @@
 /**
  * FUNC START BLOCK UI
  */
-const blockUi = () => {
-    $.blockUI();
-	NProgress.start();
+const blockui = ( msg = false ) => {
+
+    $.blockUI({ message: `  ${msg}  `});
+    NProgress.start();
+    $(document).css('overflow', 'hidden');
 }
-//
-/*============================*/
-
-
-
-
 /**
- * This function ini the blockUI
- * @returns false;
+ * FUNC STOP BLOCK UI
  */
+const blockui_stop = () => {
+    $.unblockUI();
+	NProgress.done();
+    $(document).css('overflow', '');
+}
+
 const fnLoadblockUI = function() {
     $.blockUI.defaults.css = {
         padding: 0,
@@ -23,47 +24,26 @@ const fnLoadblockUI = function() {
         top: '40%',
         left: '35%',
         textAlign: 'center',
-        cursor: 'wait'
+        cursor: 'wait',
+        color: "#fff",
+        fontSize: '3rem',
+        textTransform: 'oblique',
+        textDecoration: 'underline',
+        fontStyle: 'italic',
     };
     $.blockUI.defaults.message = '<span></span>';
     return false;
 }
-//
-/*============================*/
 
+jQuery(() => {
 
+    fnLoadblockUI();
 
+    ( () => {
+        NProgress.configure({
+            template: '<div class="bar" role="bar"><div class="peg"></div></div>'
+        });
+    })
 
-fnLoadblockUI();
-
-
-
-
-
-/**
- * FUNC STOP BLOCK UI
- */
-const stopBlockUi = () => {
-    $.unblockUI();
-	NProgress.done();
-}
-//
-/*============================*/
-
-
-
-
-
-/**
- * This function init the nprogress plugin
- * @returns false
- */
-var fnnprogressIni = function() {
-    NProgress.configure({
-        template: '<div class="bar" role="bar"><div class="peg"></div></div>'
-    });
-    return false;
-}
-fnnprogressIni();
-//
-/*============================*/
+    $('[data-toggle="tooltip"]').tooltip()
+})

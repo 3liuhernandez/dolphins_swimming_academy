@@ -1,4 +1,4 @@
-<aside class="col-sm-3 col-lg-2 flex-grow-sm-1 flex-shrink-1 flex-grow-0 sticky-top p-0 pb-3 pb-lg-0">
+<aside class="col-sm-3 col-lg-2 flex-grow-sm-1 flex-shrink-1 flex-grow-0  p-0 pb-3 pb-lg-0">
     <div class="panel_container bg-light border border-top-0 p-1 h-100">
         <ul class="nav nav-pills flex-sm-column flex-row mb-auto justify-content-around p-3">
 

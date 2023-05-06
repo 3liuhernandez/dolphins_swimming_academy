@@ -63,17 +63,16 @@
 @section('footer')
     @yield('foot')
 
-    <script src="{{ asset('js/master.js').site_v() }}"></script>
     <script src="{{ asset('js/students/students.js').site_v() }}"></script>
 
-    <script>
+    {{-- <script>
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Something went wrong!',
             footer: '<a href="">Why do I have this issue?</a>'
             })
-    </script>
+    </script> --}}
 
     @include('admin.students.form_register')
 
