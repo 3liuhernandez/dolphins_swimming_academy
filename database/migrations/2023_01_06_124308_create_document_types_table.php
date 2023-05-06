@@ -13,16 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('parents', function (Blueprint $table) {
+        Schema::create('document_types', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('code')->unique();
-
-            $table->unsignedBigInteger('document_type')->references('code')->on("document_types")->onDelete('restrict')->onUpdate('cascade');
-            $table->unsignedBigInteger('document')->unique();
-
-            $table->string('name', 100);
-            $table->string('last_name', 100)->nullable();
-
+            $table->string('title', 10)->unique();
+            $table->string('description')->nullable();
             $table->unsignedTinyInteger("status")->default(1);
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
@@ -36,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('parents');
+        Schema::dropIfExists('document_types');
     }
 };

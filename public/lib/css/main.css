@@ -1034,6 +1034,7 @@ main #contact {
     min-height: 50vh;
     background-color: #fff;
     padding: 2rem;
+    max-width: 70%;
     /*TODO: hacer que tenga transition*/
     /* transition: all 1s ease !important; */
 }
