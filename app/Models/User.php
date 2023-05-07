@@ -12,6 +12,12 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $appends = ['is_admin'];
+
+    public function getIsAdminAttribute(){
+        return UserAdmin::where("username", $this->username)->where("email", $this->email)->where("status", 1)->first();
+    }
+
     /**
      * The attributes that are mass assignable.
      *
@@ -45,4 +51,5 @@ class User extends Authenticatable
     static public function get_user_by_email( $email ) {
         return User::where('email', $email)->first();
     }
+
 }

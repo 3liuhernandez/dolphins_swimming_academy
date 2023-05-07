@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             DocumentTypeSeeder::class,
+            UserAdminSeeder::class,
         ]);
     }
 }

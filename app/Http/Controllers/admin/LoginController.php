@@ -33,7 +33,7 @@ class LoginController extends Controller
         ]);
 
         // login successfull
-        if ($login) {
+        if ($login && Auth::user()->is_admin) {
             return redirect()->route('admin.home');
         }
 
