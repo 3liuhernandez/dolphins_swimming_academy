@@ -76,9 +76,9 @@
     <script>
         jQuery(() => {
             // show_toast('mensaje que va en el toast');
-            blockui( 'cargando' )
+            // blockui( 'cargando' )
             setTimeout(() => {
-                blockui_stop()
+                // blockui_stop()
             }, 1000);
 
             $('#element').click(function() {

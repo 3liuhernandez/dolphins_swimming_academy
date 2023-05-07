@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('code')->unique();
-            $table->unsignedBigInteger('document');
+            $table->unsignedBigInteger('document')->unique();
 
             $table->unsignedBigInteger('document_type')->references('code')->on("document_types")->onDelete('restrict')->onUpdate('cascade');
 

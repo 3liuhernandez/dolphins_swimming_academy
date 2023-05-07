@@ -14,8 +14,8 @@
                 <div class="row">
                     <div class="col-5">
                         <label for="document_type">Tipo de documento</label>
-                        <select class="form-select" name="document_type" id="document_type">
-                            <option selected>Seleccione</option>
+                        <select class="form-select field" name="document_type" id="document_type">
+                            <option value="" selected>Seleccione</option>
                             @foreach ($document_types as $dt)
                                 <option value="{{$dt->code}}">{{$dt->title}}</option>
                             @endforeach
@@ -43,7 +43,7 @@
                         class="bi bi-info-square-fill text-primary"
                         data-toggle="tooltip"
                         data-placement="top"
-                        title="Hooray!"
+                        title="Si es < 18. Debe adjuntar al representate"
                     ></i>
                 </label>
                 <input id="age" name="age" type="number"
@@ -82,6 +82,10 @@
                     class="form-control field @error('email') is-invalid @enderror"
                     placeholder="Correo del estudiante" required autofocus value="{{ old('email') }}">
             </div>
+        </div>
+
+        <div id="container_parents_form" class="d-none my-5">
+            @include('admin.students.parents_form_register')
         </div>
 
         <div class="row m-0 justify-content-center">
