@@ -42,20 +42,30 @@ const clean_error_inputs = () => {
     $('#form_register input.field').removeClass('is-invalid');
 }
 
+const clean_form_student = () => {
+    $('#form_student_register')[0].reset();
+}
+
 jQuery( () => {
+
+    $('#add_student').on('click', function() {
+        console.log('click');
+        clean_form_student();
+    })
+
     $('#submit_student_register').on('click', function(e) {
         e.preventDefault;
 
         // block page
         $(this).attr('disabled', true);
-        blockUi();
+        blockui();
 
         const data = get_data_student_form();
         const validate = validate_form_register(data);
 
 
         // unlock page
-        // stopBlockUi();
+        blockui_stop();
         $(this).removeAttr('disabled');
         return false;
     })

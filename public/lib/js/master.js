@@ -11,9 +11,10 @@ const blockui = ( msg = false ) => {
  * FUNC STOP BLOCK UI
  */
 const blockui_stop = () => {
-    $.unblockUI();
-	NProgress.done();
-    $(document).css('overflow', '');
+    setTimeout(() => {
+        $.unblockUI();
+	    NProgress.done();
+    }, 500);
 }
 
 const fnLoadblockUI = function() {
@@ -30,6 +31,7 @@ const fnLoadblockUI = function() {
         textTransform: 'oblique',
         textDecoration: 'underline',
         fontStyle: 'italic',
+        zIndex: '1025',
     };
     $.blockUI.defaults.message = '<span></span>';
     return false;
