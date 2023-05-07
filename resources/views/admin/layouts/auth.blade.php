@@ -50,15 +50,10 @@
     <!-- CDN SLICE -->
     <script src="{{ asset('vendor/jquery/jquery.min.js').site_v() }}"></script>
     <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js').site_v() }}"></script>
-    <script src="{{ asset('vendor/popper/popper.min.js').site_v() }}"></script>
-
-    <script src="{{ asset('vendor/toast/toast.js').site_v() }}"></script>
-
-    <script src="{{ asset('vendor/axios/axios.min.js').site_v() }}"></script>
 
     <script>
         jQuery(() => {
-            // show_toast('mensaje que va en el toast');
+            show_toast('mensaje que va en el toast');
         });
     </script>
 

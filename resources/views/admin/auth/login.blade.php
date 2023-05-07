@@ -1,5 +1,8 @@
 @extends('admin.layouts.auth')
 
+@section('footer')
+    
+@endsection
 
 @section('body')
     <section id="inicio_seccion">
@@ -7,7 +10,17 @@
             <div class="row m-0 d-flex justify-content-center align-items-center" style="height: 80vh">
                 <!--  -->
                 <div class="p-3 shadow-sm border rounded-2" style="width: 420px;">
-                        <h3 class="text_color-blue-main display-5 text-center fw-semibold">Administración</h3>
+                    
+                    @isset($msg_login)
+                        <div class="col text-center">
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                <strong>{{$msg_login}}</strong>
+                            </div>
+                        </div>
+                    @endisset
+
+                    <h3 class="text_color-blue-main display-5 text-center fw-semibold">Administración</h3>
                     <form action="{{ route('admin.login.validate') }}" method="POST">
                         @csrf
                         <div class="p-2 p-lg-4">
