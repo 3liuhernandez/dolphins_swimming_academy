@@ -16,6 +16,9 @@
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" type="text/css" href="{{ asset('vendor/bs/css/bootstrap.min.css') . site_v() }}">
 
+    <!-- STYLE INPUT -->
+    <link rel="stylesheet" type="text/css" href="{{ asset('vendor/inputTel/css/inputTel.css') . site_v() }}">
+
     <!-- ICONS BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
@@ -68,6 +71,10 @@
 
     <link rel="stylesheet" href="{{ asset('vendor/jquery_blockui/nprogress.css') . site_v() }}">
     <script src="{{ asset('vendor/jquery_blockui/nprogress.min.js') . site_v() }}"></script>
+
+    {{-- JS INPUT --}}
+    <script src="{{ asset('vendor/inputTel/js/inputTel.min.js') . site_v() }}"></script>
+    <script src="{{ asset('vendor/inputTel/js/inputUtils.js') . site_v() }}"></script>
 
     {{-- JS BOOTSTRAP 5.3 --}}
     <script src="{{ asset('vendor/bs/js/bootstrap.min.js') . site_v() }}"></script>
