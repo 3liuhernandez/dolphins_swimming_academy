@@ -20,11 +20,10 @@
         </ul>
     </div>
 
-    <div class="offcanvas offcanvas-end w-50" data-bs-backdrop="static" tabindex="-1" id="Id2"
-        aria-labelledby="staticBackdropLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <div class="offcanvas offcanvas-end" style="min-width:50%;max-width:100%" tabindex="-1" id="Id2" aria-labelledby="Formaulario de registro">
+        <div class="offcanvas-header flex-row-reverse pb-0">
+            <h5 class="offcanvas-title w-100 text-center me-5" id="Formaulario de registro">Formaulario de registro</h5>
+        <button type="button" class="bi bi-arrow-right-square bg-transparent" style="padding:0;position:absolute;left:-50px;font-size:1.8rem;color:#fff;padding:0!important;display:flex;}" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             @include('admin.students.form_register')
@@ -85,5 +84,4 @@
             footer: '<a href="">Why do I have this issue?</a>'
             })
     </script> --}}
-
 @endsection

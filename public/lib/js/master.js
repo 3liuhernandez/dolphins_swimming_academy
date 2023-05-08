@@ -1,51 +1,132 @@
 /**
  * FUNC START BLOCK UI
- */
-const blockui = ( msg = false ) => {
+ **/
 
-    $.blockUI({ message: `  ${msg}  `});
+const blockui = (msg = false) => {
+    $.blockUI({ message: `  ${msg}  ` });
     NProgress.start();
-    $(document).css('overflow', 'hidden');
-}
+    $(document).css("overflow", "hidden");
+};
+
 /**
  * FUNC STOP BLOCK UI
- */
+ **/
 const blockui_stop = () => {
     setTimeout(() => {
         $.unblockUI();
-	    NProgress.done();
+        NProgress.done();
     }, 500);
-}
+};
 
-const fnLoadblockUI = function() {
+/**
+ * FUNC STOP BLOCK UI STYLE
+ **/
+const fnLoadblockUI = function () {
     $.blockUI.defaults.css = {
         padding: 0,
         margin: 0,
-        width: '30%',
-        top: '40%',
-        left: '35%',
-        textAlign: 'center',
-        cursor: 'wait',
+        width: "30%",
+        top: "40%",
+        left: "35%",
+        textAlign: "center",
+        cursor: "wait",
         color: "#fff",
-        fontSize: '3rem',
-        textTransform: 'oblique',
-        textDecoration: 'underline',
-        fontStyle: 'italic',
-        zIndex: '1025',
+        fontSize: "3rem",
+        textTransform: "oblique",
+        textDecoration: "underline",
+        fontStyle: "italic",
+        zIndex: "1025",
     };
-    $.blockUI.defaults.message = '<span></span>';
+    $.blockUI.defaults.message = "<span></span>";
     return false;
-}
+};
 
 jQuery(() => {
-
     fnLoadblockUI();
 
-    ( () => {
+    () => {
         NProgress.configure({
-            template: '<div class="bar" role="bar"><div class="peg"></div></div>'
+            template:
+                '<div class="bar" role="bar"><div class="peg"></div></div>',
         });
-    })
+    };
 
-    $('[data-toggle="tooltip"]').tooltip()
-})
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // show_toast('mensaje que va en el toast');
+    // blockui( 'cargando' )
+    setTimeout(() => {
+        // blockui_stop()
+    }, 1000);
+
+    $("#element").click(function () {
+        $.blockUI({
+            css: {
+                border: "none",
+                padding: "15px",
+                backgroundColor: "#000",
+                "-webkit-border-radius": "10px",
+                "-moz-border-radius": "10px",
+                opacity: 0.5,
+                color: "#fff",
+            },
+        });
+        setTimeout($.unblockUI, 2000);
+    });
+});
+
+/**
+ * SELECT OF IMG NUMBER INTERNATIONAL
+ **/
+
+const input = document.querySelector("#phone");
+const errorMsg = document.querySelector("#error-msg");
+const validMsg = document.querySelector("#valid-msg");
+
+// here, the index maps to the error code returned from getValidationError - see readme
+const errorMap = [
+    "Número no válido",
+    "Código de país no válido",
+    "Demasiado corto",
+    "Demasiado largo",
+    "Número no válido",
+];
+
+// initialise plugin
+const iti = window.intlTelInput(input, {
+    initialCountry: "auto",
+    geoIpLookup: (callback) => {
+        fetch("https://ipapi.co/json")
+            .then((res) => res.json())
+            .then((data) => callback(data.country_code))
+            .catch(() => callback("us"));
+    },
+    utilsScript: "{{ asset('vendor/inputTel/js/inputUtils.js') }}", // just for formatting/placeholders etc
+});
+
+const reset = () => {
+    input.classList.remove("error");
+    errorMsg.innerHTML = "";
+    errorMsg.classList.add("hide");
+    validMsg.classList.add("hide");
+};
+
+// on blur: validate
+input.addEventListener("blur", () => {
+    reset();
+    if (input.value.trim()) {
+        if (iti.isValidNumber()) {
+            input.classList.add("valid");
+            validMsg.classList.remove("hide");
+        } else {
+            input.classList.add("error");
+            const errorCode = iti.getValidationError();
+            errorMsg.innerHTML = errorMap[errorCode];
+            errorMsg.classList.remove("hide");
+        }
+    }
+});
+
+// on keyup / change flag: reset
+input.addEventListener("change", reset);
+input.addEventListener("keyup", reset);

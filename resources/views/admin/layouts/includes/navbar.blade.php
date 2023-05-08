@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light shadow-sm p-0">
+{{-- <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-0">
     <div class="container container-md">
         <a class="navbar-brand m-0 p-0" href="{{ route('admin.home') }}"><img src="{{ asset('imgs/logo_white.jpg') }}" style="width: 100px; height: 80px;" alt="logo"></a>
         <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -21,4 +21,4 @@
             </div>
         </div>
     </div>
-</nav>
+</nav> --}}

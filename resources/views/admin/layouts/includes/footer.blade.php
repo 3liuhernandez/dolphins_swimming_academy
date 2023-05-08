@@ -1,7 +1,3 @@
-<footer class="bg-light border-top">
-    <!-- footer section start -->
-    <div class="footer_section layout_padding">
-        footer
-    </div>
+<footer class="row bg-light py-4 mt-auto">
+    <div class="col"> Footer content here... </div>
 </footer>
-<!-- footer section end -->
