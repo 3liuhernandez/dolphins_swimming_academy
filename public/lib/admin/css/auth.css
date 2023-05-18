@@ -1,0 +1,155 @@
+#login {
+}
+
+#login .content-img {
+    padding: 0;
+    min-height: 100vh;
+    box-shadow: 1px 0px 0px 0px #dddddd;
+}
+
+#login .content-img .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #f4f5fa;
+}
+
+#login .content-img .content img {
+    width: 80%;
+}
+
+/* // 
+ */
+
+#login .content-form {
+    /* padding: 0; */
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+#login .content-form .card {
+    display: flex;
+    border: 0;
+    transform: translate(0, 50%);
+    text-align: center;
+    color: #282f32;
+}
+
+#login .content-form .card .card-header {
+    /* border: 0; */
+    background: #fff;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#login .content-form .card .card-header h2 {
+    /* font-weight: 400; */
+    color: #444444;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+#login .content-form .card .card-body {
+    padding: 0 2rem;
+}
+
+#login .content-form .card .card-body .content {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#login .content-form .card .card-body .content form .group {
+    width: 100%;
+}
+
+#login .content-form .card .card-body .content form .group button {
+    width: 100%;
+    padding: 5px 0;
+}
+
+/* ELIMINAMOS EL COLOR 
+POR DEFECTO DE 
+LOS IMPUT AUTOCOMPLETADOS 
+*/
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    font-size: 17px !important;
+    color: #6c757d !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: #6c757d;
+} */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+    -webkit-text-fill-color: #6c757d;
+    transition: background-color 5000s ease-in-out 0s;
+    font-size: 17px !important;
+}
+
+.floating-label-content {
+    position: relative;
+    margin-bottom: 20px;
+}
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 15px;
+    margin: 0 !important;
+    padding: 0 2px;
+    color: #4e4e4e;
+    background: #fff;
+    transition: 0.1s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.1s ease all;
+}
+.floating-input,
+.floating-select {
+    padding: 0 17px !important;
+    font-size: 17px !important;
+    height: 55px;
+    color: #6c757d;
+}
+
+.floating-input[type="placeholder"] {
+    color: #771010;
+}
+
+.floating-input:focus,
+.floating-select:focus {
+    outline: none;
+    box-shadow: none !important;
+    color: #86b7fe !important;
+}
+.floating-input:focus ~ .floating-label,
+.floating-select:focus ~ .floating-label {
+    top: -12px;
+    color: #86b7fe !important;
+    font-size: 17px;
+}
+
+.floating-input:not(:placeholder-shown) ~ .floating-label {
+    top: -12px;
+    font-size: 17px;
+    outline: 0;
+    color: #6c757d;
+}
+
+@media (max-width: 1250px) {
+    #login .content-form .card .card-body {
+        padding: 0;
+    }
+}

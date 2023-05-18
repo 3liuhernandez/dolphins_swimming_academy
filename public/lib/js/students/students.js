@@ -68,7 +68,7 @@ const validate_form_register = (data) => {
 };
 
 const clean_error_inputs = () => {
-    $("#form_register .field").removeClass("is-invalid");
+    $(".field").removeClass("is-invalid");
 };
 
 const clean_form_student = () => {

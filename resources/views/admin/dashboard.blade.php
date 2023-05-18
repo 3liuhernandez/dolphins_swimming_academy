@@ -1,29 +1,115 @@
 @extends('admin.layouts.main')
 
 @section('body')
-    <div class="row overflow-auto">
-        <div class="col pt-4">
-            <h3>Vertical Sidebar that switches to Horizontal Navbar</h3>
-            <p class="lead">
-                An example multi-level sidebar with collasible menu items. The menu functions like an
-                "accordion" where only a single menu is be open at a time.
-            </p>
-            <hr />
-            <h3>More content...</h3>
-            <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch.
-                Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape swag wolf squid tote
-                bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade
-                ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick
-                artisan cliche semiotics ugh synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice
-                sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.
-            </p>
-            <p>Ethical Kickstarter PBR asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter
-                artisan Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table
-                Williamsburg slow-carb readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American
-                Apparel whatever. Helvetica cray plaid, vegan brunch Banksy leggings +1 direct trade. Wayfarers codeply PBR
-                selfies. Banh mi McSweeney's Shoreditch selfies, forage fingerstache food truck occupy YOLO Pitchfork fixie
-                iPhone fanny pack art party Portland.
-            </p>
+    <section id="dashboard">
+        <div class="container-fluid">
+            <div class="row row-cols-2 row-cols-lg-4 m-0">
+                
+                <div class="content-card col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="icon-big icon-warning text-center">
+                                        <i class="bi bi-database"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="numbers">
+                                        <p>Total Estudiantes</p>
+                                        108
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr />
+                                <div class="stats">
+                                    <i class="bi bi-arrow-clockwise"></i> Actualizado ahora
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="icon-big icon-success text-center">
+                                        <i class="bi bi-wallet"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="numbers">
+                                        <p>Ganancia</p>
+                                        $1,345
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr />
+                                <div class="stats">
+                                    <i class="bi bi-calendar4-week"></i> Último día
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="icon-big icon-danger text-center">
+                                        <i class="bi bi-activity"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="numbers">
+                                        <p>Errors</p>
+                                        23
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr />
+                                <div class="stats">
+                                    <i class="bi bi-stopwatch"></i> en la ultima hora
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card col-lg-3 col-sm-6">
+                    <div class="card">
+                        <div class="content">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="icon-big icon-info text-center">
+                                        <i class="bi bi-twitter"></i>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <div class="numbers">
+                                        <p>Seguidores</p>
+                                        +45
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <hr />
+                                <div class="stats">
+                                    <i class="bi bi-arrow-clockwise"></i> Actualizado ahora
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 @endsection

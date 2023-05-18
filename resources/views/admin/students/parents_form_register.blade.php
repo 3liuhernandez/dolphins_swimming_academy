@@ -1,6 +1,4 @@
-{{-- 
-    /* AFORMULARIO DE REGISTRO PADRES */
---}}
+{{-- AFORMULARIO DE REGISTRO PADRES --}}
 
 <div class="card p-0 border-3 border-dark">
     <div class="w-100 text-center mb-4 pt-2 pb-1 bg-dark bg-gradient text-white">
@@ -16,7 +14,7 @@
             <div class="-12 col-md-5 form-group mb-3">
                 <input id="p_last_name" name="p_last_name" type="text" class="form-control my-1 form-control-md field field_parent @error('p_last_name') is-invalid @enderror" placeholder="Apellido" required autofocus value="{{ old('p_last_name') }}">
             </div>
-            <div class="col-12 col-md-2 form-group mb-3">
+            <div class="col-12 col-md-2 form-group mb-3 px-md-0">
                 <input id="p_age" name="p_age" type="number" class="form-control my-1 form-control-md field field_parent @error('p_age') is-invalid @enderror" placeholder="Ej: 15" required autofocus value="{{ old('p_age') }}">
             </div>
         </div>

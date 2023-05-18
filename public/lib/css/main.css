@@ -176,7 +176,7 @@ main .svg path {
 }
 
 .select_images .carousel-inner #item-carusel img {
-    height: 70vh;
+    height: 80vh;
     width: 100% !important;
 }
 
@@ -368,7 +368,7 @@ main #students_section .text-welcome {}
 main #students_section .text-welcome h1 {
     text-shadow: 10px 6px 9px #00000047;
     color: var(--color-blue-derivate);
-    width: 75%;
+    /* width: 75%; */
 }
 
 main #students_section .text-welcome p {
@@ -961,6 +961,12 @@ main #contact {
 .navbar-toggler:focus {
     outline: 0 !important;
     box-shadow: 0 0 0 0.10rem rgb(0, 174, 255) !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
 
 

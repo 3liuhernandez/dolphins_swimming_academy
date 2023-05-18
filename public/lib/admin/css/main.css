@@ -1,0 +1,59 @@
+@import url("../../css/variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,300&display=swap');
+
+body {
+    color: #808080 !important;
+    font-family: 'Mulish', sans-serif !important;
+}
+
+main {
+}
+
+main .content-body {
+    background-color: #f4f3ef;
+    position: relative;
+    min-height: 100%;
+}
+
+.main {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 100000;
+    transition: 1s all;
+    overflow: hidden;
+}
+
+.main::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff url(../../imgs/preload.gif) center no-repeat;
+    z-index: 500000;
+    transition: 2s all;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.main::after {
+    content: "Loading ...";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #11b797;
+    z-index: 500000;
+    overflow: hidden;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+}

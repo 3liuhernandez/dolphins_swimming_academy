@@ -1,6 +1,4 @@
-{{-- 
-    /* AFORMULARIO DE REGISTRO ALUMNOS */
---}}
+{{-- AFORMULARIO DE REGISTRO ALUMNOS --}}
 
 <div id="container_student_register" class="row m-0">
     <div class="card p-0 border-3 border-dark" style="padding: 0">

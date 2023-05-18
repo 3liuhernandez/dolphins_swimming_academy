@@ -45,19 +45,6 @@
         <i class="bi bi-chevron-up text-white"></i>
     </button>
 
-    <div id="snackbar_container">
-        <div class="side cont-left"></div>
-        <div class="side cont-center"></div>
-        <div class="side cont-right"></div>
-    </div>
-
-    <div id="toast_msg" class="toast align-items-center text-white bg_color-green_main border-0" role="alert" aria-live="assertive" aria-atomic="true" data-bs-animation="true" data-bs-delay="2000" data-bs-autoHide="true">
-        <div class="d-flex">
-            <div class="toast-body text-center">Hello, world! This is a toast message.</div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-    </div>
-
     @include('layouts.includes.footer')
 
     <script>

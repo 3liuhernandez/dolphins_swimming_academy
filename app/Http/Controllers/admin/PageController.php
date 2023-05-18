@@ -15,10 +15,20 @@ class PageController extends Controller {
         return view('admin.dashboard');
     }
 
+    public function parents() {
+        Session::put('section', 'parents');
+        return view('admin.parents.parents');
+    }
+
     public function students() {
         Session::put('section', 'students');
         $document_types = DocumentType::list();
-        return view('admin.students.home', compact('document_types'));
+        return view('admin.students.students', compact('document_types'));
+    }
+
+    public function perfil() {
+        Session::put('section', 'perfil');
+        return view('admin.perfil.perfil');
     }
 
 

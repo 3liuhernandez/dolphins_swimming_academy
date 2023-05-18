@@ -1,43 +1,57 @@
 @extends('admin.layouts.auth')
 
-@section('footer')
-    
-@endsection
-
 @section('body')
-    <section id="inicio_seccion">
-        <div class="container">
-            <div class="row m-0 d-flex justify-content-center align-items-center" style="height: 80vh">
-                <!--  -->
-                <div class="p-3 shadow-sm border rounded-2" style="width: 420px;">
-                    
-                    @isset($msg_login)
-                        <div class="col text-center">
-                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                <strong>{{$msg_login}}</strong>
-                            </div>
+    <section id="login">
+        <div class="row m-0">
+            <div class="content-img col-md-8 d-none d-md-block">
+                <!-- content img -->
+                <div class="content">
+                    <img src="{{ asset('imgs/login-illustration.png') }}" class="" alt="">
+                </div>
+            </div>
+
+            <div class="content-form col-10 col-sm-10 col-md-4 col-lg-4">
+                @isset($msg_login)
+                    <script>
+                        Swal.fire({
+                            confirmButtonText: 'Volver',
+                            icon: 'error',
+                            title: "{{ $msg_login }}",
+                            text: "Usuario y/o contraseña no existe",
+                            imageUrl: "../../../img/oopsface.png",
+                            imageSize: '600x600'
+                        });
+                    </script>
+                @endisset
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="display-3">Area de <br> Administración</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="content">
+                            <form action="{{ route('admin.login.validate') }}" autocomplete="off" method="POST">
+                                @csrf
+                                <div class="group mb-3 position-relative">
+                                    <input type="text" class="form-control floating-input" name="username" required autofocus value="{{ old('username') }}" placeholder=" ">
+                                    <label class="form-label floating-label">Username</label>
+                                </div>
+                                <div class="group mb-3 position-relative">
+                                    <input type="password" class="form-control floating-input" name="pass" required value="{{ old('pass') }}" placeholder=" ">
+                                    <label class="form-label floating-label">Password</label>
+                                </div>
+                                <div class="group">
+                                    <button class="btn btn-secondary"type="submit">Login</button>
+                                </div>
+                            </form>
                         </div>
-                    @endisset
-
-                    <h3 class="text_color-blue-main display-5 text-center fw-semibold">Administración</h3>
-                    <form action="{{ route('admin.login.validate') }}" method="POST">
-                        @csrf
-                        <div class="p-2 p-lg-4">
-                            
-                            <div class="input-group mb-3">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-person-plus-fill text-white"></i></span>
-                                <input type="text" class="form-control" placeholder="Username" name="username" required autocomplete="username" autofocus value="{{ old('username') }}">
-                            </div>
-
-                            <div class="input-group mb-3">
-                                <span class="input-group-text bg_color-blue-derivate"><i class="bi bi-key-fill text-white"></i></span>
-                                <input type="password" class="form-control" placeholder="password" name="pass" required value="{{ old('pass') }}">
-                            </div>
-
-                            <button class="btn w-100 mt-2 text-white fw-semibold bg_color-blue-derivate"type="submit">Iniciar Sesión</button>
+                    </div>
+                    <div class="bg-white card-footer text-muted">
+                        <div class="mt-2 mb-4">
+                            <a class="nav-link" href="#">
+                                ¿Has olvidado tu contraseña?
+                            </a>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

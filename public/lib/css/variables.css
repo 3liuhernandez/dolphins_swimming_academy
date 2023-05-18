@@ -7,4 +7,7 @@
     --color-secondary-rgb: 72, 86, 100;
     --color-blue-derivate-transparent: 2, 173, 252;
     --color-black-transparent: 0, 0, 0;
+
+    /* ADMINISTRATION THEME */
+    --color-dark-administration: #212529;
 }

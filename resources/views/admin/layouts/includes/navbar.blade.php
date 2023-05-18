@@ -1,24 +1,45 @@
-{{-- <nav class="navbar navbar-expand-lg navbar-light shadow-sm p-0">
-    <div class="container container-md">
-        <a class="navbar-brand m-0 p-0" href="{{ route('admin.home') }}"><img src="{{ asset('imgs/logo_white.jpg') }}" style="width: 100px; height: 80px;" alt="logo"></a>
-        <button class="navbar-toggler p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h2>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.home') }}">HOME</a>
+<div id="navbar" class="container-fuid">
+    <nav class="sticky-top navbar navbar-expand px-3">
+        <a class="navbar-brand ps-3 indicador" href="{{ route('admin.home') }}">
+            Dashboard
+        </a>
+        
+        <span class="d-none d-md-inline-block form-inline ms-auto"></span>
+
+        <div class="dropdown list-inline drp-user">
+            <a class="dropdown-toggle nav-link ms-auto ms-md-0 me-3 me-lg-4 " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="feather bi bi-person-fill"></i>
+            </a>
+            
+            <div class="dropdown-menu dropdown-menu-end profile-notification" aria-labelledby="navbarDropdown">
+                <div class="pro-head">
+                    <img src="{{ asset('imgs/images_icons/manager_medium.png') }}" class="img-fluid rounded-circle" alt="User-Profile-Image">
+                    <a class="nav-link" href="{{ route('home') }}"><span>Administrador</span></a>
+                </div>
+                <ul class="pro-body">
+                    <li>
+                        <a href="{{ route('perfil') }}" class="dropdown-item">
+                            <i class="bi bi-person-fill"></i>
+                            Mi perfil
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('admin.logout') }}">LOGOUT</a>
+                    <li>
+                        <a href="email_inbox.html" class="dropdown-item">
+                            <i class="bi bi-envelope"></i> 
+                            Mensajes
+                        </a>
+                    </li>
+                    <hr class="">
+                    <li>
+                        <a href="{{ route('admin.logout') }}" class="dropdown-item" title="Logout">
+                            <i class="bi bi-box-arrow-right"></i>
+                            Cerrar sesion
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
-</nav> --}}
+
+
+    </nav>
+</div>

@@ -60,6 +60,8 @@ Route::prefix("admin")->group(function () {
         Route::get('/dashboard', [AdminPageController::class, 'home'])->name('admin.dashboard');
         Route::get('/home', [AdminPageController::class, 'home'])->name('admin.home');
 
+        Route::get('/parents', [AdminPageController::class, 'parents'])->name('parents');
         Route::get('/students', [AdminPageController::class, 'students'])->name('students');
+        Route::get('/perfil', [AdminPageController::class, 'perfil'])->name('perfil');
     });
 });
