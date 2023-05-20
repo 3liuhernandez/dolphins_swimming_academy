@@ -1,9 +1,9 @@
 @import url("../../css/variables.css");
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,500;1,300&display=swap");
 
 body {
     color: #808080 !important;
-    font-family: 'Mulish', sans-serif !important;
+    font-family: "Mulish", sans-serif !important;
 }
 
 main {
@@ -15,7 +15,7 @@ main .content-body {
     min-height: 100%;
 }
 
-.main {
+/* .main {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -49,11 +49,107 @@ main .content-body {
     color: #11b797;
     z-index: 500000;
     overflow: hidden;
+} */
+
+/**
+ * Preloader
+**/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #ffffff;
+    transition: 0.3s all ease;
 }
 
+.preloader * {
+    box-sizing: content-box;
+}
+
+.preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader-body {
+    text-align: center;
+}
+
+.preloader-body p {
+    position: relative;
+    right: -8px;
+}
+
+.cssload-bell {
+    width: 97px;
+    height: 99px;
+    border-radius: 100%;
+}
+
+.cssload-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.cssload-circle .cssload-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 5px solid rgba(4, 115, 219, 0.7);
+    border-right: none;
+    border-top: none;
+    background-clip: padding;
+    box-shadow: inset 0 0 10px rgba(4, 115, 219, 0.15);
+}
+
+.cssload-circle:nth-of-type(0) {
+    transform: rotate(0deg);
+}
+
+.cssload-circle:nth-of-type(0) .cssload-inner {
+    animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-circle:nth-of-type(1) {
+    transform: rotate(70deg);
+}
+
+.cssload-circle:nth-of-type(1) .cssload-inner {
+    animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-circle:nth-of-type(2) {
+    transform: rotate(140deg);
+}
+
+.cssload-circle:nth-of-type(2) .cssload-inner {
+    animation: cssload-spin 2.3s infinite linear;
+}
+
+.cssload-bell {
+    animation: cssload-spin 5.75s infinite linear;
+}
+
+@keyframes cssload-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
 }

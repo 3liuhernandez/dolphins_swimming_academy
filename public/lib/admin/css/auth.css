@@ -34,6 +34,7 @@
     transform: translate(0, 50%);
     text-align: center;
     color: #282f32;
+    top: -80px;
 }
 
 #login .content-form .card .card-header {
@@ -112,9 +113,9 @@ select:-webkit-autofill:focus {
     padding: 0 2px;
     color: #4e4e4e;
     background: #fff;
-    transition: 0.1s ease all;
+    transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.1s ease all;
+    -webkit-transition: 0.2s ease all;
 }
 .floating-input,
 .floating-select {

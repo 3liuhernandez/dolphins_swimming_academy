@@ -3,7 +3,7 @@
  * SHOW DATA DATATABLE
  */
 $(document).ready(function () {
-    $(".main").fadeOut();
+    $(".preloader").fadeOut();
 
     $("#dataTableStudents").DataTable({
         // cambiamos el lenguaje a español

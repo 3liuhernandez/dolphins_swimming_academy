@@ -12,12 +12,16 @@ aside .height-static .panel-content {
     box-shadow: inset -1px 0px 0px 0px #dddddd;
 }
 
-aside .height-static .panel-content .img-content {}
-aside .height-static .panel-content .img-content a {}
+aside .height-static .panel-content .img-content {
+    /* width: auto; */
+}
+aside .height-static .panel-content .img-content a {
+}
 aside .height-static .panel-content .img-content img {
-    width: 100%;
+    /* width: 100%; */
     filter: invert(44%) sepia(39%) saturate(1849%) hue-rotate(343deg)
         brightness(95%) contrast(94%);
+    width: 200px;
 }
 
 aside .height-static .panel-content .nav {padding-right: 0 !important;}
