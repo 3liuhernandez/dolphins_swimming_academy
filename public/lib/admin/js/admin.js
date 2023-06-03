@@ -15,12 +15,12 @@ $(document).ready(function () {
         processing: "Procesando",
 
         // formatiamos la fecha (Y-m-d) x ('d MMM yyyy')
-        columnDefs: [
+        /* columnDefs: [
             {
                 targets: 4,
-                render: DataTable.render.date(/* opcional => 'd MMM yyyy' */),
+                render: DataTable.render.date(), // opcional => 'd MMM yyyy'
             },
-        ],
+        ], */
 
         // scroll vertical responsive
         scrollCollapse: true,

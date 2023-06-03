@@ -27,8 +27,6 @@ const get_data_student_form = () => {
         }
     }
 
-    console.log(dd);
-
     return data_register;
 };
 

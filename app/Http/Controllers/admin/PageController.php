@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\LoginController;
 use App\Models\DocumentType;
+use App\Models\Student;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -23,7 +24,11 @@ class PageController extends Controller {
     public function students() {
         Session::put('section', 'students');
         $document_types = DocumentType::list();
-        return view('admin.students.students', compact('document_types'));
+        $students = Student::list();
+
+        // dd($students->toArray());
+
+        return view('admin.students.students', compact('document_types', 'students'));
     }
 
     public function perfil() {

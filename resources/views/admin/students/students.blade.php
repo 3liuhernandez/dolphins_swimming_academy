@@ -30,6 +30,7 @@
                                         <th>Documento</th>
                                         <th>Nombre</th>
                                         <th>Apellido</th>
+                                        <th>Edad</th>
                                         <th>Email</th>
                                         <th>Teléfono</th>
                                         <th>Representante</th>
@@ -38,96 +39,27 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @for ($i = 0; $i < 50; $i++)
-                                    <tr>
-                                        <td>14769220</td>
-                                        <td>John</td>
-                                        <td>Lennon</td>
-                                        <td>Lennon.music@yahoo.com</td>
-                                        <th>23445</th>
-                                        <th>Alfred Lennon</th>
-                                        <th>
-                                            <div class="bg-success rounded-1 text-white text-center fw-normal">Activo</div>
-                                        </th>
-                                        <td>
-                                            <div class="d-flex justify-content-center">
-                                                <a class="btn btn-sm btn-primary d-flex align-items-center me-1 me-md-2" href="#">
-                                                    <span class="d-none d-md-block">Editar</span>
-                                                    <i class="bi bi-pencil-square ms-md-2"></i>
-                                                </a>
-                                                <a class="btn btn-sm btn-danger d-flex align-items-center ms-1 ms-md-2" href="#">
-                                                    <span class="d-none d-md-block">Eliminar</span>
-                                                    <i class="bi bi-trash ms-md-2"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>14769220</td>
-                                        <td>Elton</td>
-                                        <td>John</td>
-                                        <td>John.music@yahoo.com</td>
-                                        <th>1998</th>
-                                        <th>Stanley Dwight</th>
-                                        <th>
-                                            <div class="bg-danger rounded-1 text-white text-center fw-normal">Inactivo</div>
-                                        </th>
-                                        <td>
-                                            <div class="d-flex justify-content-center">
-                                                <a class="btn btn-sm btn-primary d-flex align-items-center me-1 me-md-2" href="#">
-                                                    <span class="d-none d-md-block">Editar</span>
-                                                    <i class="bi bi-pencil-square ms-md-2"></i>
-                                                </a>
-                                                <a class="btn btn-sm btn-danger d-flex align-items-center ms-1 ms-md-2" href="#">
-                                                    <span class="d-none d-md-block">Eliminar</span>
-                                                    <i class="bi bi-trash ms-md-2"></i>
-                                                </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    @endfor
+                                    @foreach ($students as $student)
+                                        <tr>
+                                            <td>{{ $student->document }}</td>
+                                            <td>{{ $student->name }}</td>
+                                            <td>{{ $student->last_name }}</td>
+                                            <td>{{ $student->age }}</td>
+                                            <td>{{ $student->email }}</td>
+                                            <td>{{ $student->phone }}</td>
+                                            <td>{{ $student->parent_id??"-" }}</td>
+                                            <td>{{ $student->status_title }}</td>
+                                            <td>
+                                                <button class="btn btn-warning" role="button"> Editar </button>
+                                                <button class="btn btn-danger" role="button"> Eliminar </button>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-
-                
-                {{-- <div class="col-12">
-                @isset($students)
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Documento</th>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>Email</th>
-                                <th>Teléfono</th>
-                                <th>Representante</th>
-                                <th>Estatus</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach ($students as $student)
-                                <tr>
-                                    <td>{{ $student->code }}</td>
-                                    <td>{{ $student->name }}</td>
-                                    <td>{{ $student->last_name }}</td>
-                                    <td>{{ $student->email }}</td>
-                                    <td>{{ $student->phone }}</td>
-                                    <td>{{ $student->parent_id }}</td>
-                                    <td>{{ $student->status }}</td>
-                                    <td>
-                                        <button class="btn btn-warning" role="button"> Editar </button>
-                                        <button class="btn btn-danger" role="button"> Eliminar </button>
-                                    </td>
-                                </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
-                @endisset
-            </div> --}}
             </div>
         </div>
     </section>
