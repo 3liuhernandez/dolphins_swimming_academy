@@ -67,6 +67,7 @@ const errorMap = [
     "Demasiado largo",
     "Número no válido",
 ];
+
 // inicializando plugin
 const iti = window.intlTelInput(input, {
     initialCountry: "auto",
@@ -107,28 +108,28 @@ input.addEventListener("keyup", reset);
  * FUNC START BLOCK UI
  */
 
-/* const blockui = (msg = false) => {
+const blockui = (msg = false) => {
     $.blockUI({ message: `  ${msg}  ` });
     NProgress.start();
     $(document).css("overflow", "hidden");
-}; */
+};
 
 /*****************************************
  * FUNC STOP BLOCK UI
  */
 
-/* const blockui_stop = () => {
+const blockui_stop = () => {
     setTimeout(() => {
         $.unblockUI();
         NProgress.done();
     }, 500);
-}; */
+};
 
 /*****************************************
  * FUNC STOP BLOCK UI STYLE
  */
 
-/* const fnLoadblockUI = function () {
+const fnLoadblockUI = function () {
     $.blockUI.defaults.css = {
         padding: 0,
         margin: 0,
@@ -146,12 +147,12 @@ input.addEventListener("keyup", reset);
     };
     $.blockUI.defaults.message = "<span></span>";
     return false;
-}; */
+};
 
 /*****************************************
  *SHOW TEXT ALERT AL COMPONENT
  */
-/* jQuery(() => {
+jQuery(() => {
     fnLoadblockUI();
 
     () => {
@@ -184,4 +185,4 @@ input.addEventListener("keyup", reset);
         });
         setTimeout($.unblockUI, 2000);
     });
-}); */
+});

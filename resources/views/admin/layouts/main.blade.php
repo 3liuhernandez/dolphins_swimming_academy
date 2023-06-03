@@ -1,26 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<div class="preloader">
-    <div class="preloader-body">
-        <div class="cssload-bell">
-            <div class="cssload-circle">
-                <div class="cssload-inner"></div>
-            </div>
-            <div class="cssload-circle">
-                <div class="cssload-inner"></div>
-            </div>
-            <div class="cssload-circle">
-                <div class="cssload-inner"></div>
-            </div>
-            <div class="cssload-circle">
-                <div class="cssload-inner"></div>
-            </div>
-            <div class="cssload-circle">
-                <div class="cssload-inner"></div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,8 +38,30 @@
 </head>
 
 <body>
-    
-    <main>
+
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-bell">
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+                <div class="cssload-circle">
+                    <div class="cssload-inner"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="fade">
         <div class="wrapper container-fluid flex-grow-1 d-flex flex-column flex-sm-row p-0">
             <div class="row flex-grow-sm-1 flex-grow-0 m-0 w-100">
                 <div class="col-12 col-xl-2 p-0 content-aside">
@@ -74,8 +76,6 @@
             </div>
         </div>
     </main>
-
-    @yield('footer')
 
     {{-- JQUERY --}}
     <script src="{{ asset('vendor/jquery/jquery.min.js') . site_v() }}"></script>
@@ -94,6 +94,17 @@
 
     {{-- JS BOOTSTRAP 5.3 --}}
     <script src="{{ asset('vendor/bs/js/bootstrap.bundle.min.js') . site_v() }}"></script>
+
+    @yield('footer')
+
+    <script>
+        jQuery( () => {
+            setTimeout(() => {
+                $('body main').removeClass('fade');
+            }, 300);
+        });
+    </script>
+
 </body>
 
 </html>

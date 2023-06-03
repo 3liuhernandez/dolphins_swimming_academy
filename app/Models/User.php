@@ -15,7 +15,7 @@ class User extends Authenticatable
     protected $appends = ['is_admin'];
 
     public function getIsAdminAttribute(){
-        return UserAdmin::where("username", $this->username)->where("email", $this->email)->where("status", 1)->first();
+        return UserAdmin::where("username", $this->email)->where("status", 1)->first();
     }
 
     /**

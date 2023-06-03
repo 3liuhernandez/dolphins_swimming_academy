@@ -40,7 +40,6 @@ class LoginController extends Controller
         Session::flash('msg_login', $msg_login);
         // error login
         return back();
-
     }
 
     public function logout() {

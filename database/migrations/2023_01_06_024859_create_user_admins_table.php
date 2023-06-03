@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('user_admins', function (Blueprint $table) {
             $table->id();
-            $table->string("username", 10)->unique();
-            $table->string("email", 100)->unique();
+            $table->string("username", 100)->unique()->index();
             $table->string("password");
             $table->unsignedTinyInteger("status")->default(1);
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });
     }
 
