@@ -1,13 +1,13 @@
 /**
  * GUARDAR ESTUDIANTE
  */
+const $form_student_register = $("#form_student_register");
 
 const get_data_student_form = () => {
-    const $form = $("#form_student_register");
 
     const data_register = new FormData();
     const dd = {};
-    const $data_serialize = $form.serializeArray();
+    const $data_serialize = $form_student_register.serializeArray();
 
     const age_student = get_student_age();
 
@@ -46,13 +46,9 @@ const validate_form_register = (data) => {
     clean_error_inputs();
 
     for (const field of data.entries()) {
-        const value = field[1];
         const field_name = field[0];
+        const value = field[1];
 
-        console.log("datos", {
-            value: value,
-            field_name: field_name,
-        });
         if (value == "") {
             $(`[name="${field_name}"]`).addClass("is-invalid");
             console.log("field_name", field_name);
@@ -68,11 +64,11 @@ const validate_form_register = (data) => {
 };
 
 const clean_error_inputs = () => {
-    $(".field").removeClass("is-invalid");
+    $form_student_register.find(".field").removeClass("is-invalid");
 };
 
 const clean_form_student = () => {
-    $("#form_student_register")[0].reset();
+    $form_student_register[0].reset();
 };
 
 jQuery(() => {
@@ -122,4 +118,12 @@ jQuery(() => {
 
 const handle_submit_student_form = (data) => {
     console.log("data a enviar", data);
+
+    axios.post(STUDENT_REGISTER_URL, data)
+    .then( ({data}) => {
+        console.log('data', data)
+    })
+    .catch( (error) => {
+        console.log('error', error)
+    })
 };

@@ -4,6 +4,7 @@ use App\Http\Controllers\admin\LoginController as AdminLoginController;
 use App\Http\Controllers\admin\PageController as AdminPageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\StudentController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,6 +63,10 @@ Route::prefix("admin")->group(function () {
 
         Route::get('/parents', [AdminPageController::class, 'parents'])->name('parents');
         Route::get('/students', [AdminPageController::class, 'students'])->name('students');
+
+        // RUTA PARA REGISTRAR UN ESTUDIANTE
+        Route::post('/students/store', [StudentController::class, 'store'])->name('students.store');
+
         Route::get('/perfil', [AdminPageController::class, 'perfil'])->name('perfil');
     });
 });

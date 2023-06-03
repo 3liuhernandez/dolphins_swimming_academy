@@ -136,6 +136,10 @@
 @section('footer')
     @yield('foot')
 
+    <script>
+        const STUDENT_REGISTER_URL = `{{ route('students.store') }}`;
+    </script>
+
     <script src="{{ asset('js/students/students.js') . site_v() }}"></script>
 
     {{-- <script>

@@ -79,6 +79,7 @@
 
     {{-- JQUERY --}}
     <script src="{{ asset('vendor/jquery/jquery.min.js') . site_v() }}"></script>
+    <script src="{{ asset('vendor/axios/axios.min.js') . site_v() }}"></script>
     <script src="{{ asset('vendor/jquery_blockui/jquery.blockUI.js') . site_v() }}"></script>
     <script src="{{ asset('vendor/jquery_blockui/nprogress.min.js') . site_v() }}"></script>
 
