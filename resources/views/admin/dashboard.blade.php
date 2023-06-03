@@ -17,7 +17,7 @@
                                 <div class="col-sm-8">
                                     <div class="numbers">
                                         <p>Total Estudiantes</p>
-                                        108
+                                        {{ $count_student }}
                                     </div>
                                 </div>
                             </div>

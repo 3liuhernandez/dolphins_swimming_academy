@@ -13,7 +13,8 @@ class PageController extends Controller {
 
     public function home() {
         Session::put('section', 'home');
-        return view('admin.dashboard');
+        $count_student = Student::counter();
+        return view('admin.dashboard', compact('count_student'));
     }
 
     public function parents() {
@@ -25,8 +26,6 @@ class PageController extends Controller {
         Session::put('section', 'students');
         $document_types = DocumentType::list();
         $students = Student::list();
-
-        // dd($students->toArray());
 
         return view('admin.students.students', compact('document_types', 'students'));
     }

@@ -18,7 +18,11 @@ class Student extends Model
         return $this->status == 1 ? 'activo' : 'pendiente';
     }
 
-    static function list() {
+    public static function list() {
         return Self::where('status', 1)->orderBy("created_at", "desc")->get();
+    }
+
+    public static function counter() {
+        return Self::list()->count();
     }
 }
