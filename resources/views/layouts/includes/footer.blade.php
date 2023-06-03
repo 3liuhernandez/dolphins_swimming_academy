@@ -22,10 +22,18 @@
             <div class="col-lg-3 col-md-6 footer-links d-flex flex-column align-items-center align-items-md-start">
                 <h4>Follow Us</h4>
                 <div class="social-links d-flex"> 
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> 
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a> 
+                    <a href="#" class="facebook">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a> 
+                    <a href="#" class="instagram">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a> 
+                    <a href="#" class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
         </div>

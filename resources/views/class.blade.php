@@ -6,31 +6,31 @@
         <div class="container-fluid p-0" id="carrusel">
             <div class="row m-0">
                 <div class="col-12 p-0">
-                    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-interval="7000" data-bs-ride="carousel">
+                    <div id="myCarousel" class="carousel slide carousel-fade" data-bs-interval="10000" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ asset('imgs/images_carrusel/banner_carrusel4.WebP') }}" style="width: 100%;height:50vh" alt="..." loading="lazy">
+                                <img src="{{ asset('imgs/images_carrusel/banner_carrusel4.WebP') }}" alt="..." loading="lazy">
                             </div>
                             <?php for ($i=0; $i < 6; $i++) { ?>
                             @if ($i === 0)
                                 <div class="carousel-item">
-                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel3.WebP') }}" style="width: 100%;height:50vh" alt="..." loading="lazy">
+                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel3.WebP') }}" alt="..." loading="lazy">
                                 </div>
                             @elseif($i === 1)
                                 <div class="carousel-item">
-                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel2.WebP') }}" style="width: 100%;height:50vh" alt="..." loading="lazy">
+                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel2.WebP') }}" alt="..." loading="lazy">
                                 </div>
                             @elseif($i === 2)
                                 <div class="carousel-item">
-                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel5.WebP') }}" style="width: 100%;height:50vh" alt="..." loading="lazy">
+                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel5.WebP') }}" alt="..." loading="lazy">
                                 </div>
                             @elseif($i === 3)
                                 <div class="carousel-item">
-                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel6.WebP') }}" style="width: 100%;height:50vh" alt="..." loading="lazy">
+                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel6.WebP') }}" alt="..." loading="lazy">
                                 </div>
                             @elseif($i === 4)
                                 <div class="carousel-item">
-                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel3.WebP') }}" style="width: 100%;height:50vh" alt="..." loading="lazy">
+                                    <img src="{{ asset('imgs/images_carrusel/banner_carrusel3.WebP') }}" alt="..." loading="lazy">
                                 </div>
                             @elseif($i)
                             @endif
@@ -57,10 +57,10 @@
                         <div class="member-img">
                             <img src="{{ asset('imgs/images_instructors/photo3.WebP') }}" class="img-fluid" alt="" loading="lazy">
                             <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
@@ -75,10 +75,10 @@
                         <div class="member-img">
                             <img src="{{ asset('imgs/images_instructors/photo2.WebP') }}" class="img-fluid" alt="" loading="lazy">
                             <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
@@ -93,10 +93,10 @@
                         <div class="member-img">
                             <img src="{{ asset('imgs/images_instructors/photo1.WebP') }}" class="img-fluid" alt="" loading="lazy">
                             <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class="member-info">
@@ -111,10 +111,10 @@
                         <div class="member-img">
                             <img src="{{ asset('imgs/images_instructors/photo4.WebP') }}" class="img-fluid" alt="" loading="lazy">
                             <div class="social">
-                                <a href="#"><i class="bi bi-twitter"></i></a>
-                                <a href="#"><i class="bi bi-facebook"></i></a>
-                                <a href="#"><i class="bi bi-instagram"></i></a>
-                                <a href="#"><i class="bi bi-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                         <div class="member-info">

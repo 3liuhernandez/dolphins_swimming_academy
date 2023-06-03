@@ -38,6 +38,8 @@ class LoginController extends Controller {
             return redirect()->route('home');
         }
 
+        die(dd($login));
+
         Session::flash('msg_login', $msg_login);
         // error login
         return back();

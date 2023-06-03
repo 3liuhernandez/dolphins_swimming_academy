@@ -1,4 +1,5 @@
 @import url(variables.css);
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 
 /* BACKGROUND BLUE */
 .bg_color-blue-main {
@@ -23,11 +24,42 @@
 /* COLOR TEXT DEVIVATE BLUE */
 .text_color-blue-derivate {
     color: var(--color-blue-derivate) !important;
+    /* font-size: 1rem !important; */
 }
 
 /* COLOR TEXT DERIVATE WHITE */
 .text_color-white-derivate {
     color: var(--color-text-derivate) !important;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* PRELOADER */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+
+#preloader::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #fff url(../imgs/loader.gif) center center no-repeat;
+    background-size: 20%;
 }
 
 /*  */
@@ -38,6 +70,7 @@
 
 body {
     color: #444444 !important;
+    font-family: "Comfortaa", cursive !important;
 }
 
 body #scroll-top {
@@ -61,7 +94,7 @@ body #scroll-top:hover i {
     animation: 800ms linear 0s normal none infinite running scroll-ani-to-top;
     height: 100%;
     left: 0;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -86,6 +119,7 @@ body #scroll-top:hover i {
 
 body main .title_section {
     color: var(--color-blue-derivate);
+    padding: 0 !important;
     font-size: 15px;
     line-height: 1px;
     letter-spacing: 2px;
@@ -94,6 +128,7 @@ body main .title_section {
 
 body main .subtitle_section {
     font-size: 30px;
+    padding: 0 !important;
     font-weight: 700;
     text-transform: uppercase;
     color: #203a4b;
@@ -102,7 +137,7 @@ body main .subtitle_section {
 
 body main .title_section::after {
     content: "";
-    width: 120px;
+    width: 100px;
     height: 1px;
     display: inline-block;
     background: var(--color-blue-derivate);
@@ -120,6 +155,20 @@ main .svg path {
     fill: var(--color-blue-derivate);
 }
 
+main .title_section {
+    position: relative;
+}
+
+main .title_section::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    border-right: 1px solid var(--color-blue-derivate);
+    border-top: 1px solid var(--color-blue-derivate);
+    width: 20px;
+    height: 20px;
+    top: 4px;
+}
 
 /*  */
 /*  */
@@ -171,20 +220,21 @@ main .svg path {
 /*  */
 
 /* =========== SECTION CARUSEL HOME start =========== */
-.select_images .carousel-inner #item-carusel {
+#carousel .carousel-inner #item-carusel {
     position: relative;
 }
 
-.select_images .carousel-inner #item-carusel img {
-    /* height: 100vh; */
+#carousel .carousel-inner #item-carusel img {
     width: 100% !important;
+    height: 100%;
+    object-fit: cover !important;
 }
 
-.select_images .carousel-inner #item-carusel .carousel-caption {
+#carousel .carousel-inner #item-carusel .carousel-caption {
     color: var(--color-text-main);
 }
 
-.select_images .carousel-inner #item-carusel::before {
+#carousel .carousel-inner #item-carusel::before {
     content: " ";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.401);
@@ -192,44 +242,50 @@ main .svg path {
     height: 100%;
 }
 
-.select_images .carousel-indicators .btn-select {
+#carousel .carousel-indicators .btn-select {
     border-radius: 50%;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     width: 20px;
     background: var(--color-blue-derivate);
 }
 
 @media (max-width: 992px) {
-    .select_images .carousel-inner #item-carusel img {
-        height: 100%;
-        width: auto;
+    #carousel .carousel-inner #item-carusel img {
+        /* height: 100%; */
+        /* width: auto; */
     }
 }
 
 @media (max-width: 576px) {
-    .select_images .carousel-inner #item-carusel img {
-        height: 40vh;
+    .container,
+    .container-fluid {
+        /* padding: 0 !important; */
     }
 
-    .select_images .carousel-inner #item-carusel .carousel-caption {
+    #carousel .carousel-inner #item-carusel img {
+        height: 35vh;
+        /* object-fit: scale-down; */
+    }
+
+    #carousel .carousel-inner #item-carusel .carousel-caption {
         padding: 0;
         margin-bottom: 2rem;
     }
 
-    .select_images .carousel-inner #item-carusel .carousel-caption h2 {
-        font-size: 17px;
+    #carousel .carousel-inner #item-carusel .carousel-caption h2 {
+        font-size: 15px;
         line-height: 1;
     }
 
-    .select_images .carousel-inner #item-carusel .carousel-caption p {
-        font-size: 14px;
+    #carousel .carousel-inner #item-carusel .carousel-caption p {
+        font-size: 12px;
         line-height: 1;
         display: flex;
         justify-content: flex-end;
     }
 
-    .select_images .carousel-inner #item-carusel .carousel-caption a {
-        padding: .1rem 0.2rem;
+    #carousel .carousel-inner #item-carusel .carousel-caption a {
+        padding: 0.1rem 0.2rem;
         font-size: 13px;
     }
 }
@@ -261,7 +317,7 @@ main .svg path {
 #svg-move .hero-waves {
     display: block;
     width: 100%;
-    height: 100px;
+    height: 50px;
     position: relative;
 }
 
@@ -355,28 +411,43 @@ main .svg path {
 /*  */
 
 /* =========== SECTION WLCOME HOME PAGE START =========== */
-main #students_section {}
+main #students_section {
+    padding: 70px 0;
+}
 
-main #students_section .text-welcome {}
+main #students_section .container {
+    padding: 0;
+}
+
+main #students_section .text-welcome {
+    text-align: center;
+}
 
 main #students_section .text-welcome h1 {
-    /* text-shadow: 10px 0px 0px #00000047; */
-    /* color: var(--color-blue-derivate); */
     width: 75%;
-    background-image: linear-gradient(30deg,#66a4f9, #21ffea, #66a4f9,#055ad1);
-    color: rgba(0,0,0,0);
+    background-image: linear-gradient(
+        30deg,
+        #66a4f9,
+        #2196f3,
+        #004983,
+        #00bcd4
+    );
+    color: rgba(0, 0, 0, 0);
     -webkit-background-clip: text;
     -webkit-background-clip: text;
+    font-weight: bold !important;
+    margin: 0 auto;
 }
 
 main #students_section .text-welcome p {
-    /* width: 65%; */
-    margin: 2rem 0 !important;
-    line-height: 20px;
+    width: 75%;
+    margin: 2rem auto;
+    line-height: 1.1;
+    font-size: 1.3rem;
 }
 
-main #students_section .text-welcome a {}
-
+main #students_section .text-welcome a {
+}
 
 /* MEDIA QUERY */
 
@@ -393,8 +464,8 @@ main #students_section .text-welcome a {}
         /* width: 70%; */
     }
 
-    main #students_section .text-welcome a {}
-
+    main #students_section .text-welcome a {
+    }
 }
 
 @media (max-width: 768px) {
@@ -408,20 +479,27 @@ main #students_section .text-welcome a {}
 
     main #students_section .text-welcome p {
         margin: 1.5rem 0;
+        width: 90%;
     }
 
     main #students_section .text-welcome a {
-        padding: .2rem .5rem !important;
+        padding: 0.2rem 0.5rem !important;
     }
 }
 
 @media (max-width: 576px) {
+    main #stadistic_section {
+        background-image: url(../imgs/images_banner_bg/banner_bg1.WebP);
+        background-size: 100% 100%;
+        background-attachment: initial !important;
+    }
+
     #svg-move .hero-waves {
         height: 30px;
     }
 
     main #students_section .text-welcome h1 {
-        /* font-size: 2rem; */
+        font-size: 2rem;
     }
 
     main #students_section .text-welcome p {
@@ -430,7 +508,14 @@ main #students_section .text-welcome a {}
         font-size: 14px;
     }
 
-    main #students_section .text-welcome a {}
+    main #students_section .text-welcome a {
+    }
+}
+
+@media (max-width: 430px) {
+    main #students_section .text-welcome h1 {
+        font-size: 1.7rem;
+    }
 }
 
 /* ============= END SECTION WLCOME HOME PAGE ============= */
@@ -449,6 +534,7 @@ main #stadistic_section {
     z-index: 10;
     background-attachment: fixed;
     color: var(--color-text-main);
+    padding: 70px 0;
 }
 
 main #stadistic_section svg {
@@ -464,12 +550,6 @@ main #stadistic_section::before {
     height: 100%;
 }
 
-@media (max-width: 992px) {}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {}
-
 /* ========== SECTION STADISTIC HOME PAGE END ==========  */
 
 /*  */
@@ -482,9 +562,12 @@ main #stadistic_section::before {
 main #about {
     color: #203a4b;
     margin: 6rem 0 4rem 0 !important;
+    padding: 70px 0;
 }
 
-main #about h2 {}
+main #about h2 {
+    position: relative;
+}
 
 main #about .text_inf {
     /* font-size: 17px; */
@@ -499,7 +582,7 @@ main #about .nav {
 main #about .nav li {
     display: flex;
     align-items: center;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
 }
 
 /* ============ SECTION ABOUT HOME PAGE END ============ */
@@ -514,6 +597,7 @@ main #about .nav li {
 
 main #galeria {
     padding: 40px 0 60px 0;
+    padding: 70px 0;
 }
 
 main #galeria .galeria-flters {
@@ -608,7 +692,6 @@ main #galeria .galeria-item:hover .galeria-info {
     inset: auto 10px 0 10px;
 }
 
-
 /*  */
 /*  */
 /*  */
@@ -618,7 +701,8 @@ main #galeria .galeria-item:hover .galeria-info {
 /*  */
 /*  */
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+}
 
 @media (max-width: 768px) {
     main .title_section {
@@ -666,6 +750,7 @@ main #galeria .galeria-item:hover .galeria-info {
 
 main #services {
     margin: 4rem 0 6rem !important;
+    padding: 70px 0;
 }
 
 main #services .icon-box {
@@ -716,30 +801,29 @@ main #services .description {
 /* ========== SECTION NATACION PROFESIONAL HOME PAGE START ========== */
 
 main #natacion_profesional_section {
-    background-image: url(../imgs/images_banner_bg/banner_bg2.WebP);
+    background: url(../imgs/images_banner_bg/banner_bg2.WebP) center center
+        no-repeat;
+    background-size: cover;
     position: relative;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 10;
-    /* height: 50vh; */
+    z-index: 1;
+    height: 50vh;
     width: 100%;
-    /* display: flex; */
+    display: flex;
     background-attachment: fixed;
     align-items: center;
-    /* padding: 3rem 0 !important; */
 }
 
 main #natacion_profesional_section::before {
     content: "";
-    z-index: -10;
+    z-index: -1;
     position: absolute;
     background-color: hsl(207deg 100% 17% / 57%);
     width: 100%;
     height: 100%;
 }
 
-main #natacion_profesional_section .text-profesional {}
+main #natacion_profesional_section .text-profesional {
+}
 
 main #natacion_profesional_section .text-profesional h2 {
     text-shadow: -7px -3px 9px #00000047;
@@ -749,7 +833,7 @@ main #natacion_profesional_section .text-profesional h2 {
 
 main #natacion_profesional_section .text-profesional p {
     line-height: 1;
-    /* width: 50%; */
+    width: 50%;
     margin: 2rem 0;
 }
 
@@ -768,7 +852,8 @@ main #natacion_profesional_section .text-profesional p {
 /*  */
 
 /* SECTION CONTACT HOME PAGE START  */
-main #contact {}
+main #contact {
+}
 
 main #contact .info {
     width: 100%;
@@ -840,7 +925,7 @@ main #contact .php-email-form .sent-message {
 }
 
 main #contact .php-email-form .form-group {
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 main #contact .php-email-form input {
@@ -866,6 +951,33 @@ main #contact .php-email-form textarea {
 /*  */
 /*  */
 
+/* SECTION IFRAMEYOTUBE HOME PAGE START */
+main #iframe-youtube {
+    padding: 70px 0;
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+/* SECTION OPENING HOME PAGE START */
+main #opening_section {
+    padding: 70px 0;
+}
+
+
+
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
 /*============== SECTION FEATURE LEVELS HOME PAGE START============== */
 main #features {
     margin: 4rem auto;
@@ -878,7 +990,6 @@ main #features .nav-link {
     color: var(--color-blue-derivate);
     text-align: center;
     position: relative;
-    
 }
 
 main #features .nav-link:hover {
@@ -889,18 +1000,24 @@ main #features .nav-link:hover {
 main #features .nav-link.active {
     background: var(--color-blue-derivate);
     color: var(--color-text-main);
-    border-color:
-        var(--color-blue-derivate);
+    border-color: var(--color-blue-derivate);
 }
 
 main #features .nav-link i {
-    font-size: 40px;
+    font-size: 35px;
 }
 
 main #features .nav-link h4 {
     font-size: 18px;
     font-weight: 600;
-    margin: 0;
+    /* margin: 0 0 10px; */
+}
+
+main #features .nav-tabs {
+}
+
+main #features .nav-tabs .nav-item {
+    padding: 0;
 }
 
 main #features .tab-content {
@@ -925,13 +1042,15 @@ main #features .tab-pane p:last-child {
 }
 
 @media (max-width: 576px) {
+    main #natacion_profesional_section .text-profesional p {
+        width: 90%;
+    }
     main #features .nav-link {
         width: 50px;
     }
 }
 
 @media (max-width: 350px) {
-
     main #features .nav-link {
         padding: 0px 17px;
     }
@@ -965,23 +1084,20 @@ main #contact {
 /*  */
 /*  */
 
-
 .form-control:focus,
 .form-select:focus,
 .btn:focus,
 .btn-close:focus,
 .navbar-toggler:focus {
     outline: 0 !important;
-    box-shadow: 0 0 0 0.10rem rgb(0, 174, 255) !important;
+    box-shadow: 0 0 0 0.1rem rgb(0, 174, 255) !important;
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }
-
-
 
 /*  */
 /*  */
@@ -1043,10 +1159,9 @@ input:-webkit-autofill:focus {
 
 /* SECTION FOOTER END */
 
-
 /* ASSIDE */
 .asside {
-    position: fixed;
+    /* position: fixed; */
     top: 10%;
     bottom: 0;
     min-height: 50vh;

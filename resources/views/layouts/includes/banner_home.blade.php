@@ -1,8 +1,8 @@
-<section class="select_images d-flex flex-column justify-content-end align-items-center">
+<section id="carousel">
     <div class="container-fluid p-0">
         <div class="row m-0">
             <div class="col-12 p-0">
-                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-interval="1110000" data-bs-ride="carousel">
                     <div class="carousel-indicators d-none d-lg-block" style="z-index: 2;">
                         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 1"></button>
@@ -70,25 +70,14 @@
                     </button>
                 </div>
             </div>
-            <div class="col-12 p-0" id="svg-move">
-                <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-                    <defs>
-                        <path id="wave-path"
-                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-                    </defs>
-                    <g class="wave1">
-                        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-                        </use>
-                    </g>
-                    <g class="wave2">
-                        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-                        </use>
-                    </g>
-                    <g class="wave3">
-                        <use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use>
-                    </g>
-                </svg>
-            </div>
         </div>
+    </div>
+    <div id="svg-move">
+        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+            <defs><path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs>
+            <g class="wave1"><use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)"></use></g>
+            <g class="wave2"><use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)"></use></g>
+            <g class="wave3"><use xlink:href="#wave-path" x="50" y="9" fill="#fff"></use></g>
+        </svg>
     </div>
 </section>

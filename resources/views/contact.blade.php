@@ -33,15 +33,12 @@
                 </div>
             </div>
         </div>
-
         <div class="divider my-4"></div>
-
         <div class="container">
             <div class="row m-0">
                 <div class="col-12 col-lg-8">
                     <div class="ayuda border p-3">
                         <h3 class="text-center fw-semibold my-3 text_color-blue-derivate">¿En qué le podemos ayudar?</h3>
-                        {{-- <h4 class="my-2">Contacta con Triatlón Noticias</h4> --}}
                         <div class="divider my-4"></div>
                         <form action="#eviando.." method="post">
                             <div class="col-12 col-md-8 col-lg-6">
@@ -195,8 +192,5 @@
                 </div>
             </div>
         </div>
-
-        <div class="divider my-4"></div>
-
     </section>
 @endsection
