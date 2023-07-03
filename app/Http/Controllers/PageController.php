@@ -8,6 +8,7 @@ class PageController extends Controller
 
     public function home_page() {
         session()->put('section', 'home');
+        session()->put('title', app_name());
         return view('welcome');
     }
 
