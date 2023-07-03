@@ -1,108 +1,3 @@
-/*****************************************
- *
- * SHOW DATA DATATABLE
- */
-$(document).ready(function () {
-    $(".preloader").fadeOut();
-
-    $("#dataTableStudents").DataTable({
-        // cambiamos el lenguaje a español
-        language: {
-            url: "https://cdn.datatables.net/plug-ins/1.13.4/i18n/es-ES.json",
-        },
-
-        // loader mientras carga la tabla opcional
-        processing: "Procesando",
-
-        // formatiamos la fecha (Y-m-d) x ('d MMM yyyy')
-        /* columnDefs: [
-            {
-                targets: 4,
-                render: DataTable.render.date(), // opcional => 'd MMM yyyy'
-            },
-        ], */
-
-        // scroll vertical responsive
-        scrollCollapse: true,
-        paging: true,
-
-        // agregamos el resposivo
-        responsive: true,
-
-        // mostrar de cuanto a cuanto en la tabla
-        lengthMenu: [
-            [5, 10, 15, 25, 50 - 1],
-            [5, 10, 15, 25, 50, "All"],
-        ],
-
-        // procesamos desde Database
-        /* processing: true,
-        serverSide: true,
-        ajax: {
-            url: 'scripts/post.php',
-            type: 'POST',
-        },
-        columns: [
-            {data: 'Nombre'},
-            {data: 'Posición'},
-            {data: 'Localidad'},
-            {data: 'Edad'},
-            {data: 'Fecha'},
-            {data: 'Salario'},
-        ], */
-    });
-});
-
-/*****************************************
- * SELECT OF IMG NUMBER INTERNATIONAL
- **/
-const input = document.querySelector("#phone");
-const errorMsg = document.querySelector("#error-msg");
-const validMsg = document.querySelector("#valid-msg");
-// Mensajes de validacion de numeros tlf
-const errorMap = [
-    "Número no válido",
-    "Código de país no válido",
-    "Demasiado corto",
-    "Demasiado largo",
-    "Número no válido",
-];
-
-// inicializando plugin
-const iti = window.intlTelInput(input, {
-    initialCountry: "auto",
-    geoIpLookup: (callback) => {
-        fetch("https://ipapi.co/json")
-            .then((res) => res.json())
-            .then((data) => callback(data.country_code))
-            .catch(() => callback("us"));
-    },
-    utilsScript: "{{ asset('vendor/inputTel/js/inputUtils.js') }}", // just for formatting/placeholders etc
-});
-const reset = () => {
-    input.classList.remove("error");
-    errorMsg.innerHTML = "";
-    errorMsg.classList.add("hide");
-    validMsg.classList.add("hide");
-};
-// on blur: validate
-input.addEventListener("blur", () => {
-    reset();
-    if (input.value.trim()) {
-        if (iti.isValidNumber()) {
-            input.classList.add("valid");
-            validMsg.classList.remove("hide");
-        } else {
-            input.classList.add("error");
-            const errorCode = iti.getValidationError();
-            errorMsg.innerHTML = errorMap[errorCode];
-            errorMsg.classList.remove("hide");
-        }
-    }
-});
-// on keyup / change flag: reset
-input.addEventListener("change", reset);
-input.addEventListener("keyup", reset);
 
 /*****************************************
  * FUNC START BLOCK UI
@@ -166,10 +61,12 @@ jQuery(() => {
     $('[data-toggle="tooltip"]').tooltip();
 
     // show_toast('mensaje que va en el toast');
-    blockui( 'cargando' )
+    blockui("")
+    blockui_stop();
+
     setTimeout(() => {
-        blockui_stop()
-    }, 1000);
+        $(".preloader").fadeOut();
+    }, 500);
 
     $("#element").click(function () {
         $.blockUI({

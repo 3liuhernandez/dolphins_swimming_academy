@@ -1,8 +1,8 @@
 {{-- AFORMULARIO DE REGISTRO ALUMNOS --}}
 
 <div id="container_student_register" class="row m-0">
-    <div class="card p-0 border-3 border-dark" style="padding: 0">
-        <div class="w-100 text-center mb-4 pt-2 pb-1 bg-dark bg-gradient text-white">
+    <div class="card p-0 border-0" style="padding: 0">
+        <div class="w-100 text-center mb-4 pt-2 pb-1 bg-gradient">
             <h5>Datos del alumno</h5>
         </div>
         <div class="card-body">
